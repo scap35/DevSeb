@@ -27,7 +27,7 @@
  - V4.9h par N. Monceret / A. Beaude le 25/04/2014 : MAJ pour prise en compte FP2.1 pour Int'l
  - V4.9i par N. Monceret le 19/05/2014 : MAJ pour prise en compte de topologie de migration 8.6.2 Lot 1 vers Lot 2 - FR
  - V4.9j par S. Caprais le 19/06/2014 : ajout du middleware spécifique (id=52) a la VM Service (id=54006, topologie HCS862V4-MW2)
- 
+ - V4.9k par S. Caprais le 30/06/2014 : modif du vmNaming 25S01 -> 25S01E ou 25S01S
 
 Offre : UCaaS-France
 Version : 4.9j
@@ -790,7 +790,7 @@ Sprint : SP554
 <!-- CUEAC / VMs -->
 		<Collection name="UCaaS CUEACs ITD">
 			<!-- 8.6.1 -->
-			<VMTemplate catalogElementId="14015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+			<VMTemplate catalogElementId="14015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01E" hostNaming="CU1">
 				<Information>
 					<Name commercialName="CUEAC UCaaS 1-6 operatrices-HCS861V1" shortName="CUEAC6-25S01E-HCS861V1" />
 					<Version OSFamily="Windows 2008" version="ITDv1.2 V1" type="CUEAC01" language="FR" architecture="64bits"/>
@@ -808,7 +808,7 @@ Sprint : SP554
 			</VMTemplate>
 
 			<!-- 8.6.2 -->
-			<VMTemplate catalogElementId="24015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+			<VMTemplate catalogElementId="24015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01E" hostNaming="CU1">
 				<Information>
 					<Name commercialName="CUEAC UCaaS 1-6 operatrices-HCS862V1" shortName="CUEAC6-25S01E-HCS862V1" />
 					<Version OSFamily="Windows 2008" version="ITDv1.2 V1" type="CUEAC01" language="FR" architecture="64bits"/>
@@ -825,7 +825,7 @@ Sprint : SP554
 				</Middlewares>
 			</VMTemplate>
 
-			<VMTemplate catalogElementId="44015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+			<VMTemplate catalogElementId="44015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01E" hostNaming="CU1">
 				<Information>
 					<Name commercialName="CUEAC UCaaS 1-6 operatrices-HCS862V3" shortName="CUEAC6-25S01E-HCS862V3" />
 					<Version OSFamily="Windows 2008" version="ITDv3.0" type="CUEAC01" language="FR" architecture="64bits"/>
@@ -843,7 +843,7 @@ Sprint : SP554
 			</VMTemplate>
 
 			<!-- 8.6.1 -->
-			<VMTemplate catalogElementId="14016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+			<VMTemplate catalogElementId="14016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01S" hostNaming="CU1">
 				<Information>
 					<Name commercialName="CUEAC UCaaS 6-25 operatrices-HCS861V1" shortName="CUEAC6-25S01S-HCS861V1" />
 					<Version OSFamily="Windows 2008" version="ITDv1.2 V1" type="CUEAC01" language="FR" architecture="64bits"/>
@@ -861,7 +861,7 @@ Sprint : SP554
 			</VMTemplate>
 
 			<!-- 8.6.2 -->
-			<VMTemplate catalogElementId="24016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+			<VMTemplate catalogElementId="24016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01S" hostNaming="CU1">
 				<Information>
 					<Name commercialName="CUEAC UCaaS 6-25 operatrices-HCS862V1" shortName="CUEAC6-25S01S-HCS862V1" />
 					<Version OSFamily="Windows 2008" version="ITDv1.2 V1" type="CUEAC01" language="FR" architecture="64bits"/>
@@ -878,7 +878,7 @@ Sprint : SP554
 				</Middlewares>
 			</VMTemplate>
 
-			<VMTemplate catalogElementId="44016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+			<VMTemplate catalogElementId="44016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01S" hostNaming="CU1">
 				<Information>
 					<Name commercialName="CUEAC UCaaS 6-25 operatrices-HCS862V3" shortName="CUEAC6-25S01S-HCS862V3" />
 					<Version OSFamily="Windows 2008" version="ITDv3.0" type="CUEAC01" language="FR" architecture="64bits"/>
@@ -1320,7 +1320,7 @@ Sprint : SP554
 			</VMTemplate>
 
 			<!-- 8.6.2 -->
-			<VMTemplate catalogElementId="34015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+			<VMTemplate catalogElementId="34015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01E" hostNaming="CU1">
 				<Information>
 					<Name commercialName="CUEAC UCaaS 1-6 operatrices-HCS862V2-MW2" shortName="CUEAC6-25S01E-HCS862V2-MW2" />
 					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC01" language="FR" architecture="64bits"/>
@@ -1338,7 +1338,7 @@ Sprint : SP554
 			</VMTemplate>
 
 			<!-- 8.6.2 -->
-			<VMTemplate catalogElementId="34016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+			<VMTemplate catalogElementId="34016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01S" hostNaming="CU1">
 				<Information>
 					<Name commercialName="CUEAC UCaaS 6-25 operatrices-HCS862V2-MW2" shortName="CUEAC6-25S01S-HCS862V2-MW2" />
 					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC01" language="FR" architecture="64bits"/>
@@ -1502,7 +1502,7 @@ Sprint : SP554
 			<!-- 8.6.2 V4  -->
 
 			<!-- 8.6.2  V4-->
-			<VMTemplate catalogElementId="54015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+			<VMTemplate catalogElementId="54015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01E" hostNaming="CU1">
 				<Information>
 					<Name commercialName="CUEAC UCaaS 1-6 operatrices-HCS862V4-MW2" shortName="CUEAC6-25S01E-HCS862V4-MW2" />
 					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC01" language="FR" architecture="64bits"/>
@@ -1520,7 +1520,7 @@ Sprint : SP554
 			</VMTemplate>
 
 			<!-- 8.6.2 V4-->
-			<VMTemplate catalogElementId="54016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+			<VMTemplate catalogElementId="54016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01E" hostNaming="CU1">
 				<Information>
 					<Name commercialName="CUEAC UCaaS 6-25 operatrices-HCS862V4-MW2" shortName="CUEAC6-25S01S-HCS862V4-MW2" />
 					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC01" language="FR" architecture="64bits"/>
