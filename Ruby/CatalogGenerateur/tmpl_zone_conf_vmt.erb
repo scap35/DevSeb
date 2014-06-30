@@ -1,0 +1,4 @@
+					<VMTemplate catalogElementId="<%= @t[:catalog_element_id] %>">
+						<Eth number="0" address="<%= @t[:eth0_address] %>" networkType="<%= @t[:eth0_type] %>"/><% unless @t[:eth1_type].nil? %>
+						<Eth number="1" address="<%= @t[:eth1_address] %>" networkType="<%= @t[:eth1_type] %>"/><% end %>
+					</VMTemplate>

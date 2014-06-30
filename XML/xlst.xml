@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="xslt.xsl"?>
+<bouteille>
+    <marque>Cristaline</marque>
+    <composition>
+      <ion_positif>calcium 71mg/l</ion_positif>
+      <ion_negatif>nitrate 1mg/l</ion_negatif>
+      <ion_positif>magnésium 5,5mg/l</ion_positif>
+      <ion_negatif>chlorure 20mg/l</ion_negatif>
+      <autres_materiaux>fer</autres_materiaux>
+    </composition>
+    <source>
+      <ville>St-Cyr la Source</ville>
+      <departement>Loiret</departement>
+    </source>
+  <code_barre>3274080005003</code_barre>
+  <contenance>150cl</contenance>
+  <ph>7,45</ph>
+</bouteille>

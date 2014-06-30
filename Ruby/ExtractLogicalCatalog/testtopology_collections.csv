@@ -1,0 +1,16 @@
+collection_name;name;version;display_name;migration_target
+CHY - UCaaS Cisco HCS;UCaaS Cisco (1000 users) HCS 8.6.1-V1;HCS 8.6.1-V1;Topologie UCaaS Cisco (1000 users) HCS 8.6.1-V1;UCaaS Cisco (1000 devices) HCS 8.6.2-V3
+CHY - UCaaS Cisco HCS;UCaaS Cisco (1000 users) HCS 8.6.2-V1;HCS 8.6.2-V1;Topologie UCaaS Cisco (1000 users) HCS 8.6.2-V1;
+CHY - UCaaS Cisco HCS;UCaaS Cisco (1000 devices) HCS 8.6.2-V3;HCS 8.6.2-V3;Topologie UCaaS Cisco (1000 devices) HCS 8.6.2-V3;
+CHY - UCaaS Cisco HCS;UCaaS Cisco (1000 devices) HCS 8.6.2-V3-mig;HCS 8.6.2-V3;Topologie UCaaS Cisco (1000 devices) HCS 8.6.2-V3-mig;UCaaS Cisco (1000 devices) HCS 8.6.2-V3
+CHY - UCaaS Cisco HCS;UCaaS Cisco (7500 devices) HCS 8.6.2-V3;HCS 8.6.2-V3;Topologie UCaaS Cisco (7500 devices) HCS 8.6.2-V3;
+CHY - UCaaS Cisco HCS;UCaaS Cisco (7500 devices) HCS 8.6.2-V3-mig;HCS 8.6.2-V3;Topologie UCaaS Cisco (7500 devices) HCS 8.6.2-V3-mig;UCaaS Cisco (7500 devices) HCS 8.6.2-V3
+CHY - UCaaS Cisco HCS;UCaaS Cisco (20000 devices) HCS 8.6.2-V3;HCS 8.6.2-V3;Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V3;
+CHY - UCaaS Cisco HCS;UCaaS Cisco (40000 devices) HCS 8.6.2-V3;HCS 8.6.2-V3;Topologie UCaaS Cisco (40000 devices) HCS 8.6.2-V3;
+CHY - UCaaS Cisco HCS;UCaaS Cisco (2500 users) HCS 8.6.2-V1;HCS 8.6.2-V1;Topologie UCaaS Cisco (2500 users) HCS 8.6.2-V1;
+VDR-FRA-ATL-SIN - UCaaS Cisco HCS;UCaaS Cisco (1000 devices) HCS 8.6.2-V2-MW2;HCS 8.6.2-V2-MW2;Topologie UCaaS Cisco (1000 devices) HCS 8.6.2-V2 Middleware pour ADLDS;
+VDR-FRA-ATL-SIN - UCaaS Cisco HCS;UCaaS Cisco (1000 devices) HCS 8.6.2-V4-MW2;HCS 8.6.2-V4-MW2;Topologie UCaaS Cisco (1000 devices) HCS 8.6.2-V4-MW2;
+VDR-FRA-ATL-SIN - UCaaS Cisco HCS;UCaaS Cisco (7500 devices) HCS 8.6.2-V2-MW2;HCS 8.6.2-V2-MW2;Topologie UCaaS Cisco (7500 devices) HCS 8.6.2-V2 Middleware pour ADLDS;
+VDR-FRA-ATL-SIN - UCaaS Cisco HCS;UCaaS Cisco (7500 devices) HCS 8.6.2-V4-MW2;HCS 8.6.2-V4-MW2;Topologie UCaaS Cisco (7500 devices) HCS 8.6.2-V4-MW2;
+VDR-FRA-ATL-SIN - UCaaS Cisco HCS;UCaaS Cisco (20000 devices) HCS 8.6.2-V2-MW2;HCS 8.6.2-V2-MW2;Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V2 Middleware pour ADLDS;
+VDR-FRA-ATL-SIN - UCaaS Cisco HCS;UCaaS Cisco (20000 devices) HCS 8.6.2-V4-MW2;HCS 8.6.2-V4-MW2;Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V4-MW2;

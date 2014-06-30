@@ -1,0 +1,12 @@
+collection_name;catalog_element_id;status;use_license_id;required_available_space_in_go;configurable_size;commercial_name;short_name
+Toolbox_Configuration;11;available;00001;0;false;Config: join Domain + TITAN sFTP server;TBConfig1
+Middleware_Configuration;14;available;00001;0;false;Config: join Domain + middlewares;MWConfig1
+CUEAC_S01_Configuration_Express;21;available;00001;0;false;Config: installation of MS-SQL Express CUEAC 1;CUEAC1_Config_Express
+CUEAC_S01_Configuration_Standard;22;available;00001;0;false;Config: installation of MS-SQL Standard CUEAC 1;CUEAC1_Config_Standard
+CUEAC_S02a9_Configuration_Standard;23;available;00001;0;false;Config: installation of MS-SQL Standard CUEAC 2-9;CUEAC2-9_Config_Standard
+DC1_Configuration1;31;available;00001;0;false;Config AD1-1;DC1Config1
+DC2_Configuration;33;available;00001;0;false;Config AD2;DC2Config
+Toolbox_Configuration_MW2;51;available;00001;0;false;Config: join Domain + TITAN sFTP server MW2;TBConfig1_MW2
+CUEAC_E01_Configuration_Express_MW2;61;available;00001;0;false;Config: installation of MS-SQL Express CUEAC 1 MW2;CUEAC1_Config_Express_MW2
+CUEAC_S0X_Configuration_Standard_MW2;62;available;00001;0;false;Config: installation of MS-SQL Standard CUEAC MW2;CUEAC_Config_Standard_MW2
+DC_Configuration_MW2;71;available;00001;0;false;Config AD LDS 1 et 2;DCConfig

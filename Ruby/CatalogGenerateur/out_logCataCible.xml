@@ -1,0 +1,3071 @@
+				<VMTemplate catalogElementId="14002" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="AD1" hostNaming="AD1">
+				<Information>
+					<Name commercialName="ActiveDirectory AD1-HCS861V1" shortName="AD1-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="ITDv1.3 V1" type="AD1" language="FR" architecture="64bits"/>
+					<Description description="Active-Directory and Domain-Controler AD1 HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="ADCNS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="31"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24002" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="AD1" hostNaming="AD1">
+				<Information>
+					<Name commercialName="ActiveDirectory AD1-HCS862V1" shortName="AD1-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="ITDv1.3 V1" type="AD1" language="FR" architecture="64bits"/>
+					<Description description="Active-Directory and Domain-Controler AD1 HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="ADCNS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="31"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44002" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="AD1" hostNaming="AD1">
+				<Information>
+					<Name commercialName="ActiveDirectory AD1-HCS862V3" shortName="AD1-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.1" type="AD1" language="FR" architecture="64bits"/>
+					<Description description="Active-Directory and Domain-Controler AD1 HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="ADCNS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="600" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="31"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="14003" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="AD2" hostNaming="AD2">
+				<Information>
+					<Name commercialName="ActiveDirectory AD2-HCS861V1" shortName="AD2-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="ITDv1.3 V1" type="AD2" language="FR" architecture="64bits"/>
+					<Description description="Active-Directory and Domain-Controler AD2 HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="ADCNS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="33"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24003" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="AD2" hostNaming="AD2">
+				<Information>
+					<Name commercialName="ActiveDirectory AD2-HCS862V1" shortName="AD2-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="ITDv1.3 V1" type="AD2" language="FR" architecture="64bits"/>
+					<Description description="Active-Directory and Domain-Controler AD2 HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="ADCNS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="33"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44003" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="AD2" hostNaming="AD2">
+				<Information>
+					<Name commercialName="ActiveDirectory AD2-HCS862V3" shortName="AD2-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.1" type="AD2" language="FR" architecture="64bits"/>
+					<Description description="Active-Directory and Domain-Controler AD2 HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="ADCNS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="600" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="33"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="14005" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="TOOLBOX" hostNaming="TBX">
+				<Information>
+					<Name commercialName="ToolBox Ucaas-HCS861V1" shortName="TOOLBOX-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="ITDv1.0 V1" type="TB01" language="FR" architecture="64bits"/>
+					<Description description="ToolBox (avec installation Middleware) HCS8.6.1 V1" />
+					<Upgrade isRelay="true" mountPoint="C:\applicativeUpgrade"/>
+					<ApplicationType useApplicationTypeId="Toolbox" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="11"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24005" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="TOOLBOX" hostNaming="TBX">
+				<Information>
+					<Name commercialName="ToolBox Ucaas-HCS862V1" shortName="TOOLBOX-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="ITDv1.0 V1" type="TB01" language="FR" architecture="64bits"/>
+					<Description description="ToolBox (avec installation Middleware) HCS8.6.2 V1" />
+					<Upgrade isRelay="true" mountPoint="C:\applicativeUpgrade"/>
+					<ApplicationType useApplicationTypeId="Toolbox" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="11"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44005" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="TOOLBOX" hostNaming="TBX">
+				<Information>
+					<Name commercialName="ToolBox Ucaas-HCS862V3" shortName="TOOLBOX-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.1" type="TB01" language="FR" architecture="64bits"/>
+					<Description description="ToolBox (avec installation Middleware) HCS8.6.2 V3" />
+					<Upgrade isRelay="true" mountPoint="C:\applicativeUpgrade"/>
+					<ApplicationType useApplicationTypeId="Toolbox" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="2048" maxMo="2048" unlimited="true"/>
+					<CPU minMhz="300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="14"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44006" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="SERVICE" hostNaming="SRV">
+				<Information>
+					<Name commercialName="Service France Ucaas-HCS862V3" shortName="SERVICE-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.1" type="SV01" language="FR" architecture="64bits"/>
+					<Description description="Service (avec installation Middleware) HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="COLL" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="600" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="14"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34002" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="AD1" hostNaming="AD1">
+				<Information>
+					<Name commercialName="ActiveDirectory AD1-HCS862V2-MW2" shortName="AD1-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="AD1" language="FR" architecture="64bits"/>
+					<Description description="Active-Directory and Domain-Controller AD1 with LDS HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="ADCNS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="2048" maxMo="2048" unlimited="true"/>
+					<CPU minMhz="600" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="71"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54002" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="AD1" hostNaming="AD1">
+				<Information>
+					<Name commercialName="ActiveDirectory AD1-HCS862V4-MW2" shortName="AD1-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDv1.0" type="AD1" language="FR" architecture="64bits"/>
+					<Description description="Active-Directory and Domain-Controler AD1 HCS8.6.2 V4 Middleware 2" />
+					<ApplicationType useApplicationTypeId="ADCNS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="600" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="31"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34003" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="AD2" hostNaming="AD2">
+				<Information>
+					<Name commercialName="ActiveDirectory AD2-HCS862V2-MW2" shortName="AD2-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="AD2" language="FR" architecture="64bits"/>
+					<Description description="Active-Directory and Domain-Controller AD2 with LDS HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="ADCNS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="2048" maxMo="2048" unlimited="true"/>
+					<CPU minMhz="600" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="71"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54003" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="AD2" hostNaming="AD2">
+				<Information>
+					<Name commercialName="ActiveDirectory AD2-HCS862V4-MW2" shortName="AD2-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDv4.1" type="AD2" language="FR" architecture="64bits"/>
+					<Description description="Active-Directory and Domain-Controler AD2 HCS8.6.2 V4 Middleware 2" />
+					<ApplicationType useApplicationTypeId="ADCNS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="600" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="33"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34005" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="TOOLBOX" hostNaming="TBX">
+				<Information>
+					<Name commercialName="ToolBox Ucaas-HCS862V2-MW2" shortName="TOOLBOX-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="TB01" language="FR" architecture="64bits"/>
+					<Description description="ToolBox International (avec installation Middleware) HCS8.6.1 V2" />
+					<Upgrade isRelay="true" mountPoint="C:\applicativeUpgrade"/>
+					<ApplicationType useApplicationTypeId="Toolbox" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="2048" maxMo="2048" unlimited="true"/>
+					<CPU minMhz="300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="51"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54005" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="TOOLBOX" hostNaming="TBX">
+				<Information>
+					<Name commercialName="ToolBox Ucaas-HCS862V4-MW2" shortName="TOOLBOX-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDv4.1" type="TB01" language="FR" architecture="64bits"/>
+					<Description description="ToolBox (avec installation Middleware) HCS8.6.2 V4 Middleware 2" />
+					<Upgrade isRelay="true" mountPoint="C:\applicativeUpgrade"/>
+					<ApplicationType useApplicationTypeId="Toolbox" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="2048" maxMo="2048" unlimited="true"/>
+					<CPU minMhz="300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="51"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54006" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="SERVICE" hostNaming="SRV">
+				<Information>
+					<Name commercialName="Service France Ucaas-HCS862V4-MW2" shortName="SERVICE-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDv1.0" type="SV01" language="FR" architecture="64bits"/>
+					<Description description="Service (avec installation Middleware) HCS8.6.2 V4 Middleware 2" />
+					<ApplicationType useApplicationTypeId="COLL" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="600" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="52"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="14015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 1-6 operatrices-HCS861V1" shortName="CUEAC6-25S01E-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="ITDv1.2 V1" type="CUEAC01" language="FR" architecture="64bits"/>
+					<Description description="CUEAC 6 operatrices SQL-Express avec installation Middleware HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="21"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 1-6 operatrices-HCS862V1" shortName="CUEAC6-25S01E-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="ITDv1.2 V1" type="CUEAC01" language="FR" architecture="64bits"/>
+					<Description description="CUEAC 6 operatrices SQL-Express avec installation Middleware HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="21"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 1-6 operatrices-HCS862V3" shortName="CUEAC6-25S01E-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.0" type="CUEAC01" language="FR" architecture="64bits"/>
+					<Description description="CUEAC 6 operatrices SQL-Express avec installation Middleware HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6128" maxMo="6128" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="21"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="14016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 6-25 operatrices-HCS861V1" shortName="CUEAC6-25S01S-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="ITDv1.2 V1" type="CUEAC01" language="FR" architecture="64bits"/>
+					<Description description="CUEAC 25 operatrices SQL-Standard avec installation Middleware HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="22"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 6-25 operatrices-HCS862V1" shortName="CUEAC6-25S01S-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="ITDv1.2 V1" type="CUEAC01" language="FR" architecture="64bits"/>
+					<Description description="CUEAC 25 operatrices SQL-Standard avec installation Middleware HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="22"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 6-25 operatrices-HCS862V3" shortName="CUEAC6-25S01S-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.0" type="CUEAC01" language="FR" architecture="64bits"/>
+					<Description description="CUEAC 25 operatrices SQL-Standard avec installation Middleware HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6128" maxMo="6128" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="22"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="14007" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S02" hostNaming="CU2">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 1+25-HCS861V1" shortName="CUEAC25S02-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC02" language="FR" architecture="64bits"/>
+					<Description description="CUEAC premier increment de 25 operatrices HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24007" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S02" hostNaming="CU2">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 1+25-HCS862V1" shortName="CUEAC25S02-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC02" language="FR" architecture="64bits"/>
+					<Description description="CUEAC premier increment de 25 operatrices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44007" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S02" hostNaming="CU2">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 1+25-HCS862V3" shortName="CUEAC25S02-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.0" type="CUEAC02" language="FR" architecture="64bits"/>
+					<Description description="CUEAC premier increment de 25 operatrices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6128" maxMo="6128" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="14008" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S03" hostNaming="CU3">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 2+25-HCS861V1" shortName="CUEAC25S03-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC03" language="FR" architecture="64bits"/>
+					<Description description="CUEAC second increment de 25 operatrices HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24008" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S03" hostNaming="CU3">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 2+25-HCS862V1" shortName="CUEAC25S03-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC03" language="FR" architecture="64bits"/>
+					<Description description="CUEAC second increment de 25 operatrices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44008" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S03" hostNaming="CU3">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 2+25-HCS862V3" shortName="CUEAC25S03-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.0" type="CUEAC03" language="FR" architecture="64bits"/>
+					<Description description="CUEAC second increment de 25 operatrices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6128" maxMo="6128" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="14009" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S04" hostNaming="CU4">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 3+25-HCS861V1" shortName="CUEAC25S04-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC04" language="FR" architecture="64bits"/>
+					<Description description="CUEAC troisieme increment de 25 operatrices HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24009" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S04" hostNaming="CU4">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 3+25-HCS862V1" shortName="CUEAC25S04-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC04" language="FR" architecture="64bits"/>
+					<Description description="CUEAC troisieme increment de 25 operatrices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44009" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S04" hostNaming="CU4">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 3+25-HCS862V3" shortName="CUEAC25S04-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.0" type="CUEAC04" language="FR" architecture="64bits"/>
+					<Description description="CUEAC troisieme increment de 25 operatrices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6128" maxMo="6128" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="14010" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S05" hostNaming="CU5">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 4+25-HCS861V1" shortName="CUEAC25S05-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC05" language="FR" architecture="64bits"/>
+					<Description description="CUEAC quatrieme increment de 25 operatrices HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24010" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S05" hostNaming="CU5">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 4+25-HCS862V1" shortName="CUEAC25S05-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC05" language="FR" architecture="64bits"/>
+					<Description description="CUEAC quatrieme increment de 25 operatrices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44010" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S05" hostNaming="CU5">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 4+25-HCS862V3" shortName="CUEAC25S05-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.0" type="CUEAC05" language="FR" architecture="64bits"/>
+					<Description description="CUEAC quatrieme increment de 25 operatrices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6128" maxMo="6128" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="14011" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S06" hostNaming="CU6">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 5+25-HCS861V1" shortName="CUEAC25S06-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC06" language="FR" architecture="64bits"/>
+					<Description description="CUEAC cinquieme increment de 25 operatrices HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24011" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S06" hostNaming="CU6">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 5+25-HCS862V1" shortName="CUEAC25S06-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC06" language="FR" architecture="64bits"/>
+					<Description description="CUEAC cinquieme increment de 25 operatrices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44011" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S06" hostNaming="CU6">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 5+25-HCS862V3" shortName="CUEAC25S06-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.0" type="CUEAC06" language="FR" architecture="64bits"/>
+					<Description description="CUEAC cinquieme increment de 25 operatrices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6128" maxMo="6128" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="14012" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S07" hostNaming="CU7">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 6+25-HCS861V1" shortName="CUEAC25S07-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC07" language="FR" architecture="64bits"/>
+					<Description description="CUEAC sixieme increment de 25 operatrices HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24012" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S07" hostNaming="CU7">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 6+25-HCS862V1" shortName="CUEAC25S07-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC07" language="FR" architecture="64bits"/>
+					<Description description="CUEAC sixieme increment de 25 operatrices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44012" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S07" hostNaming="CU7">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 6+25-HCS862V3" shortName="CUEAC25S07-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.0" type="CUEAC07" language="FR" architecture="64bits"/>
+					<Description description="CUEAC sixieme increment de 25 operatrices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6128" maxMo="6128" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="14013" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S08" hostNaming="CU8">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 7+25-HCS861V1" shortName="CUEAC25S08-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC08" language="FR" architecture="64bits"/>
+					<Description description="CUEAC septieme increment de 25 operatrices HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24013" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S08" hostNaming="CU8">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 7+25-HCS862V1" shortName="CUEAC25S08-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC08" language="FR" architecture="64bits"/>
+					<Description description="CUEAC septieme increment de 25 operatrices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44013" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S08" hostNaming="CU8">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 7+25-HCS862V3" shortName="CUEAC25S08-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.0" type="CUEAC08" language="FR" architecture="64bits"/>
+					<Description description="CUEAC septieme increment de 25 operatrices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6128" maxMo="6128" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="14014" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S09" hostNaming="CU9">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 8+25-HCS861V1" shortName="CUEAC25S09-HCS861V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC09" language="FR" architecture="64bits"/>
+					<Description description="CUEAC huitieme increment de 25 operatrices HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="24014" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S09" hostNaming="CU9">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 8+25-HCS862V1" shortName="CUEAC25S09-HCS862V1" />
+					<Version OSFamily="Windows 2008" version="1.2 V1" type="CUEAC09" language="FR" architecture="64bits"/>
+					<Description description="CUEAC huitieme increment de 25 operatrices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="256" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="44014" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S09" hostNaming="CU9">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 8+25-HCS862V3" shortName="CUEAC25S09-HCS862V3" />
+					<Version OSFamily="Windows 2008" version="ITDv3.0" type="CUEAC09" language="FR" architecture="64bits"/>
+					<Description description="CUEAC huitieme increment de 25 operatrices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6128" maxMo="6128" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="23"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 1-6 operatrices-HCS862V2-MW2" shortName="CUEAC6-25S01E-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC01" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International 6 operatrices SQL-Express avec installation Middleware HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="61"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 6-25 operatrices-HCS862V2-MW2" shortName="CUEAC6-25S01S-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC01" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International 25 operatrices SQL-Standard avec installation middleware HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34007" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S02" hostNaming="CU2">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 1+25-HCS862V2-MW2" shortName="CUEAC25S02-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC02" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International premier incrément de 25 operatrices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34008" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S03" hostNaming="CU3">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 2+25-HCS862V2-MW2" shortName="CUEAC25S03-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC03" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International second incrément de 25 operatrices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34009" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S04" hostNaming="CU4">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 3+25-HCS862V2-MW2" shortName="CUEAC25S04-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC04" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International troisieme incrément de 25 operatrices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34010" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S05" hostNaming="CU5">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 4+25-HCS862V2-MW2" shortName="CUEAC25S05-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC05" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International quatrieme incrément de 25 operatrices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34011" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S06" hostNaming="CU6">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 5+25-HCS862V2-MW2" shortName="CUEAC25S06-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC06" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International cinquieme incrément de 25 operatrices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34012" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S07" hostNaming="CU7">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 6+25-HCS862V2-MW2" shortName="CUEAC25S07-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC07" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International sixieme incrément de 25 operatrices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34013" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S08" hostNaming="CU8">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 7+25-HCS862V2-MW2" shortName="CUEAC25S08-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC08" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International septième incrément de 25 operatrices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="34014" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S09" hostNaming="CU9">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 8+25-HCS862V2-MW2" shortName="CUEAC25S09-HCS862V2-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC09" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International huitième incrément de 25 operatrices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54015" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 1-6 operatrices-HCS862V4-MW2" shortName="CUEAC6-25S01E-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC01" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International 6 operatrices SQL-Express avec installation Middleware HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="61"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54016" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01" hostNaming="CU1">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 6-25 operatrices-HCS862V4-MW2" shortName="CUEAC6-25S01S-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC01" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International 25 operatrices SQL-Standard avec installation middleware HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54007" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S02" hostNaming="CU2">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 1+25-HCS862V4-MW2" shortName="CUEAC25S02-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC02" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International premier incrément de 25 operatrices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54008" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S03" hostNaming="CU3">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 2+25-HCS862V4-MW2" shortName="CUEAC25S03-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC03" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International second incrément de 25 operatrices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54009" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S04" hostNaming="CU4">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 3+25-HCS862V4-MW2" shortName="CUEAC25S04-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC04" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International troisieme incrément de 25 operatrices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54010" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S05" hostNaming="CU5">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 4+25-HCS862V4-MW2" shortName="CUEAC25S05-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC05" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International quatrieme incrément de 25 operatrices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54011" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S06" hostNaming="CU6">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 5+25-HCS862V4-MW2" shortName="CUEAC25S06-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC06" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International cinquieme incrément de 25 operatrices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54012" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S07" hostNaming="CU7">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 6+25-HCS862V4-MW2" shortName="CUEAC25S07-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC07" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International sixieme incrément de 25 operatrices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54013" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S08" hostNaming="CU8">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 7+25-HCS862V4-MW2" shortName="CUEAC25S08-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC08" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International septième incrément de 25 operatrices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="54014" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC25S09" hostNaming="CU9">
+				<Information>
+					<Name commercialName="CUEAC UCaaS 8+25-HCS862V4-MW2" shortName="CUEAC25S09-HCS862V4-MW2" />
+					<Version OSFamily="Windows 2008" version="ITDV1.0" type="CUEAC09" language="FR" architecture="64bits"/>
+					<Description description="CUEAC International huitième incrément de 25 operatrices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUEAC" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				<Middlewares>
+					<Middleware useCatalogElementId="62"/>
+				</Middlewares>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="1212" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC100CX01" hostNaming="UC100CX01">
+				<Information>
+					<Name commercialName="UCCX01 100-HCS861V1" shortName="UC100CX01-HCS861V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.1 V1" type="UC100CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 100 attendants HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="UCCX" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="900" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2212" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC100CX01" hostNaming="UC100CX01">
+				<Information>
+					<Name commercialName="UCCX01 100-HCS862V1" shortName="UC100CX01-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UC100CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 100 attendants HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="UCCX" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="2500" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4212" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC100CX01" hostNaming="UC100CX01">
+				<Information>
+					<Name commercialName="UCCX01 100-HCS862V3" shortName="UC100CX01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC100CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 100 attendants HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="UCCX" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="2500" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5212" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC100CX01" hostNaming="UC100CX01">
+				<Information>
+					<Name commercialName="UCCX01 100-HCS862V4" shortName="UC100CX01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UC100CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 100 attendants HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="UCCX" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="2500" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="1213" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC300CX01" hostNaming="UC300CX01">
+				<Information>
+					<Name commercialName="UCCX01 300-HCS861V1" shortName="UC300CX01-HCS861V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.1 V1" type="UC300CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 300 attendants HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="UCCX" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="900" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2213" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC300CX01" hostNaming="UC300CX01">
+				<Information>
+					<Name commercialName="UCCX01 300-HCS862V1" shortName="UC300CX01-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UC300CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 300 attendants HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="UCCX" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="900" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4213" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC300CX01" hostNaming="UC300CX01">
+				<Information>
+					<Name commercialName="UCCX01 300-HCS862V3" shortName="UC300CX01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC300CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 300 attendants HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="UCCX" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="2500" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3212" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC100CX01" hostNaming="UC100CX01">
+				<Information>
+					<Name commercialName="UCCX01 100-HCS862V2" shortName="UC100CX01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UC100CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 100 attendants HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="UCCX" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="2500" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3213" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC300CX01" hostNaming="UC300CX01">
+				<Information>
+					<Name commercialName="UCCX01 300-HCS862V2" shortName="UC300CX01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UC300CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 300 attendants HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="UCCX" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="2500" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5213" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC300CX01" hostNaming="UC300CX01">
+				<Information>
+					<Name commercialName="UCCX01 300-HCS862V4" shortName="UC300CX01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UC300CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 300 attendants HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="UCCX" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="2500" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="1500" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS1000P01" hostNaming="UCS1000P01">
+				<Information>
+					<Name commercialName="UCSP01 1000-HCS861V1" shortName="UCS1000P01-HCS861V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.1 V1" type="UCS1000P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 1000 users HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="800" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2500" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS1000P01" hostNaming="UCS1000P01">
+				<Information>
+					<Name commercialName="UCSP01 1000-HCS862V1" shortName="UCS1000P01-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UCS1000P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 1000 users HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="800" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4500" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS1000P01" hostNaming="UCS1000P01">
+				<Information>
+					<Name commercialName="UCSP01 1000-HCS862V3" shortName="UCS1000P01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS1000P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 1000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="800" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="1501" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS1000S01" hostNaming="UCS1000S01">
+				<Information>
+					<Name commercialName="UCSS01 1000-HCS861V1" shortName="UCS1000S01-HCS861V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.1 V1" type="UCS1000S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 1000 users HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="800" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2501" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS1000S01" hostNaming="UCS1000S01">
+				<Information>
+					<Name commercialName="UCSS01 1000-HCS862V1" shortName="UCS1000S01-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UCS1000S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 1000 users HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="800" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4501" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS1000S01" hostNaming="UCS1000S01">
+				<Information>
+					<Name commercialName="UCSS01 1000-HCS862V3" shortName="UCS1000S01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS1000S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 1000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="800" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="1502" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC1000CNX01" hostNaming="UC1000CNX01">
+				<Information>
+					<Name commercialName="UCNX01 1000-HCS861V1" shortName="UC1000CNX01-HCS861V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.1 V1" type="UC1000CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX01 (Unity) 1000 users HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="2500" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2502" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC1000CNX01" hostNaming="UC1000CNX01">
+				<Information>
+					<Name commercialName="UCNX01 1000-HCS862V1" shortName="UC1000CNX01-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UC1000CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX01 (Unity) 1000 users HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="900" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4502" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC1000CNX01" hostNaming="UC1000CNX01">
+				<Information>
+					<Name commercialName="UCNX01 1000-HCS862V3" shortName="UC1000CNX01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC1000CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX01 (Unity) 1000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="1503" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC1000PS01" hostNaming="UC1000PS01">
+				<Information>
+					<Name commercialName="UCPS01 1000-HCS861V1" shortName="UC1000PS01-HCS861V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.1 V1" type="UC1000PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 1000 users HCS8.6.1 V1" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="2048" maxMo="2048" unlimited="true"/>
+					<CPU minMhz="800" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2503" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC1000PS01" hostNaming="UC1000PS01">
+				<Information>
+					<Name commercialName="UCPS01 1000-HCS862V1" shortName="UC1000PS01-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UC1000PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 1000 users HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="2048" maxMo="2048" unlimited="true"/>
+					<CPU minMhz="800" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4503" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC1000PS01" hostNaming="UC1000PS01">
+				<Information>
+					<Name commercialName="UCPS01 1000-HCS862V3" shortName="UC1000PS01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC1000PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 1000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="1500" unlimited="true"/>
+					<vCPU min="1" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3500" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS1000P01" hostNaming="UCS1000P01">
+				<Information>
+					<Name commercialName="UCSP01 1000-HCS862V2" shortName="UCS1000P01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS1000P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 1000 users HCH8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="800" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5500" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS1000P01" hostNaming="UCS1000P01">
+				<Information>
+					<Name commercialName="UCSP01 1000-HCS862V4" shortName="UCS1000P01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS1000P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 1000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="800" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3501" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS1000S01" hostNaming="UCS1000S01">
+				<Information>
+					<Name commercialName="UCSS01 1000-HCS862V2" shortName="UCS1000S01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS1000S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 1000 users HCH8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="800" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5501" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS1000S01" hostNaming="UCS1000S01">
+				<Information>
+					<Name commercialName="UCSS01 1000-HCS862V4" shortName="UCS1000S01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS1000S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 1000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="800" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3502" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC1000CNX01" hostNaming="UC1000CNX01">
+				<Information>
+					<Name commercialName="UCNX01 1000-HCS862V2" shortName="UC1000CNX01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UC1000CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX (Unity) 1000 users HCH8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5502" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC1000CNX01" hostNaming="UC1000CNX01">
+				<Information>
+					<Name commercialName="UCNX01 1000-HCS862V4" shortName="UC1000CNX01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UC1000CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX01 (Unity) 1000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3503" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC1000PS01" hostNaming="UC1000PS01">
+				<Information>
+					<Name commercialName="UCPS01 1000-HCS862V2" shortName="UC1000PS01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UC1000PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 1000 users HCH8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="1500" unlimited="true"/>
+					<vCPU min="1" max="1"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5503" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC1000PS01" hostNaming="UC1000PS01">
+				<Information>
+					<Name commercialName="UCPS01 1000-HCS862V4" shortName="UC1000PS01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UC1000PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 1000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="1500" unlimited="true"/>
+					<vCPU min="1" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2200" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500P01" hostNaming="UCS7500P01">
+				<Information>
+					<Name commercialName="UCSP01 7500 HCS 8.6.2-V1" shortName="UCS7500P01-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UCS7500P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 7500 devices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2201" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S01" hostNaming="UCS7500S01">
+				<Information>
+					<Name commercialName="UCSS01 7500 HCS 8.6.2-V1" shortName="UCS7500S01-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UCS7500S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 7500 devices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2202" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S02" hostNaming="UCS7500S02">
+				<Information>
+					<Name commercialName="UCSS02 7500 HCS 8.6.2-V1" shortName="UCS7500S02-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UCS7500S02" language="FR" architecture="32bits"/>
+					<Description description="UCSS02 (CUCM) 7500 devices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2203" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S03" hostNaming="UCS7500S03">
+				<Information>
+					<Name commercialName="UCSS03 7500 HCS 8.6.2-V1" shortName="UCS7500S03-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UCS7500S03" language="FR" architecture="32bits"/>
+					<Description description="UCSS03 (CUCM) 7500 devices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2204" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S04" hostNaming="UCS7500S04">
+				<Information>
+					<Name commercialName="UCSS04 7500 HCS 8.6.2-V1" shortName="UCS7500S04-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UCS7500S04" language="FR" architecture="32bits"/>
+					<Description description="UCSS04 (CUCM) 7500 devices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2207" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S07" hostNaming="UCS7500S07">
+				<Information>
+					<Name commercialName="UCSS07 7500 HCS 8.6.2-V1" shortName="UCS7500S07-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UCS7500S07" language="FR" architecture="32bits"/>
+					<Description description="UCSS07 (CUCM) 7500 devices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2208" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S08" hostNaming="UCS7500S08">
+				<Information>
+					<Name commercialName="UCSS08 7500 HCS 8.6.2-V1" shortName="UCS7500S08-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UCS7500S08" language="FR" architecture="32bits"/>
+					<Description description="UCSS08 (CUCM) 7500 devices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2209" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC7500CNX01" hostNaming="UC7500CNX01">
+				<Information>
+					<Name commercialName="UCNX01 7500 HCS 8.6.2-V1" shortName="UC7500CNX01-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UC7500CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX01 (Unity) 7500 devices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="9600" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="2210" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC7500PS01" hostNaming="UC7500PS01">
+				<Information>
+					<Name commercialName="UCPS01 7500 HCS 8.6.2-V1" shortName="UC7500PS01-HCS862V1" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V1" type="UC7500PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 7500 devices HCS8.6.2 V1" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3200" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500P01" hostNaming="UCS7500P01">
+				<Information>
+					<Name commercialName="UCSP01 7500 HCS 8.6.2-V2" shortName="UCS7500P01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS7500P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 7500 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3201" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S01" hostNaming="UCS7500S01">
+				<Information>
+					<Name commercialName="UCSS01 7500 HCS 8.6.2-V2" shortName="UCS7500S01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS7500S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 7500 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3202" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S02" hostNaming="UCS7500S02">
+				<Information>
+					<Name commercialName="UCSS02 7500 HCS 8.6.2-V2" shortName="UCS7500S02-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS7500S02" language="FR" architecture="32bits"/>
+					<Description description="UCSS02 (CUCM) 7500 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3203" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S03" hostNaming="UCS7500S03">
+				<Information>
+					<Name commercialName="UCSS03 7500 HCS 8.6.2-V2" shortName="UCS7500S03-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS7500S03" language="FR" architecture="32bits"/>
+					<Description description="UCSS03 (CUCM) 7500 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3204" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S04" hostNaming="UCS7500S04">
+				<Information>
+					<Name commercialName="UCSS04 7500 HCS 8.6.2-V2" shortName="UCS7500S04-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS7500S04" language="FR" architecture="32bits"/>
+					<Description description="UCSS04 (CUCM) 7500 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3207" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S07" hostNaming="UCS7500S07">
+				<Information>
+					<Name commercialName="UCSS07 7500 HCS 8.6.2-V2" shortName="UCS7500S07-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS7500S07" language="FR" architecture="32bits"/>
+					<Description description="UCSS07 (CUCM) 7500 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3208" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S08" hostNaming="UCS7500S08">
+				<Information>
+					<Name commercialName="UCSS08 7500 HCS 8.6.2-V2" shortName="UCS7500S08-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS7500S08" language="FR" architecture="32bits"/>
+					<Description description="UCSS08 (CUCM) 7500 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3209" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC7500CNX01" hostNaming="UC7500CNX01">
+				<Information>
+					<Name commercialName="UCNX01 7500 HCS 8.6.2-V2" shortName="UC7500CNX01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UC7500CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX (Unity) 7500 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="9000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3210" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC7500PS01" hostNaming="UC7500PS01">
+				<Information>
+					<Name commercialName="UCPS01 7500 HCS 8.6.2-V2" shortName="UC7500PS01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UC7500PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 7500 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4200" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500P01" hostNaming="UCS7500P01">
+				<Information>
+					<Name commercialName="UCSP01 7500 HCS 8.6.2-V3" shortName="UCS7500P01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS7500P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 7500 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4201" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S01" hostNaming="UCS7500S01">
+				<Information>
+					<Name commercialName="UCSS01 7500 HCS 8.6.2-V3" shortName="UCS7500S01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS7500S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 7500 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4202" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S02" hostNaming="UCS7500S02">
+				<Information>
+					<Name commercialName="UCSS02 7500 HCS 8.6.2-V3" shortName="UCS7500S02-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS7500S02" language="FR" architecture="32bits"/>
+					<Description description="UCSS02 (CUCM) 7500 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4203" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S03" hostNaming="UCS7500S03">
+				<Information>
+					<Name commercialName="UCSS03 7500 HCS 8.6.2-V3" shortName="UCS7500S03-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS7500S03" language="FR" architecture="32bits"/>
+					<Description description="UCSS03 (CUCM) 7500 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4204" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S04" hostNaming="UCS7500S04">
+				<Information>
+					<Name commercialName="UCSS04 7500 HCS 8.6.2-V3" shortName="UCS7500S04-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS7500S04" language="FR" architecture="32bits"/>
+					<Description description="UCSS04 (CUCM) 7500 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4207" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S07" hostNaming="UCS7500S07">
+				<Information>
+					<Name commercialName="UCSS07 7500 HCS 8.6.2-V3" shortName="UCS7500S07-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS7500S07" language="FR" architecture="32bits"/>
+					<Description description="UCSS07 (CUCM) 7500 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4208" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S08" hostNaming="UCS7500S08">
+				<Information>
+					<Name commercialName="UCSS08 7500 HCS 8.6.2-V3" shortName="UCS7500S08-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS7500S08" language="FR" architecture="32bits"/>
+					<Description description="UCSS08 (CUCM) 7500 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4209" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC7500CNX01" hostNaming="UC7500CNX01">
+				<Information>
+					<Name commercialName="UCNX01 7500 HCS 8.6.2-V3" shortName="UC7500CNX01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC7500CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX (Unity) 7500 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="9000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4210" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC7500PS01" hostNaming="UC7500PS01">
+				<Information>
+					<Name commercialName="UCPS01 7500 HCS 8.6.2-V3" shortName="UC7500PS01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC7500PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 7500 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5200" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500P01" hostNaming="UCS7500P01">
+				<Information>
+					<Name commercialName="UCSP01 7500 HCS 8.6.2-V4" shortName="UCS7500P01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS7500P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 7500 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5201" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S01" hostNaming="UCS7500S01">
+				<Information>
+					<Name commercialName="UCSS01 7500 HCS 8.6.2-V4" shortName="UCS7500S01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS7500S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 7500 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5202" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S02" hostNaming="UCS7500S02">
+				<Information>
+					<Name commercialName="UCSS02 7500 HCS 8.6.2-V4" shortName="UCS7500S02-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS7500S02" language="FR" architecture="32bits"/>
+					<Description description="UCSS02 (CUCM) 7500 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5203" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S03" hostNaming="UCS7500S03">
+				<Information>
+					<Name commercialName="UCSS03 7500 HCS 8.6.2-V4" shortName="UCS7500S03-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS7500S03" language="FR" architecture="32bits"/>
+					<Description description="UCSS03 (CUCM) 7500 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5204" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S04" hostNaming="UCS7500S04">
+				<Information>
+					<Name commercialName="UCSS04 7500 HCS 8.6.2-V4" shortName="UCS7500S04-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS7500S04" language="FR" architecture="32bits"/>
+					<Description description="UCSS04 (CUCM) 7500 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5207" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S07" hostNaming="UCS7500S07">
+				<Information>
+					<Name commercialName="UCSS07 7500 HCS 8.6.2-V4" shortName="UCS7500S07-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS7500S07" language="FR" architecture="32bits"/>
+					<Description description="UCSS07 (CUCM) 7500 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5208" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS7500S08" hostNaming="UCS7500S08">
+				<Information>
+					<Name commercialName="UCSS08 7500 HCS 8.6.2-V4" shortName="UCS7500S08-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS7500S08" language="FR" architecture="32bits"/>
+					<Description description="UCSS08 (CUCM) 7500 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="3600" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5209" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC7500CNX01" hostNaming="UC7500CNX01">
+				<Information>
+					<Name commercialName="UCNX01 7500 HCS 8.6.2-V4" shortName="UC7500CNX01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UC7500CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX (Unity) 7500 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="9000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5210" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC7500PS01" hostNaming="UC7500PS01">
+				<Information>
+					<Name commercialName="UCPS01 7500 HCS 8.6.2-V4" shortName="UC7500PS01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UC7500PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 7500 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3600" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000P01" hostNaming="UCS20000P01">
+				<Information>
+					<Name commercialName="UCSP01 20000 HCS 8.6.2-V2" shortName="UCS20000P01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS20000P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3601" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S01" hostNaming="UCS20000S01">
+				<Information>
+					<Name commercialName="UCSS01 20000 HCS 8.6.2-V2" shortName="UCS20000S01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS20000S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3602" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S02" hostNaming="UCS20000S02">
+				<Information>
+					<Name commercialName="UCSS02 20000 HCS 8.6.2-V2" shortName="UCS20000S02-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS20000S02" language="FR" architecture="32bits"/>
+					<Description description="UCSS02 (CUCM) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3603" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S03" hostNaming="UCS20000S03">
+				<Information>
+					<Name commercialName="UCSS03 20000 HCS 8.6.2-V2" shortName="UCS20000S03-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS20000S03" language="FR" architecture="32bits"/>
+					<Description description="UCSS03 (CUCM) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3604" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S04" hostNaming="UCS20000S04">
+				<Information>
+					<Name commercialName="UCSS04 20000 HCS 8.6.2-V2" shortName="UCS20000S04-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS20000S04" language="FR" architecture="32bits"/>
+					<Description description="UCSS04 (CUCM) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3605" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S05" hostNaming="UCS20000S05">
+				<Information>
+					<Name commercialName="UCSS05 20000 HCS 8.6.2-V2" shortName="UCS20000S05-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS20000S05" language="FR" architecture="32bits"/>
+					<Description description="UCSS05 (CUCM) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3606" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S06" hostNaming="UCS20000S06">
+				<Information>
+					<Name commercialName="UCSS06 20000 HCS 8.6.2-V2" shortName="UCS20000S06-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS20000S06" language="FR" architecture="32bits"/>
+					<Description description="UCSS06 (CUCM) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3607" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S07" hostNaming="UCS20000S07">
+				<Information>
+					<Name commercialName="UCSS07 20000 HCS 8.6.2-V2" shortName="UCS20000S07-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS20000S07" language="FR" architecture="32bits"/>
+					<Description description="UCSS07 (CUCM) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3608" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S08" hostNaming="UCS20000S08">
+				<Information>
+					<Name commercialName="UCSS08 20000 HCS 8.6.2-V2" shortName="UCS20000S08-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS20000S08" language="FR" architecture="32bits"/>
+					<Description description="UCSS08 (CUCM) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3609" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S09" hostNaming="UCS20000S09">
+				<Information>
+					<Name commercialName="UCSS09 20000 HCS 8.6.2-V2" shortName="UCS20000S09-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS20000S09" language="FR" architecture="32bits"/>
+					<Description description="UCSS09 (CUCM) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3610" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S10" hostNaming="UCS20000S10">
+				<Information>
+					<Name commercialName="UCSS10 20000 HCS 8.6.2-V2" shortName="UCS20000S10-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UCS20000S10" language="FR" architecture="32bits"/>
+					<Description description="UCSS10 (CUCM) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3611" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000CNX01" hostNaming="UC20000CNX01">
+				<Information>
+					<Name commercialName="UCNX01 20000 HCS 8.6.2-V2" shortName="UC20000CNX01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UC20000CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX (Unity) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="8192" maxMo="8192" unlimited="true"/>
+					<CPU minMhz="14000" unlimited="true"/>
+					<vCPU min="7" max="7"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3612" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000PS01" hostNaming="UC20000PS01">
+				<Information>
+					<Name commercialName="UCPS01 20000 HCS 8.6.2-V2" shortName="UC20000PS01-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UC20000PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="3613" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000PS02" hostNaming="UC20000PS02">
+				<Information>
+					<Name commercialName="UCPS02 20000 HCS 8.6.2-V2" shortName="UC20000PS02-HCS862V2" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V2" type="UC20000PS02" language="FR" architecture="32bits"/>
+					<Description description="UCPS02 (CUPS) 20000 devices HCS8.6.2 V2" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4600" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000P01" hostNaming="UCS20000P01">
+				<Information>
+					<Name commercialName="UCSP01 20000 HCS 8.6.2-V3" shortName="UCS20000P01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS20000P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4601" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S01" hostNaming="UCS20000S01">
+				<Information>
+					<Name commercialName="UCSS01 20000 HCS 8.6.2-V3" shortName="UCS20000S01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS20000S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4602" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S02" hostNaming="UCS20000S02">
+				<Information>
+					<Name commercialName="UCSS02 20000 HCS 8.6.2-V3" shortName="UCS20000S02-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS20000S02" language="FR" architecture="32bits"/>
+					<Description description="UCSS02 (CUCM) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4603" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S03" hostNaming="UCS20000S03">
+				<Information>
+					<Name commercialName="UCSS03 20000 HCS 8.6.2-V3" shortName="UCS20000S03-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS20000S03" language="FR" architecture="32bits"/>
+					<Description description="UCSS03 (CUCM) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4604" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S04" hostNaming="UCS20000S04">
+				<Information>
+					<Name commercialName="UCSS04 20000 HCS 8.6.2-V3" shortName="UCS20000S04-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS20000S04" language="FR" architecture="32bits"/>
+					<Description description="UCSS04 (CUCM) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4605" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S05" hostNaming="UCS20000S05">
+				<Information>
+					<Name commercialName="UCSS05 20000 HCS 8.6.2-V3" shortName="UCS20000S05-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS20000S05" language="FR" architecture="32bits"/>
+					<Description description="UCSS05 (CUCM) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4606" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S06" hostNaming="UCS20000S06">
+				<Information>
+					<Name commercialName="UCSS06 20000 HCS 8.6.2-V3" shortName="UCS20000S06-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS20000S06" language="FR" architecture="32bits"/>
+					<Description description="UCSS06 (CUCM) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4607" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S07" hostNaming="UCS20000S07">
+				<Information>
+					<Name commercialName="UCSS07 20000 HCS 8.6.2-V3" shortName="UCS20000S07-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS20000S07" language="FR" architecture="32bits"/>
+					<Description description="UCSS07 (CUCM) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4608" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S08" hostNaming="UCS20000S08">
+				<Information>
+					<Name commercialName="UCSS08 20000 HCS 8.6.2-V3" shortName="UCS20000S08-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS20000S08" language="FR" architecture="32bits"/>
+					<Description description="UCSS08 (CUCM) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4609" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S09" hostNaming="UCS20000S09">
+				<Information>
+					<Name commercialName="UCSS09 20000 HCS 8.6.2-V3" shortName="UCS20000S09-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS20000S09" language="FR" architecture="32bits"/>
+					<Description description="UCSS09 (CUCM) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4610" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S10" hostNaming="UCS20000S10">
+				<Information>
+					<Name commercialName="UCSS10 20000 HCS 8.6.2-V3" shortName="UCS20000S10-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS20000S10" language="FR" architecture="32bits"/>
+					<Description description="UCSS10 (CUCM) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4611" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000CNX01" hostNaming="UC20000CNX01">
+				<Information>
+					<Name commercialName="UCNX01 20000 HCS 8.6.2-V3" shortName="UC20000CNX01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC20000CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX (Unity) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="8192" maxMo="8192" unlimited="true"/>
+					<CPU minMhz="14000" unlimited="true"/>
+					<vCPU min="7" max="7"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4612" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000PS01" hostNaming="UC20000PS01">
+				<Information>
+					<Name commercialName="UCPS01 20000 HCS 8.6.2-V3" shortName="UC20000PS01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC20000PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="4613" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000PS02" hostNaming="UC20000PS02">
+				<Information>
+					<Name commercialName="UCPS02 20000 HCS 8.6.2-V3" shortName="UC20000PS02-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC20000PS02" language="FR" architecture="32bits"/>
+					<Description description="UCPS02 (CUPS) 20000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6600" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000P01" hostNaming="UCS20000P01">
+				<Information>
+					<Name commercialName="UCSP01 20000 HCS 8.6.2-V4" shortName="UCS20000P01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS20000P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6601" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S01" hostNaming="UCS20000S01">
+				<Information>
+					<Name commercialName="UCSS01 20000 HCS 8.6.2-V4" shortName="UCS20000S01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS20000S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6602" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S02" hostNaming="UCS20000S02">
+				<Information>
+					<Name commercialName="UCSS02 20000 HCS 8.6.2-V4" shortName="UCS20000S02-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS20000S02" language="FR" architecture="32bits"/>
+					<Description description="UCSS02 (CUCM) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6603" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S03" hostNaming="UCS20000S03">
+				<Information>
+					<Name commercialName="UCSS03 20000 HCS 8.6.2-V4" shortName="UCS20000S03-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS20000S03" language="FR" architecture="32bits"/>
+					<Description description="UCSS03 (CUCM) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6604" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S04" hostNaming="UCS20000S04">
+				<Information>
+					<Name commercialName="UCSS04 20000 HCS 8.6.2-V4" shortName="UCS20000S04-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS20000S04" language="FR" architecture="32bits"/>
+					<Description description="UCSS04 (CUCM) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6605" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S05" hostNaming="UCS20000S05">
+				<Information>
+					<Name commercialName="UCSS05 20000 HCS 8.6.2-V4" shortName="UCS20000S05-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS20000S05" language="FR" architecture="32bits"/>
+					<Description description="UCSS05 (CUCM) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6606" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S06" hostNaming="UCS20000S06">
+				<Information>
+					<Name commercialName="UCSS06 20000 HCS 8.6.2-V4" shortName="UCS20000S06-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS20000S06" language="FR" architecture="32bits"/>
+					<Description description="UCSS06 (CUCM) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6607" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S07" hostNaming="UCS20000S07">
+				<Information>
+					<Name commercialName="UCSS07 20000 HCS 8.6.2-V4" shortName="UCS20000S07-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS20000S07" language="FR" architecture="32bits"/>
+					<Description description="UCSS07 (CUCM) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6608" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S08" hostNaming="UCS20000S08">
+				<Information>
+					<Name commercialName="UCSS08 20000 HCS 8.6.2-V4" shortName="UCS20000S08-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS20000S08" language="FR" architecture="32bits"/>
+					<Description description="UCSS08 (CUCM) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6609" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S09" hostNaming="UCS20000S09">
+				<Information>
+					<Name commercialName="UCSS09 20000 HCS 8.6.2-V4" shortName="UCS20000S09-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS20000S09" language="FR" architecture="32bits"/>
+					<Description description="UCSS09 (CUCM) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6610" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S10" hostNaming="UCS20000S10">
+				<Information>
+					<Name commercialName="UCSS10 20000 HCS 8.6.2-V4" shortName="UCS20000S10-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UCS20000S10" language="FR" architecture="32bits"/>
+					<Description description="UCSS10 (CUCM) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6611" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000CNX01" hostNaming="UC20000CNX01">
+				<Information>
+					<Name commercialName="UCNX01 20000 HCS 8.6.2-V4" shortName="UC20000CNX01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UC20000CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX (Unity) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="8192" maxMo="8192" unlimited="true"/>
+					<CPU minMhz="14000" unlimited="true"/>
+					<vCPU min="7" max="7"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6612" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000PS01" hostNaming="UC20000PS01">
+				<Information>
+					<Name commercialName="UCPS01 20000 HCS 8.6.2-V4" shortName="UC20000PS01-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UC20000PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="6613" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000PS02" hostNaming="UC20000PS02">
+				<Information>
+					<Name commercialName="UCPS02 20000 HCS 8.6.2-V4" shortName="UC20000PS02-HCS862V4" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UC20000PS02" language="FR" architecture="32bits"/>
+					<Description description="UCPS02 (CUPS) 20000 devices HCS8.6.2 V4" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5600" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS40000P01" hostNaming="UCS40000P01">
+				<Information>
+					<Name commercialName="UCSP01 40000 HCS 8.6.2-V3" shortName="UCS40000P01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS40000P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5601" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS40000S01" hostNaming="UCS40000S01">
+				<Information>
+					<Name commercialName="UCSS01 40000 HCS 8.6.2-V3" shortName="UCS40000S01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS40000S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5602" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS40000S02" hostNaming="UCS40000S02">
+				<Information>
+					<Name commercialName="UCSS02 40000 HCS 8.6.2-V3" shortName="UCS40000S02-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS40000S02" language="FR" architecture="32bits"/>
+					<Description description="UCSS02 (CUCM) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5603" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS40000S03" hostNaming="UCS40000S03">
+				<Information>
+					<Name commercialName="UCSS03 40000 HCS 8.6.2-V3" shortName="UCS40000S03-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS40000S03" language="FR" architecture="32bits"/>
+					<Description description="UCSS03 (CUCM) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5604" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS40000S04" hostNaming="UCS40000S04">
+				<Information>
+					<Name commercialName="UCSS04 40000 HCS 8.6.2-V3" shortName="UCS40000S04-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS40000S04" language="FR" architecture="32bits"/>
+					<Description description="UCSS04 (CUCM) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5605" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS40000S05" hostNaming="UCS40000S05">
+				<Information>
+					<Name commercialName="UCSS05 40000 HCS 8.6.2-V3" shortName="UCS40000S05-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS40000S05" language="FR" architecture="32bits"/>
+					<Description description="UCSS05 (CUCM) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5606" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS40000S06" hostNaming="UCS40000S06">
+				<Information>
+					<Name commercialName="UCSS06 40000 HCS 8.6.2-V3" shortName="UCS40000S06-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS40000S06" language="FR" architecture="32bits"/>
+					<Description description="UCSS06 (CUCM) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5607" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS40000S07" hostNaming="UCS40000S07">
+				<Information>
+					<Name commercialName="UCSS07 40000 HCS 8.6.2-V3" shortName="UCS40000S07-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS40000S07" language="FR" architecture="32bits"/>
+					<Description description="UCSS07 (CUCM) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5608" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS40000S08" hostNaming="UCS40000S08">
+				<Information>
+					<Name commercialName="UCSS08 40000 HCS 8.6.2-V3" shortName="UCS40000S08-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS40000S08" language="FR" architecture="32bits"/>
+					<Description description="UCSS08 (CUCM) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5609" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS40000S09" hostNaming="UCS40000S09">
+				<Information>
+					<Name commercialName="UCSS09 40000 HCS 8.6.2-V3" shortName="UCS40000S09-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS40000S09" language="FR" architecture="32bits"/>
+					<Description description="UCSS09 (CUCM) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5610" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS40000S10" hostNaming="UCS40000S10">
+				<Information>
+					<Name commercialName="UCSS10 40000 HCS 8.6.2-V3" shortName="UCS40000S10-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UCS40000S10" language="FR" architecture="32bits"/>
+					<Description description="UCSS10 (CUCM) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUCM" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="7200" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5611" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC40000CNX01" hostNaming="UC40000CNX01">
+				<Information>
+					<Name commercialName="UCNX01 40000 HCS 8.6.2-V3" shortName="UC40000CNX01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC40000CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX (Unity) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="8192" maxMo="8192" unlimited="true"/>
+					<CPU minMhz="14000" unlimited="true"/>
+					<vCPU min="7" max="7"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5614" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC40000CNX02" hostNaming="UC40000CNX02">
+				<Information>
+					<Name commercialName="UCNX02 40000 HCS 8.6.2-V3" shortName="UC40000CNX02-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC40000CNX02" language="FR" architecture="32bits"/>
+					<Description description="UCNX (Unity) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="Unity" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="8192" maxMo="8192" unlimited="true"/>
+					<CPU minMhz="14000" unlimited="true"/>
+					<vCPU min="7" max="7"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5612" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC40000PS01" hostNaming="UC40000PS01">
+				<Information>
+					<Name commercialName="UCPS01 40000 HCS 8.6.2-V3" shortName="UC40000PS01-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC40000PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5613" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC40000PS02" hostNaming="UC40000PS02">
+				<Information>
+					<Name commercialName="UCPS02 40000 HCS 8.6.2-V3" shortName="UC40000PS02-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC40000PS02" language="FR" architecture="32bits"/>
+					<Description description="UCPS02 (CUPS) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				
+				<VMTemplate catalogElementId="5615" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC40000PS03" hostNaming="UC40000PS03">
+				<Information>
+					<Name commercialName="UCPS03 40000 HCS 8.6.2-V3" shortName="UC40000PS03-HCS862V3" />
+					<Version OSFamily="RedHat" version="HCS8.6.2 V3" type="UC40000PS03" language="FR" architecture="32bits"/>
+					<Description description="UCPS03 (CUPS) 40000 devices HCS8.6.2 V3" />
+					<ApplicationType useApplicationTypeId="CUPS" />
+				</Information>
+				<OSRequirement>
+					<RAM minMo="6144" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="8000" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+				</VMTemplate>
+				

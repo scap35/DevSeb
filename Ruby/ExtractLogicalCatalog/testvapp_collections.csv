@@ -1,0 +1,29 @@
+collection_name;vapp_id;name;description
+Vapp Collection UCaaS Cisco HCS;20000;WIN_VAADTB;VappNonUC HCS8.6.1 V1
+Vapp Collection UCaaS Cisco HCS;30000;WIN_VAADTB;VappNonUC HCS8.6.2 V1
+Vapp Collection UCaaS Cisco HCS;40000;WIN_VAADTB;VappNonUC HCS8.6.2 V3
+Vapp Collection UCaaS Cisco HCS;60000;WIN_VAADTB;VappNonUC HCS8.6.2 V2 (2 AD, 1 Toolbox) MiddleWare 2
+Vapp Collection UCaaS Cisco HCS;70000;WIN_VAADTB;VappNonUC HCS8.6.2 V4 Middleware 2
+Vapp Collection UCaaS Cisco HCS;21000;WIN_VACUEAC25;Vapp CUEAC25 HCS8.6.1 V1
+Vapp Collection UCaaS Cisco HCS;31000;WIN_VACUEAC25;Vapp CUEAC25 HCS8.6.2 V1
+Vapp Collection UCaaS Cisco HCS;41000;WIN_VACUEAC25;Vapp CUEAC25 HCS8.6.2 V3
+Vapp Collection UCaaS Cisco HCS;61000;WIN_VACUEAC25;Vapp CUEAC25 HCS8.6.2 V2 (1 to 9 CUEAC) MiddleWare 2
+Vapp Collection UCaaS Cisco HCS;71000;WIN_VACUEAC25;Vapp CUEAC25 HCS8.6.2 V4 Middleware 2
+Vapp Collection UCaaS Cisco HCS;22000;UCS_VAUCCX;Vapp UCCX HCS8.6.1 V1
+Vapp Collection UCaaS Cisco HCS;32000;UCS_VAUCCX;Vapp UCCX HCS8.6.2 V1
+Vapp Collection UCaaS Cisco HCS;42000;UCS_VAUCCX;Vapp UCCX HCS8.6.2 V3
+Vapp Collection UCaaS Cisco HCS;62000;UCS_VAUCCX;Vapp UCCX HCS8.6.2 V2 (1 UCCX)
+Vapp Collection UCaaS Cisco HCS;72000;UCS_VAUCCX;Vapp UCCX HCS8.6.2 V4 Middleware 2
+Vapp Collection UCaaS Cisco HCS;23000;UCS_VAUC1000;Vapp UC 1000 users HCS8.6.1 V1
+Vapp Collection UCaaS Cisco HCS;33000;UCS_VAUC1000;Vapp UC 1000 users HCS8.6.2 V1
+Vapp Collection UCaaS Cisco HCS;43000;UCS_VAUC1000;Vapp UC 1000 devices HCS8.6.2 V3
+Vapp Collection UCaaS Cisco HCS;44000;UCS_VAUC7500;Vapp UC 7500 devices HCS8.6.2 V3
+Vapp Collection UCaaS Cisco HCS;45000;UCS_VAUC20000;Vapp UC 20000 devices HCS8.6.2 V3
+Vapp Collection UCaaS Cisco HCS;46000;UCS_VAUC40000;Vapp UC 40000 devices HCS8.6.2 V3
+Vapp Collection UCaaS Cisco HCS;34000;UCS_VAUC2500;Vapp UC 2500 users HCS8.6.2 V1 (1 Publisher,  6 Subscribers,  1 Unity et 1 CUPS)
+Vapp Collection UCaaS Cisco HCS;63000;UCS_VAUC1000;Vapp UC 1000 devices HCS8.6.2 V2 (1 Publisher, 1 Subscriber, 1 Unity et 1 CUPS)
+Vapp Collection UCaaS Cisco HCS;73000;UCS_VAUC1000;Vapp UC 1000 devices HCS8.6.2 V4 (1 Publisher, 1 Subscriber, 1 Unity et 1 CUPS)
+Vapp Collection UCaaS Cisco HCS;64000;UCS_VAUC7500;Vapp UC 7500 devices 8.6.2 V2  (1 Publisher,  6 Subscribers,  1 Unity et 1 CUPS)
+Vapp Collection UCaaS Cisco HCS;74000;UCS_VAUC7500;Vapp UC 7500 devices 8.6.2 V4  (1 Publisher,  6 Subscribers,  1 Unity et 1 CUPS)
+Vapp Collection UCaaS Cisco HCS;65000;UCS_VAUC20000;Vapp UC 20000 devices 8.6.2 V2  (1 Publisher,  8 Subscribers,  2 TFTP,  1 Unity et 1 CUPS)
+Vapp Collection UCaaS Cisco HCS;75000;UCS_VAUC20000;Vapp UC 20000 devices 8.6.2 V4  (1 Publisher,  8 Subscribers,  2 TFTP,  1 Unity et 1 CUPS)
