@@ -1,8 +1,8 @@
-				<VMTemplate catalogElementId="<%= @t[:catalog_element_id] %>" status="available" useLicenseId="00001" optional="<%= @t[:optional] %>" backup="ImageLevel" vmNaming="<%= @t[:vmnaming] %>" hostNaming="<%= @t[:hostnaming] %>">
+			<VMTemplate catalogElementId="<%= @t[:catalog_element_id] %>" status="available" useLicenseId="00001" optional="<%= @t[:optional] %>" backup="ImageLevel" vmNaming="<%= @t[:vmnaming] %>" hostNaming="<%= @t[:hostnaming] %>">
 				<Information>
-					<Name commercialName="<%= @t[:commercialname] %>" shortName="<%= @t[:shortname] %>" />
+					<Name commercialName="<%= @t[:commercialname] %>" shortName="<%= @t[:shortname] %>"/>
 					<Version OSFamily="<%= @t[:osfamily] %>" version="<%= @t[:version] %>" type="<%= @t[:type] %>" language="<%= @t[:language] %>" architecture="<%= @t[:architecture] %>"/>
-					<Description description="<%= @t[:description] %>" /><% unless @t[:isrelay].nil? %>
+					<Description description="<%= @t[:description] %>"/><% unless @t[:isrelay].nil? %>
 					<Upgrade isRelay="<%= @t[:isrelay] %>" mountPoint="<%= @t[:repupgrade] %>"/><% end %>
 					<ApplicationType useApplicationTypeId="<%= @t[:useapplicationtypeid] %>" <% unless @t[:role].nil? %>role="<%= @t[:role] %>"<% end %>/>
 				</Information>
@@ -15,5 +15,4 @@
 				<Middlewares>
 					<Middleware useCatalogElementId="<%= @t[:middlewareid] %>"/>
 				</Middlewares><% end %>
-				</VMTemplate>
-				
+			</VMTemplate>

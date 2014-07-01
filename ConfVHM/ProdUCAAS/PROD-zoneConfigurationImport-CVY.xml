@@ -11,13 +11,14 @@
  - V1.9 par Nicolas Ledez le 15/04/2013: Indentation du fichier
  - V2.3 par Nicolas Ledez le 26/04/2013: Route par default dans la zone IPVPN
  - V3.0 par Zoumana TRAORE le 14/10/2013: Migration de 553 vers 554E
+ - V3.1 par Sébastien Caprais le 01/07/2014 : Ajout du SuffixAvamarBackup
 
 Offre : UCaaS
-Sprint : SP554.E
+Sprint : SP556
 Plate-forme : Prod
 Zone : CVY
-Version : 3.0
-Sous version : 20131014110
+Version : 3.1
+Sous version : 201407011705
 -->
 	<Offer type="UCAAS" version="1">
 		<HostingZone>
@@ -57,6 +58,8 @@ Sous version : 20131014110
 					</Routes>
 				</VMPostConf>
 				<PrefixeBackupAndSeparator>B2GFRC_</PrefixeBackupAndSeparator>
+				<SuffixAvamarBackup>_BACKUP</SuffixAvamarBackup>
+				<SuffixBackupRestored>_Old</SuffixBackupRestored>
 			</VMSetup>
 
 			<ActivatedFeatures>

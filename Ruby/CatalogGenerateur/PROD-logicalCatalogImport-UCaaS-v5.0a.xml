@@ -5514,7 +5514,7 @@ Sprint : SP556
 			<!--  T O P O L O G Y -->
 			<!-- 1 0 0 0 - D E V I C E S -->
 			<!-- 8.6.2 V2 -->
-			<Topology name="UCaaS Cisco (1000 devices) HCS 8.6.2-V2-MW2" version="HCS 8.6.2-V2-MW2" displayName="Topologie UCaaS Cisco (1000 devices) HCS 8.6.2-V2 Middleware pour ADLDS" description="Topologie UCaaS Cisco (1000 devices) HCS 8.6.2-V2 Middleware pour ADLDS" migrationTargetTopologyName="UCaaS Cisco (1000 devices) HCS 8.6.2-V4-MW2">
+			<Topology name="UCaaS Cisco (1000 devices) HCS 8.6.2-V2-MW2" version="HCS 8.6.2-V2-MW2" displayName="Topologie UCaaS Cisco (1000 devices) HCS 8.6.2-V2 Middleware pour ADLDS" description="Topologie UCaaS Cisco (1000 devices) HCS 8.6.2-V2 Middleware pour ADLDS">
 				<VApps>
 					<!-- ADs & Toolbox -->
 					<VApp catalogElementId="60000" orderStart="10"/>
@@ -5728,7 +5728,7 @@ Sprint : SP556
 			<!--  T O P O L O G Y -->
 			<!-- 7 5 0 0 - D E V I C E S -->
 			<!-- 8.6.2 V2 -->
-			<Topology name="UCaaS Cisco (7500 devices) HCS 8.6.2-V2-MW2" version="HCS 8.6.2-V2-MW2" displayName="Topologie UCaaS Cisco (7500 devices) HCS 8.6.2-V2 Middleware pour ADLDS" description="Topologie UCaaS Cisco (7500 devices) HCS 8.6.2-V2 Middleware pour ADLDS" migrationTargetTopologyName="UCaaS Cisco (7500 devices) HCS 8.6.2-V4-MW2">
+			<Topology name="UCaaS Cisco (7500 devices) HCS 8.6.2-V2-MW2" version="HCS 8.6.2-V2-MW2" displayName="Topologie UCaaS Cisco (7500 devices) HCS 8.6.2-V2 Middleware pour ADLDS" description="Topologie UCaaS Cisco (7500 devices) HCS 8.6.2-V2 Middleware pour ADLDS">
 				<VApps>
 					<!-- ADs & Toolbox -->
 					<VApp catalogElementId="60000" orderStart="10"/>

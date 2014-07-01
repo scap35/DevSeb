@@ -4,12 +4,13 @@
  - V1.0 par UCaaS TIO: previous version on 553E
  - V2.0 par Zoumana TRAORE le 14/10/2013: Migration de 553.D vers 554.E
  - V2.1 par Nicolas LE COZ le 16/10/2013: Mise à jour des valeurs de la partie PatchManagementSetup
+ - V2.2 par Sébastien Caprais le 01/07/2014 : upgrade 556 (ErrorLevelList)
 
 Offre : UCaaS-France
-Version : 2.0
-Sous version : 201310141113
+Version : 2.2
+Sous version : 201407011530
 Plate-forme : Prod
-Sprint : SP554.E
+Sprint : SP556
 -->
 <VHMSetup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="parametersPostDepPackaging.xsd">
@@ -24,8 +25,6 @@ Sprint : SP554.E
 			<DisplayNameNaming regexp="^[-_0-9a-zA-Z\.]+$" length="35"></DisplayNameNaming>
 			<PrefixNaming regexp="^[-_0-9a-zA-Z\.]+$" length="20"></PrefixNaming>
 		</VMSetup>
-		
-		<!-- 554E -->
 		<PatchManagementSetup>
 			<Prefix>patchManagement</Prefix>
 			<SFTPSetup>
@@ -37,19 +36,23 @@ Sprint : SP554.E
 				<WaitTimeBetweenAttempts>5000</WaitTimeBetweenAttempts>
 			</SFTPSetup>
 		</PatchManagementSetup>	
-
 		<HostingZone>	
-		<DatacenterSetup>
-				<DatacenterCodes>
-					<DatacenterCode code="CVY" description="Chevilly (B2GaaS France TTM)" />
-					<DatacenterCode code="SIN" description="Singapour" />
-					<DatacenterCode code="FRA" description="Frankfort" />
-					<DatacenterCode code="ATL" description="Atlanta" />
-					<DatacenterCode code="RUE" description="Rueil-Malmaison" />
-					<DatacenterCode code="VDR" description="Val-de-Reuil" />
-				</DatacenterCodes>
-		</DatacenterSetup>
+			<DatacenterSetup>
+					<DatacenterCodes>
+						<DatacenterCode code="CVY" description="Chevilly (B2GaaS France TTM)" />
+						<DatacenterCode code="SIN" description="Singapour" />
+						<DatacenterCode code="FRA" description="Frankfort" />
+						<DatacenterCode code="ATL" description="Atlanta" />
+						<DatacenterCode code="RUE" description="Rueil-Malmaison" />
+						<DatacenterCode code="VDR" description="Val-de-Reuil" />
+					</DatacenterCodes>
+			</DatacenterSetup>
 		</HostingZone>
-		
+		<ApplicativeUpgrade>
+			<Script>MasterUpgrade.ps1</Script>
+			<CompatibilityMatrix>matrixUpgrade.csv</CompatibilityMatrix>
+			<NbRetry>80</NbRetry>
+			<PollInterval>3</PollInterval>
+		</ApplicativeUpgrade>
 	</Offer>
 </VHMSetup>
