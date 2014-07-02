@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VHMSetup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="parametersHostingZone.xsd">
+<!--
+ Versionning du fichier:
+ - V1.1 par N. Ledez le 09/01/2012 : Version UCaaS
+ - V1.2 par N. Ledez le 09/01/2012 : Plus de serveur Redhat
+ - V1.3 par Zoumana T. le 15/03/2013: Merge 551 -> 553 (MEP 553)
+ - V1.6 par Nicolas Ledez le 10/04/2013: Ajout des IP manquantes (VMT 2501)
+ - V1.7 par Nicolas Ledez le 10/04/2013: Passage de 3 a 70% UHPAddressAlertThreshold
+ - V1.8 par Nicolas Ledez le 10/04/2013: Mise a jours de la balise AdCustFqdn
+ - V1.9 par Nicolas Ledez le 15/04/2013: Indentation du fichier
+ - V2.3 par Nicolas Ledez le 26/04/2013: Route par default dans la zone IPVPN
+
+Offre : UCaaS
+Sprint : SP553.D
+Plate-forme : Prod
+Zone : CVY
+Version : 2.3
+Sous version : 201304261445
+-->
+	<Offer type="UCAAS" version="1">
+		<HostingZone>
+			<Alert>
+				<Seuils>
+					<CPU>90</CPU>
+					<RAM>90</RAM>
+					<Gold>90</Gold>
+					<Silver>90</Silver>
+				</Seuils>
+			</Alert>
+
+			<VSASetup createPortGroup="false">
+				<ExternalZones><!-- Optionnel si Offre/AllowExternalZones   False --> <!-- enum baseTypes.xsd -->
+					<ExternalZone type="TransAdm" mandatory="false" activate="false"/>
+				</ExternalZones>
+				<SecurityZones>
+					<FrontendSecurityZones><!-- Optionnel si Offre/AllowFrontEndZones   False --> <!-- enum baseTypes.xsd -->
+						<SecurityZone id="feinet" mandatory="false" activate="false"/>
+						<SecurityZone id="feipvpn" mandatory="true" activate="false"/>
+					</FrontendSecurityZones>
+					<BackendSecurityZones><!-- Optionnel si Offre/AllowBackendzones   False --> <!-- enum baseTypes.xsd -->
+						<SecurityZone id="be1" mandatory="false" activate="false"/>
+						<SecurityZone id="be2" mandatory="false" activate="false"/>
+					</BackendSecurityZones>
+				</SecurityZones>
+
+				<AdminNetworksZone>
+					<!--AdminNetwork name="UHPAdmin" mandatory="false"/-->
+				</AdminNetworksZone>
+
+			</VSASetup>
+
+			<VMSetup>
+				<VMPostConf>
+					<Routes>
+						<!-- TODO A verifier si c'est encore utile sur UCaaS TODO a virer -->
+					</Routes>
+				</VMPostConf>
+				<PrefixeBackupAndSeparator>B2GFRC_</PrefixeBackupAndSeparator>
+				<SuffixAvamarBackup>_BACKUP</SuffixAvamarBackup>
+				<SuffixBackupRestored>_Old</SuffixBackupRestored>
+			</VMSetup>
+
+			<ActivatedFeatures>
+
+				<!--BillingSetup>
+					<BillingSupportEmail>jmichelscotto.ext@orange-ftgroup.com</BillingSupportEmail>
+				</BillingSetup-->
+				<BackupSetup>
+					<AvamarInputDirectory>input</AvamarInputDirectory>
+					<AvamarOutputDirectory>output</AvamarOutputDirectory>
+					<AvamarServerPath>/tmp</AvamarServerPath>
+					<AvamarIpAddress>10.6.142.246</AvamarIpAddress>
+					<AvamarSshUser>avamar-dummy</AvamarSshUser>
+					<AvamarSshKeyLocalPath>E:\\orchestrator\\privateKey\\key</AvamarSshKeyLocalPath>
+					<BackupSupportEmail>sebastien.caprais@orange.com</BackupSupportEmail>
+				</BackupSetup>
+
+				<UHPSetup>
+				<!-- 80 = seuil -->
+					<UHPAddressAlertThreshold>1</UHPAddressAlertThreshold>
+					<UHPSupportEmail>sebastien.caprais@orange.com</UHPSupportEmail>
+					<ManageASRFront>false</ManageASRFront>
+					<ManageASRBack>true</ManageASRBack>
+					<ManageDNS>true</ManageDNS>
+					<ZoneNameSuffix>obs</ZoneNameSuffix>
+					<!-- Pour completer les zones lors de la creation des VM -->
+					<PrimaryDNSIpAddresses>
+						<IpAddress>6.11.237.226</IpAddress>
+						<IpAddress>6.11.237.227</IpAddress>
+						</PrimaryDNSIpAddresses>
+					<SecondaryDNSIpAddresses>
+					</SecondaryDNSIpAddresses>
+					<SSHIpAddresses>
+					</SSHIpAddresses>
+				</UHPSetup>
+
+
+				<FWSetup>
+					<IPVPNInterfaceNamingCoefs>
+						<N>1000</N>
+						<M>1</M>
+					</IPVPNInterfaceNamingCoefs>
+					<IPVPNVlanIdRange>
+						<Min>10</Min>
+						<Max>3000</Max>
+					</IPVPNVlanIdRange>
+					<!-- Sert a vider les logs du FW lors de la desalocation d'un VDC / N'est plus utilise / Il faut avoir un script qui repond true sur le lab -->
+					<LogServer ipAddress="10.6.142.249" sshUser="log-server" sshKeyLocalPath="E:\\orchestrator\\privateKey\\key"/>
+					<DefaultRoutes>
+						<DefaultRoute address="0.0.0.0" description="default" mask="0" />
+					</DefaultRoutes>
+
+				</FWSetup>
+
+			</ActivatedFeatures>
+
+			<HostingZoneServices>
+				<Servers>
+					<Server name="DNS" ipAddress="195.25.83.60" etcHostsDeclaration="true"><!-- Sert a configurer le DNS dans la VM TODO ? -->
+						<ServerOptions>
+							<ServerOption name="secondaries" type="string" value="195.25.83.61"/>
+							<ServerOption name="search"      type="string" value="francetelecom.fr"/>
+						</ServerOptions>
+					</Server>
+					<Server name="NTP" ipAddress="195.25.83.62" etcHostsDeclaration="true">
+						<ServerOptions>
+							<ServerOption name="secondaries" type="string" value="195.25.83.62"/>
+						</ServerOptions>
+					</Server>
+
+					<Server name="VAMT" ipAddress="6.11.247.42" etcHostsDeclaration="true">
+						<ServerOptions>
+							<ServerOption name="login" type="string" value ="UcaasVAMTAdmin"></ServerOption>
+							<ServerOption name="sshKeyIdPath" type="string" value ="E:\\orchestrator\\privateKey\\vamt\\id_rsa"></ServerOption>
+						</ServerOptions>
+					</Server>
+					<!-- <Server name="RHN" ipAddress="" etcHostsDeclaration="true"></Server> -->
+					<Server name="WSUS" ipAddress="10.6.152.40" etcHostsDeclaration="true"></Server>
+					<Server name="Sophos" ipAddress="10.6.152.41" etcHostsDeclaration="true"></Server>
+					<Server name="S-FTP" ipAddress="6.11.237.202" etcHostsDeclaration="true">
+						<ServerOptions>
+							<ServerOption name="login" type="string" value ="vhm"></ServerOption>
+							<ServerOption name="sshKeyIdPath" type="string" value ="E:\\orchestrator\\privateKey\\sftp\\vhm"></ServerOption>
+						</ServerOptions>
+					</Server>
+					<!-- <Server name="RP-Apache-Cust" ipAddress="213.56.215.18" etcHostsDeclaration="true"></Server>
+					<Server name="RP-Apache-OBS" ipAddress="213.56.214.19" etcHostsDeclaration="true"></Server> -->
+					<!-- <Server name="machine.test machine" ipAddress="1.2.3.4" etcHostsDeclaration="true"></Server> -->
+				</Servers>
+			</HostingZoneServices>
+			<percentageForHAReservation>15</percentageForHAReservation>
+			<isThinProvisionning>false</isThinProvisionning>
+			<DatacenterSetup>
+				<AdCustFqdn>b2gaas.local</AdCustFqdn>
+				<Constants></Constants>
+				<CatalogImplementation>
+					<!-- AD1 -->
+					<VMTemplate catalogElementId="14002">
+						<Eth number="0" address="195.25.83.60" networkType="data"/>
+						<Eth number="1" address="195.25.83.142" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="44002">
+						<Eth number="0" address="195.25.83.60" networkType="data"/>
+						<Eth number="1" address="195.25.83.142" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24002">
+						<Eth number="0" address="195.25.83.60" networkType="data"/>
+						<Eth number="1" address="195.25.83.142" networkType="private"/>
+					</VMTemplate>
+					<!-- AD2 -->
+					<VMTemplate catalogElementId="14003">
+						<Eth number="0" address="195.25.83.61" networkType="data"/>
+						<Eth number="1" address="195.25.83.143" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="44003">
+						<Eth number="0" address="195.25.83.61" networkType="data"/>
+						<Eth number="1" address="195.25.83.143" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24003">
+						<Eth number="0" address="195.25.83.61" networkType="data"/>
+						<Eth number="1" address="195.25.83.143" networkType="private"/>
+					</VMTemplate>
+					<!-- ToolBox -->
+					<VMTemplate catalogElementId="14005">
+						<Eth number="0" address="195.25.83.63" networkType="data"/>
+						<Eth number="1" address="195.25.83.144" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="44005">
+						<Eth number="0" address="195.25.83.63" networkType="data"/>
+						<Eth number="1" address="195.25.83.144" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24005">
+						<Eth number="0" address="195.25.83.63" networkType="data"/>
+						<Eth number="1" address="195.25.83.144" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="14015">
+						<Eth number="0" address="195.25.83.50" networkType="data"/>
+						<Eth number="1" address="195.25.83.132" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="44015">
+						<Eth number="0" address="195.25.83.50" networkType="data"/>
+						<Eth number="1" address="195.25.83.132" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="14016">
+						<Eth number="0" address="195.25.83.50" networkType="data"/>
+						<Eth number="1" address="195.25.83.132" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="14007">
+						<Eth number="0" address="195.25.83.51" networkType="data"/>
+						<Eth number="1" address="195.25.83.133" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="14008">
+						<Eth number="0" address="195.25.83.52" networkType="data"/>
+						<Eth number="1" address="195.25.83.134" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="14009">
+						<Eth number="0" address="195.25.83.53" networkType="data"/>
+						<Eth number="1" address="195.25.83.135" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="14010">
+						<Eth number="0" address="195.25.83.54" networkType="data"/>
+						<Eth number="1" address="195.25.83.136" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="14011">
+						<Eth number="0" address="195.25.83.55" networkType="data"/>
+						<Eth number="1" address="195.25.83.137" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="14012">
+						<Eth number="0" address="195.25.83.56" networkType="data"/>
+						<Eth number="1" address="195.25.83.138" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="14013">
+						<Eth number="0" address="195.25.83.57" networkType="data"/>
+						<Eth number="1" address="195.25.83.139" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="14014">
+						<Eth number="0" address="195.25.83.58" networkType="data"/>
+						<Eth number="1" address="195.25.83.140" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24015">
+						<Eth number="0" address="195.25.83.50" networkType="data"/>
+						<Eth number="1" address="195.25.83.132" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24016">
+						<Eth number="0" address="195.25.83.50" networkType="data"/>
+						<Eth number="1" address="195.25.83.132" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="44016">
+						<Eth number="0" address="195.25.83.50" networkType="data"/>
+						<Eth number="1" address="195.25.83.132" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24007">
+						<Eth number="0" address="195.25.83.51" networkType="data"/>
+						<Eth number="1" address="195.25.83.133" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24008">
+						<Eth number="0" address="195.25.83.52" networkType="data"/>
+						<Eth number="1" address="195.25.83.134" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24009">
+						<Eth number="0" address="195.25.83.53" networkType="data"/>
+						<Eth number="1" address="195.25.83.135" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24010">
+						<Eth number="0" address="195.25.83.54" networkType="data"/>
+						<Eth number="1" address="195.25.83.136" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24011">
+						<Eth number="0" address="195.25.83.55" networkType="data"/>
+						<Eth number="1" address="195.25.83.137" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24012">
+						<Eth number="0" address="195.25.83.56" networkType="data"/>
+						<Eth number="1" address="195.25.83.138" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24013">
+						<Eth number="0" address="195.25.83.57" networkType="data"/>
+						<Eth number="1" address="195.25.83.139" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="24014">
+						<Eth number="0" address="195.25.83.58" networkType="data"/>
+						<Eth number="1" address="195.25.83.140" networkType="private"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="44007">
+						<Eth number="0" address="195.25.83.50" networkType="data"/>
+						<Eth number="1" address="195.25.83.132" networkType="private"/>
+					</VMTemplate>
+					<!-- SERVICE -->
+					<VMTemplate catalogElementId="44006">
+						<Eth number="0" address="195.25.83.67" networkType="data"/>
+						<Eth number="1" address="195.25.83.148" networkType="private"/>
+					</VMTemplate>
+					
+					<VMTemplate catalogElementId="1212">
+						<Eth number="0" address="195.25.83.40" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="1213">
+						<Eth number="0" address="195.25.83.40" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2212">
+						<Eth number="0" address="195.25.83.40" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="4212">
+						<Eth number="0" address="195.25.83.40" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2213">
+						<Eth number="0" address="195.25.83.40" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="4213">
+						<Eth number="0" address="195.25.83.40" networkType="data"/>
+					</VMTemplate>
+					<!-- UCS1000P01-HCS86 -->
+					<VMTemplate catalogElementId="1500">
+						<Eth number="0" address="195.25.83.1" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="4500">
+						<Eth number="0" address="195.25.83.1" networkType="data"/>
+					</VMTemplate>
+					<!-- UCS1000S01-HCS86 -->
+					<VMTemplate catalogElementId="1501">
+						<Eth number="0" address="195.25.83.2" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="4501">
+						<Eth number="0" address="195.25.83.2" networkType="data"/>
+					</VMTemplate>
+					<!-- UC1000CNX01-HCS86 -->
+					<VMTemplate catalogElementId="1502">
+						<Eth number="0" address="195.25.83.20" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="4502">
+						<Eth number="0" address="195.25.83.20" networkType="data"/>
+					</VMTemplate>
+					<!-- UC1000PS01-HCS86 -->
+					<VMTemplate catalogElementId="1503">
+						<Eth number="0" address="195.25.83.30" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="4503">
+						<Eth number="0" address="195.25.83.30" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2500">
+						<Eth number="0" address="195.25.83.1" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2501">
+						<Eth number="0" address="195.25.83.2" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2502">
+						<Eth number="0" address="195.25.83.20" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2503">
+						<Eth number="0" address="195.25.83.30" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2200">
+						<Eth number="0" address="195.25.83.1" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2201">
+						<Eth number="0" address="195.25.83.2" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2202">
+						<Eth number="0" address="195.25.83.3" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2203">
+						<Eth number="0" address="195.25.83.4" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2204">
+						<Eth number="0" address="195.25.83.5" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2207">
+						<Eth number="0" address="195.25.83.8" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2208">
+						<Eth number="0" address="195.25.83.9" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2209">
+						<Eth number="0" address="195.25.83.20" networkType="data"/>
+					</VMTemplate>
+					<VMTemplate catalogElementId="2210">
+						<Eth number="0" address="195.25.83.30" networkType="data"/>
+					</VMTemplate>						
+				</CatalogImplementation>
+			</DatacenterSetup>
+		</HostingZone>
+	</Offer>
+</VHMSetup>

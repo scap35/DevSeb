@@ -1,6 +1,8 @@
 #!/usr/bin/ruby
 require 'nokogiri'
 require 'csv'
+# si un fichier de conf de zone est fourni en 3eme parametre, alors le tableau topo_vm contiendra l'information suivante : 
+# Est ce que le vmt est déclaré dans la conf de zone ? si oui => (R) en suffixe au catalogElementId
 
 if ARGV.count < 2
   puts "I need 2 parameters:"
@@ -8,11 +10,12 @@ if ARGV.count < 2
   exit
 end
 
-csv_prefix = ARGV[0]
-xml_filename = ARGV[1]
+csv_prefix 		= ARGV[0]
+xml_filename 	= ARGV[1]
+xml_zoneconf 	= ARGV[2]
 
 unless File.exist? xml_filename
-  puts "#{xml_filename} must be exist"
+  puts "#{xml_filename} must exist"
   exit
 end
 
@@ -24,6 +27,26 @@ list_mid = {}
 f = File.open(xml_filename)
 doc = Nokogiri::XML(f)
 f.close
+
+# lecture de la conf de zone 
+# ----------------------------------------------------------------------
+vmt_ips = {}
+if ARGV.count > 2 and File.exist? xml_zoneconf
+	f = File.open(xml_zoneconf)
+	confZone = Nokogiri::XML(f)
+	f.close	
+	confZone.xpath("//CatalogImplementation/VMTemplate").each do |c|
+		k = c['catalogElementId']
+		vmt_ips[k] = {} unless vmt_ips.has_key? k
+	end
+else 
+	puts 'conf de zone non fournie'
+end
+
+unless vmt_ips == {}
+	puts vmt_ips
+end
+# ----------------------------------------------------------------------
 
 def hash2csv(hash, header, out = STDOUT, csv_options = {:col_sep => ";"})
   out.puts CSV.generate_line(header, options = csv_options)
@@ -304,13 +327,21 @@ csv_topology_vm_matrix.puts "topology;#{vapps.join ";"}"
 topology_collections.each.each do |k, v|
   line = []
   line << k
-  #puts 'SCA: ' + k
+  #puts 'topo: ' + k
   vapps.each do |c|
     if v[:vapps].has_key? c
 		# affiche les VMs de la vApp
-		vmts = vapp_collections[c].keys
-		#puts vapp_collections[c][:virtual_machines].keys.join("-")
-      line << vapp_collections[c][:virtual_machines].keys.join("-")
+		chaine =""
+		vapp_collections[c][:virtual_machines].keys.each do |vmt|
+			if chaine.length == 0
+				chaine = "#{vmt}" 
+			else
+				chaine = chaine + "-" + "#{vmt}"
+			end
+			chaine = chaine + "(R)" if vmt_ips.has_key? vmt
+		end
+		#chaine = vapp_collections[c][:virtual_machines].keys.join("-")
+      line << chaine
     else
       line << ""
     end
