@@ -1,9 +1,7 @@
 nomTopologie;nomUpgrade;typeApplicatif;nomIso_majeur.iso;nomIso_firmware.iso;nomIso_locale.iso
-UCaaS Cisco (1000 users) HCS 8.6.2-V3-mig;Upgrade;CUCM;;;1_1_RN20130115_CUCM.iso
-UCaaS Cisco (1000 users) HCS 8.6.2-V3-mig;Upgrade;CUCM;2_1_UCSInstall_UCOS_8.6.2.23900-10.sgn.iso
-UCaaS Cisco (1000 users) HCS 8.6.2-V3-mig;Upgrade;CUCM;;;2_2_RN20130925_CUCM.iso
-UCaaS Cisco (1000 users) HCS 8.6.2-V3-mig;Upgrade;CUPS;2_1_UCSInstall_CUP_8.6.4.13900-4.sgn.iso
-UCaaS Cisco (1000 users) HCS 8.6.2-V3-mig;Upgrade;CUPS;;;2_2_RN20130925_CUPS.iso
-UCaaS Cisco (1000 users) HCS 8.6.2-V3-mig;Upgrade;UCCX;2_1_UCSInstall_UCCX_8_5_1_UCOS_8.5.1.11004-25.sgn.iso
-UCaaS Cisco (1000 users) HCS 8.6.2-V3-mig;Upgrade;CUCM;;;3_1_RN20131231_CUCM.iso
+UCaaS Cisco (1000 users) HCS 8.6.2-V3-mig;Upgrade1;CUCM;;;1_1_RN20130115_CUCM.iso
+UCaaS Cisco (1000 users) HCS 8.6.2-V3-mig;Upgrade2;CUCM;2_1_UCSInstall_UCOS_8.6.2.23900-10.sgn.iso;;2_2_RN20130925_CUCM.iso 
+UCaaS Cisco (1000 users) HCS 8.6.2-V3-mig;Upgrade2;CUPS;2_1_UCSInstall_CUP_8.6.4.13900-4.sgn.iso;;2_2_RN20130925_CUPS.iso 
+UCaaS Cisco (1000 users) HCS 8.6.2-V3-mig;Upgrade2;UCCX;2_1_UCSInstall_UCCX_8_5_1_UCOS_8.5.1.11004-25.sgn.iso;;
+UCaaS Cisco (1000 users) HCS 8.6.2-V3-mig;Upgrade3;CUCM;;;3_1_RN20131231_CUCM.iso 
 

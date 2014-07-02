@@ -48,7 +48,7 @@ doc.xpath("//MiddlewareCollections/Collection").each do |c|
     k = e['catalogElementId']
 
     if middleware_collections.has_key? k
-      puts "Middleware allready exist: #{k}"
+      puts "Middleware already exists: #{k}"
       next e
     end
 
@@ -76,7 +76,7 @@ doc.xpath("//VirtualSystemCollections/Collection").each do |c|
     k = e['catalogElementId']
 
     if virtual_system_collections.has_key? k
-      puts "Template allready exist: #{k}"
+      puts "Template already exists: #{k}"
       next e
     end
 
@@ -154,7 +154,7 @@ doc.xpath("//VappCollections/Collection").each do |c|
     k = e['vappId']
 
     if vapp_collections.has_key? k
-      puts "Collection allready exist: #{k}"
+      puts "Collection already exists: #{k}"
       next e
     end
 
@@ -188,7 +188,7 @@ doc.xpath("//TopologyCollections/Collection").each do |c|
     k = e['name']
 
     if topology_collections.has_key? k
-      puts "Topology allready exist: #{k}"
+      puts "Topology already exists: #{k}"
       next e
     end
 
@@ -293,6 +293,29 @@ vapp_collections.each do |k, v|
     end
   end
   csv_vapp_topology_matrix.puts line.join ";"
+end
+
+csv_topology_vm_matrix = File.open("#{csv_prefix}matrix_topology_vm.csv", 'w')
+vapps = vapp_collections.keys
+vsystems = virtual_system_collections.keys
+#puts vapp_collections
+csv_topology_vm_matrix.puts ";#{vapps.map{ |v| vapp_collections[v][:name] }.join ";"}"
+csv_topology_vm_matrix.puts "topology;#{vapps.join ";"}"
+topology_collections.each.each do |k, v|
+  line = []
+  line << k
+  #puts 'SCA: ' + k
+  vapps.each do |c|
+    if v[:vapps].has_key? c
+		# affiche les VMs de la vApp
+		vmts = vapp_collections[c].keys
+		#puts vapp_collections[c][:virtual_machines].keys.join("-")
+      line << vapp_collections[c][:virtual_machines].keys.join("-")
+    else
+      line << ""
+    end
+  end
+  csv_topology_vm_matrix.puts line.join ";"
 end
 
 csv_topology_vapp_matrix = File.open("#{csv_prefix}matrix_topology_vapp.csv", 'w')
