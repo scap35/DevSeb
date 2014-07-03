@@ -35,6 +35,8 @@ Sous version : 201306031445
 					</Routes>
 				</VMPostConf>
 				<PrefixeBackupAndSeparator>B2GATL06C_</PrefixeBackupAndSeparator>
+				<SuffixAvamarBackup>_BACKUP</SuffixAvamarBackup>
+                <SuffixBackupRestored>_Old</SuffixBackupRestored>
 			</VMSetup>
 
 			<ActivatedFeatures>

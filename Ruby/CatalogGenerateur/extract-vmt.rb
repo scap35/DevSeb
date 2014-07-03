@@ -25,31 +25,33 @@ def hash2csv(hash, header, out = STDOUT, csv_options = {:col_sep => ";"})
 end
 
 vmt_ips = {}
-
+indice = 0
 doc.xpath("//Collection/VMTemplate").each do |c|
   k = c['catalogElementId']
   vmt_ips[k] = {} unless vmt_ips.has_key? k
-  
+  indice += 1
   vmt_ips[k] = {
+	:indice => indice,
     :catalog_element_id => k,
     :optional          => c['optional'],
     :vmnaming          => c['vmNaming'],
     :hostnaming       => c['hostNaming'],
-    :commercialname       => nil,
-	:shortname       => nil,
-	:osfamily       => nil,
-	:version       => nil,
-	:type       => nil,
-	:language       => nil,
-	:architecture       => nil,
-	:description       => nil,
+    :commercialname	=> nil,
+	:shortname	=> nil,
+	:osfamily	=> nil,
+	:version	=> nil,
+	:type		=> nil,
+	:language	=> nil,
+	:architecture	=> nil,
+	:description	=> nil,
 	:useapplicationtypeid       => nil,
-	:minmo       => nil,
-	:maxmo       => nil,
-	:minmhz       => nil,
-	:mincpu       => nil,
-	:maxcpu       => nil,
-	:middlewareid       => nil,
+	:minmo		=> nil,
+	:maxmo		=> nil,
+	:minmhz		=> nil,
+	:mincpu		=> nil,
+	:maxcpu		=> nil,
+	:middlewareid	=> nil,
+	:role		=> nil,
 	:isrelay	=> nil,
 	:repupgrade	=> nil
  }
@@ -77,7 +79,8 @@ doc.xpath("//Collection/VMTemplate").each do |c|
 	end	
 	
 	c.xpath("./Information/ApplicationType").each do |appType|
-	   vmt_ips[k].merge!({:useapplicationtypeid       => "#{appType['useApplicationTypeId']}"})
+	   vmt_ips[k].merge!({:useapplicationtypeid => "#{appType['useApplicationTypeId']}"})
+	   vmt_ips[k].merge!({:role       			=> "#{appType['role']}"})
 	end	 
 	
 	c.xpath("./OSRequirement/RAM").each do |ramreq|
@@ -113,25 +116,27 @@ end
 #csv_vmt_ips = STDOUT
 csv_vmt_ips = File.open("#{csv_prefix}vmt_ips.csv", 'w')
 hash2csv(vmt_ips, [
-      :catalog_element_id,
+    :indice,
+	:catalog_element_id,
     :optional,
     :vmnaming,
     :hostnaming,
     :commercialname ,
-	:shortname      ,
-	:osfamily      ,
-	:version      ,
-	:type      ,
-	:language      ,
-	:architecture      ,
-	:description      ,
-	:useapplicationtypeid      ,
-	:minmo      ,
-	:maxmo      ,
-	:minmhz      ,
-	:mincpu ,
-	:maxcpu ,
+	:shortname,
+	:osfamily,
+	:version,
+	:type,
+	:language,
+	:architecture,
+	:description,
+	:useapplicationtypeid,
+	:minmo,
+	:maxmo,
+	:minmhz,
+	:mincpu,
+	:maxcpu,
 	:middlewareid,
+	:role,
 	:isrelay,
 	:repupgrade ],
          csv_vmt_ips)

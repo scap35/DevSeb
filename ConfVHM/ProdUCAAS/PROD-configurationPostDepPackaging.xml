@@ -8,7 +8,7 @@
 
 Offre : UCaaS-France
 Version : 2.2
-Sous version : 201407011530
+Sous version : 201407031200
 Plate-forme : Prod
 Sprint : SP556
 -->
@@ -27,6 +27,8 @@ Sprint : SP556
 		</VMSetup>
 		<PatchManagementSetup>
 			<Prefix>patchManagement</Prefix>
+			<MailingList>co4.hosting@orange.com</MailingList>
+			<VHMPlatformOwner></VHMPlatformOwner>
 			<SFTPSetup>
 				<HostName>10.6.142.204</HostName>
 				<UserName>vhm</UserName>
