@@ -8,13 +8,14 @@
  - V2.3 par Nicolas Ledez le 26/04/2013: Route par default dans la zone IPVPN
  - V2.4 par Nicolas Ledez le 03/05/2013: Route par default dans la zone IPVPN
  - V2.5 par Nicolas Ledez le 07/05/2013: Ajout du parametre: IP_PartitionScriptADLDS_FE
+ - V2.6 par Sébastien Caprais le 01/07/2014 : ajout du parametre SuffixAvamarBackup
 
 Offre : UCaaS
-Sprint : SP553.D
+Sprint : SP556
 Plate-forme : Prod
 Zone : ATL
-Version : 2.5
-Sous version : 201306031445
+Version : 2.6
+Sous version : 201407011705
 -->
 	<Offer type="UCAAS" version="1">
 		<HostingZone>

@@ -148,9 +148,9 @@ Sous version : 201407031200
 
 	<!--rajout des regles de préfixages des vms -->
 
-			<ShortNameNaming regexp="^[-_\.0-9a-zA-Z]+$" length="20"/>
-			<DisplayNameNaming regexp="^[-_\.0-9a-zA-Z]+$" length="35"/>
-			<PrefixNaming regexp="^[-_\.0-9a-zA-Z]+$" length="15"/>
+			<ShortNameNaming regexp="^[-_0-9a-zA-Z\.]+$" length="20"></ShortNameNaming>
+			<DisplayNameNaming regexp="^[-_0-9a-zA-Z\.]+$" length="35"></DisplayNameNaming>
+			<PrefixNaming regexp="^[-_0-9a-zA-Z\.]+$" length="20"></PrefixNaming>
 
 		</VMSetup>
 
@@ -419,6 +419,16 @@ Sous version : 201407031200
 					<Server name="RP-Apache-OBS" ipAddress="127.0.0.1" etcHostsDeclaration="false"></Server>
 				</Servers>
 			</HostingZoneServices>
+			<DatacenterSetup>
+					<DatacenterCodes>
+						<DatacenterCode code="CVY" description="Chevilly (B2GaaS France TTM)" />
+						<DatacenterCode code="SIN" description="Singapour" />
+						<DatacenterCode code="FRA" description="Frankfort" />
+						<DatacenterCode code="ATL" description="Atlanta" />
+						<DatacenterCode code="RUE" description="Rueil-Malmaison" />
+						<DatacenterCode code="VDR" description="Val-de-Reuil" />
+					</DatacenterCodes>
+			</DatacenterSetup>
 		</HostingZone>
 		<ResourcePoolSetup constraint="ucaas"></ResourcePoolSetup>
 		<SupportTeamInfo
