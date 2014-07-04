@@ -1,6 +1,12 @@
 #!/usr/bin/ruby
 require 'nokogiri'
 require 'csv'
+# --------------------------------------------------
+# Description:
+# - lit le catalogue logique donné en parametre
+# - en extrait les donnees des VMT
+# - les restitue dans un fichier CSV
+# --------------------------------------------------
 
 csv_prefix = "csv_logical_catalog_"
 if ARGV.count < 1

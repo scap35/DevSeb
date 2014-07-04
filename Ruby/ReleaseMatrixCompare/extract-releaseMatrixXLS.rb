@@ -3,7 +3,7 @@
 # Auteur : S. Caprais
 # Date   : 26/06/2014
 # Description :
-# lire le fichier MatrixRelease
+# lire le fichier MatrixRelease, et rechercher le catalogElementId pour chacun des VMTs
 # ------------------------------------------------------------------------------------
 
 require 'nokogiri'
