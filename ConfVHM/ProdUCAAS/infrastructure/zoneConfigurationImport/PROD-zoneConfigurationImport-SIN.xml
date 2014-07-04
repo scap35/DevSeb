@@ -8,14 +8,14 @@
  - V2.3 par Nicolas Ledez le 26/04/2013: Route par default dans la zone IPVPN
  - V2.4 par Nicolas Ledez le 03/05/2013: Route par default dans la zone IPVPN
  - V2.5 par Nicolas Ledez le 07/05/2013: Ajout du parametre: IP_PartitionScriptADLDS_FE
- - V2.6 par ébastien Caprais le 01/07/2014 : ajout du parametre SuffixAvamarBackup
+ - V2.6 par ébastien Caprais le 01/07/2014 : ajout du parametre SuffixAvamarBackup, parametres Sophos et WSUS
 
 Offre : UCaaS
 Sprint : SP556
 Plate-forme : Prod
 Zone : SIN
 Version : 2.6
-Sous version : 201407011705
+Sous version : 201407041600
 -->
 	<Offer type="UCAAS" version="1">
 		<HostingZone>
@@ -90,6 +90,12 @@ Sous version : 201407011705
 					<Constant name="CIFS_SERVER" type="vm" value="57.197.139.40" />
 					<Constant name="VAMT" type="vm" value="213.56.208.1" />
 					<Constant name="TIME_ZONE" type="vm" value="Singapore Standard Time" />
+					<Constant name="HOSTNAME_SOPHOS" value="S28LSOPHOS.CSSA.LOCAL" />
+					<Constant name="CIDPATH_SOPHOS" value="http://S28LSOPHOS/Sophosupdate/Cids/S000/ESXP" />
+					<Constant name="GROUP_SOPHOS" value="OBSDEFAULT" />
+					<Constant name="USER_SOPHOS" value="anonymous" />
+					<Constant name="PASSWORD_SOPHOS" value="" />
+					<Constant name="HOSTNAME_WSUS" value="S28Lwsus" />
 				</Constants>
 				<CatalogImplementation>
 					<VMTemplate catalogElementId="34002">
