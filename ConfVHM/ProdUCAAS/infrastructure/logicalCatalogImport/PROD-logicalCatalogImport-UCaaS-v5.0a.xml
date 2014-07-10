@@ -85,6 +85,12 @@ Sprint : SP556
 						<Command interpreter="Windows" command="launchSophosScript1.bat /cidpath http://213.56.206.137/sophosupdate/CIDs/S001/SAVSCFXP/ /hostname 213.56.206.137 /group CUSTOMERS"/>
 						<Command interpreter="Windows" command="launchSophosScript2.bat"/>
 						<Command interpreter="VHM" command="StopStartVM"/>
+					    <Command interpreter="VHM" command="UploadAndRunScript">
+							<Params>
+								 <Param name="scriptFile" value="TeraTermPortable.exe"/>
+								 <Param name="uploadPath" value="c:\repo"/>
+							</Params>
+						</Command>
 					</Commands>
 				</Installation>
 			</Middleware>
@@ -114,6 +120,12 @@ Sprint : SP556
 						<Command interpreter="Windows" command="launchSophosScript1.bat /cidpath http://213.56.206.137/sophosupdate/CIDs/S001/SAVSCFXP/ /hostname 213.56.206.137 /group CUSTOMERS"/>
 						<Command interpreter="Windows" command="launchSophosScript2.bat"/>
 						<Command interpreter="VHM" command="StopStartVM"/>
+						<Command interpreter="VHM" command="UploadAndRunScript">
+							<Params>
+								 <Param name="scriptFile" value="TeraTermPortable.exe"/>
+								 <Param name="uploadPath" value="c:\repo"/>
+							</Params>
+						</Command>
 					</Commands>
 				</Installation>
 			</Middleware>
@@ -310,6 +322,12 @@ Sprint : SP556
 						</Command>
 						<Command interpreter="Windows" command="PowerShell -NonInteractive -NoProfile -Command D:\Sources\Scripts\Stage2-ToolboxApplication.ps1"/>
 						<Command interpreter="Windows" command="PowerShell -NonInteractive -NoProfile -Command D:\Sources\Scripts\Stage3-ThirdPartApplication.ps1"/>
+						<Command interpreter="VHM" command="UploadAndRunScript">
+							<Params>
+								 <Param name="scriptFile" value="TeraTermPortable.exe"/>
+								 <Param name="uploadPath" value="c:\repo"/>
+							</Params>
+						</Command>
 					</Commands>
 				</Installation>
 			</Middleware>
@@ -701,7 +719,7 @@ Sprint : SP556
 				</OSRequirement>
 				<Network createVNic="false"/>
 				<Middlewares>
-					<Middleware useCatalogElementId="31"/>
+					<Middleware useCatalogElementId="71"/>
 				</Middlewares>
 			</VMTemplate>
 			
@@ -739,7 +757,7 @@ Sprint : SP556
 				</OSRequirement>
 				<Network createVNic="false"/>
 				<Middlewares>
-					<Middleware useCatalogElementId="33"/>
+					<Middleware useCatalogElementId="71"/>
 				</Middlewares>
 			</VMTemplate>
 			
