@@ -27,10 +27,13 @@
  - V4.9i par N. Monceret le 19/05/2014 : MAJ pour prise en compte de topologie de migration 8.6.2 Lot 1 vers Lot 2 - FR
  - V4.9j par S. Caprais le 19/06/2014 : ajout du middleware spécifique (id=52) a la VM Service (id=54006, topologie HCS862V4-MW2)
  - V5.0a par S. Caprais le 01/07/2014 : mise a jour 554 vers 556
+ - V5.0b par S. Caprais le 11/07/2014 : modif de la postConf des TOOLBOX, TOOLBOX obligatoire sur MW2+ ajout de la version cible de migration des topo MW2
+ - V5.0c par S. Caprais le 03/09/2014 : 4 corrections d'erreurs d'id dans les règles d'exclusion pour la VM Service
+										Association des CUEAC-V3 au topo V3-mig
  
 Offre : UCaaS-France
-Version : 5.0a
-Sous version : 201407011400
+Version : 5.0c
+Sous version : 201409081600
 Plate-forme : Prod
 Sprint : SP556
 -->
@@ -85,6 +88,12 @@ Sprint : SP556
 						<Command interpreter="Windows" command="launchSophosScript1.bat /cidpath http://213.56.206.137/sophosupdate/CIDs/S001/SAVSCFXP/ /hostname 213.56.206.137 /group CUSTOMERS"/>
 						<Command interpreter="Windows" command="launchSophosScript2.bat"/>
 						<Command interpreter="VHM" command="StopStartVM"/>
+					    <Command interpreter="VHM" command="UploadAndRunScript">
+							<Params>
+								 <Param name="scriptFile" value="TeraTermPortable.exe"/>
+								 <Param name="uploadPath" value="c:\repo"/>
+							</Params>
+						</Command>
 					</Commands>
 				</Installation>
 			</Middleware>
@@ -114,6 +123,12 @@ Sprint : SP556
 						<Command interpreter="Windows" command="launchSophosScript1.bat /cidpath http://213.56.206.137/sophosupdate/CIDs/S001/SAVSCFXP/ /hostname 213.56.206.137 /group CUSTOMERS"/>
 						<Command interpreter="Windows" command="launchSophosScript2.bat"/>
 						<Command interpreter="VHM" command="StopStartVM"/>
+						<Command interpreter="VHM" command="UploadAndRunScript">
+							<Params>
+								 <Param name="scriptFile" value="TeraTermPortable.exe"/>
+								 <Param name="uploadPath" value="c:\repo"/>
+							</Params>
+						</Command>
 					</Commands>
 				</Installation>
 			</Middleware>
@@ -310,6 +325,12 @@ Sprint : SP556
 						</Command>
 						<Command interpreter="Windows" command="PowerShell -NonInteractive -NoProfile -Command D:\Sources\Scripts\Stage2-ToolboxApplication.ps1"/>
 						<Command interpreter="Windows" command="PowerShell -NonInteractive -NoProfile -Command D:\Sources\Scripts\Stage3-ThirdPartApplication.ps1"/>
+						<Command interpreter="VHM" command="UploadAndRunScript">
+							<Params>
+								 <Param name="scriptFile" value="TeraTermPortable.exe"/>
+								 <Param name="uploadPath" value="c:\repo"/>
+							</Params>
+						</Command>
 					</Commands>
 				</Installation>
 			</Middleware>
@@ -701,7 +722,7 @@ Sprint : SP556
 				</OSRequirement>
 				<Network createVNic="false"/>
 				<Middlewares>
-					<Middleware useCatalogElementId="31"/>
+					<Middleware useCatalogElementId="71"/>
 				</Middlewares>
 			</VMTemplate>
 			
@@ -739,7 +760,7 @@ Sprint : SP556
 				</OSRequirement>
 				<Network createVNic="false"/>
 				<Middlewares>
-					<Middleware useCatalogElementId="33"/>
+					<Middleware useCatalogElementId="71"/>
 				</Middlewares>
 			</VMTemplate>
 			
@@ -764,7 +785,7 @@ Sprint : SP556
 			</VMTemplate>
 			
 
-			<VMTemplate catalogElementId="54005" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="TOOLBOX" hostNaming="TBX">
+			<VMTemplate catalogElementId="54005" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="TOOLBOX" hostNaming="TBX">
 				<Information>
 					<Name commercialName="ToolBox Ucaas-HCS862V4-MW2" shortName="TOOLBOX-HCS862V4-MW2"/>
 					<Version OSFamily="Windows 2008" version="ITDV1.0" type="TB01" language="FR" architecture="64bits"/>
@@ -1905,7 +1926,8 @@ Sprint : SP556
 				<Network createVNic="false"/>
 			</VMTemplate>
 			
-
+		</Collection>
+		<Collection name="UCaaS Cisco HCS (1000 devices)">
 			<VMTemplate catalogElementId="5213" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC300CX01" hostNaming="UC300CX01">
 				<Information>
 					<Name commercialName="UCCX01 300-HCS862V4" shortName="UC300CX01-HCS862V4"/>
@@ -2821,7 +2843,8 @@ Sprint : SP556
 				<Network createVNic="false"/>
 			</VMTemplate>
 			
-
+		</Collection>
+		<Collection name="UCaaS Cisco HCS (20000 devices)">
 
 			<VMTemplate catalogElementId="3600" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000P01" hostNaming="UCS20000P01">
 				<Information>
@@ -3495,6 +3518,7 @@ Sprint : SP556
 			</VMTemplate>
 			
 		</Collection>
+		
 		<Collection name="UCaaS Cisco HCS (40000 devices)">
 			<VMTemplate catalogElementId="5600" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS40000P01" hostNaming="UCS40000P01">
 				<Information>
@@ -3751,7 +3775,6 @@ Sprint : SP556
 				<Network createVNic="false"/>
 			</VMTemplate>
 			
-
 		</Collection>
 	</VirtualSystemCollections>
                               <!--  -->
@@ -4764,7 +4787,7 @@ Sprint : SP556
 						<!-- Toolbox-->
 						<VirtualMachine catalogElementId="44005"/>
 						<!-- Service -->
-						<VirtualMachine catalogElementId="44005"/>
+						<VirtualMachine catalogElementId="44006"/>
 						<!-- CUEAC6S01 : SQL Express avec installation middleware -->
 						<VirtualMachine catalogElementId="44015"/>
 						<!-- CUEAC25S01 : SQL-Standard avec installation Middleware-->
@@ -4856,7 +4879,7 @@ Sprint : SP556
 					<!-- Uccx -->
 					<VApp catalogElementId="32000" orderStart="30"/>
 					<!-- Cueacs -->
-					<VApp catalogElementId="31000" orderStart="40"/>
+					<VApp catalogElementId="41000" orderStart="40"/>
 				</VApps>
 				<Rules>
 					<!--  R U L E S -->
@@ -4978,7 +5001,7 @@ Sprint : SP556
 						<!-- Toolbox-->
 						<VirtualMachine catalogElementId="44005"/>
 						<!-- Service -->
-						<VirtualMachine catalogElementId="44005"/>
+						<VirtualMachine catalogElementId="44006"/>
 						<!-- CUEAC6S01 : SQL Express avec installation middleware -->
 						<VirtualMachine catalogElementId="44015"/>
 						<!-- CUEAC25S01 : SQL-Standard avec installation Middleware-->
@@ -5108,7 +5131,7 @@ Sprint : SP556
 					<!-- Uccx -->
 					<VApp catalogElementId="32000" orderStart="30"/>
 					<!-- Cueacs -->
-					<VApp catalogElementId="31000" orderStart="40"/>
+					<VApp catalogElementId="41000" orderStart="40"/>
 				</VApps>
 				<Rules>
 					<!--  R U L E S -->
@@ -5253,7 +5276,7 @@ Sprint : SP556
 						<!-- Toolbox-->
 						<VirtualMachine catalogElementId="44005"/>
 						<!-- Service -->
-						<VirtualMachine catalogElementId="44005"/>
+						<VirtualMachine catalogElementId="44006"/>
 						<!-- CUEAC6S01 : SQL Express avec installation middleware -->
 						<VirtualMachine catalogElementId="44015"/>
 						<!-- CUEAC25S01 : SQL-Standard avec installation Middleware-->
@@ -5414,7 +5437,7 @@ Sprint : SP556
 						<!-- Toolbox-->
 						<VirtualMachine catalogElementId="44005"/>
 						<!-- Service -->
-						<VirtualMachine catalogElementId="44005"/>
+						<VirtualMachine catalogElementId="44006"/>
 						<!-- CUEAC6S01 : SQL Express avec installation middleware -->
 						<VirtualMachine catalogElementId="44015"/>
 						<!-- CUEAC25S01 : SQL-Standard avec installation Middleware-->
@@ -5705,7 +5728,7 @@ Sprint : SP556
 			<!--  T O P O L O G Y -->
 			<!-- 1 0 0 0 - D E V I C E S -->
 			<!-- 8.6.2 V2 -->
-			<Topology name="UCaaS Cisco (1000 devices) HCS 8.6.2-V2-MW2" version="HCS 8.6.2-V2-MW2" displayName="Topologie UCaaS Cisco (1000 devices) HCS 8.6.2-V2 Middleware pour ADLDS" description="Topologie UCaaS Cisco (1000 devices) HCS 8.6.2-V2 Middleware pour ADLDS">
+			<Topology name="UCaaS Cisco (1000 devices) HCS 8.6.2-V2-MW2" version="HCS 8.6.2-V2-MW2" displayName="Topologie UCaaS Cisco (1000 devices) HCS 8.6.2-V2 Middleware pour ADLDS" description="Topologie UCaaS Cisco (1000 devices) HCS 8.6.2-V2 Middleware pour ADLDS" migrationTargetTopologyName="UCaaS Cisco (1000 devices) HCS 8.6.2-V4-MW2">
 				<VApps>
 					<!-- ADs & Toolbox -->
 					<VApp catalogElementId="60000" orderStart="10"/>
@@ -5919,7 +5942,7 @@ Sprint : SP556
 			<!--  T O P O L O G Y -->
 			<!-- 7 5 0 0 - D E V I C E S -->
 			<!-- 8.6.2 V2 -->
-			<Topology name="UCaaS Cisco (7500 devices) HCS 8.6.2-V2-MW2" version="HCS 8.6.2-V2-MW2" displayName="Topologie UCaaS Cisco (7500 devices) HCS 8.6.2-V2 Middleware pour ADLDS" description="Topologie UCaaS Cisco (7500 devices) HCS 8.6.2-V2 Middleware pour ADLDS">
+			<Topology name="UCaaS Cisco (7500 devices) HCS 8.6.2-V2-MW2" version="HCS 8.6.2-V2-MW2" displayName="Topologie UCaaS Cisco (7500 devices) HCS 8.6.2-V2 Middleware pour ADLDS" description="Topologie UCaaS Cisco (7500 devices) HCS 8.6.2-V2 Middleware pour ADLDS" migrationTargetTopologyName="UCaaS Cisco (7500 devices) HCS 8.6.2-V4-MW2">
 				<VApps>
 					<!-- ADs & Toolbox -->
 					<VApp catalogElementId="60000" orderStart="10"/>
@@ -6179,7 +6202,7 @@ Sprint : SP556
 			<!--  T O P O L O G Y -->
 			<!-- 2 0 0 0 0 - D E V I C E S -->
 			<!-- 8.6.2 V2 -->
-			<Topology name="UCaaS Cisco (20000 devices) HCS 8.6.2-V2-MW2" version="HCS 8.6.2-V2-MW2" displayName="Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V2 Middleware pour ADLDS" description="Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V2 Middleware pour ADLDS">
+			<Topology name="UCaaS Cisco (20000 devices) HCS 8.6.2-V2-MW2" version="HCS 8.6.2-V2-MW2" displayName="Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V2 Middleware pour ADLDS" description="Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V2 Middleware pour ADLDS" migrationTargetTopologyName="UCaaS Cisco (20000 devices) HCS 8.6.2-V4-MW2">
 				<VApps>
 					<!-- ADs & Toolbox -->
 					<VApp catalogElementId="60000" orderStart="10"/>
