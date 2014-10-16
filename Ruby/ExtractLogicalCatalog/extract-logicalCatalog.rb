@@ -14,6 +14,8 @@ csv_prefix 		= ARGV[0]
 xml_filename 	= ARGV[1]
 xml_zoneconf 	= ARGV[2]
 
+  puts "csv_prefix: #{csv_prefix} ; xml_filename: #{xml_filename}; xml_zoneconf #{xml_zoneconf}"
+
 unless File.exist? xml_filename
   puts "#{xml_filename} must exist"
   exit
@@ -89,6 +91,43 @@ doc.xpath("//MiddlewareCollections/Collection").each do |c|
       :commercial_name => s['commercialName'],
       :short_name      => s['shortName'],
     })
+	
+	s = e.xpath("./Information/Description").first
+    middleware_collections[k].merge!({
+      :description => s['description'],
+    })
+	
+	s = e.xpath("./Information/Version").first
+    middleware_collections[k].merge!({
+      :version => s['version'], 
+	  :type => s['type'], 
+	  :language => s['language'], 
+	  :architecture => s['architecture'], 
+    })
+	
+	s = e.xpath("./OSRequirement/RAM").first
+    middleware_collections[k].merge!({
+      :ramMinMo => s['minMo'], 
+    })
+	
+	s = e.xpath("./OSRequirement/CPU").first
+    middleware_collections[k].merge!({
+      :cpuMinMhz => s['minMhz'], 
+    })
+	
+	s = e.xpath("./OSRequirement/vCPU").first
+    middleware_collections[k].merge!({
+      :vCPUmin => s['min'], 
+    })
+	
+	s = e.xpath("./MiddlewareRepository").first
+    middleware_collections[k].merge!({
+      :repositoryId => s['repositoryId'], 
+	  :path => s['path'], 
+    })	
+	
+			
+	
   end
 end
 
@@ -248,6 +287,18 @@ hash2csv(middleware_collections, [
          :configurable_size,
          :commercial_name,
          :short_name,
+		 :description,
+		 :version,
+		 :path,
+		 :OSFamily,
+		 :type,
+		 :ramMinMo,
+		 :CPUMinMhz,
+		 :vCPUmin,
+		 :repositoryId,
+		 :language,
+		 :architecture,
+		 :installation
 		 ],
          csv_middleware_collections)
 

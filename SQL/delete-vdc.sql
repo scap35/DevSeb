@@ -154,6 +154,10 @@ BEGIN
 END
 
 -- Supression des informations dans les tables
+print ' => Clean DRAAS_Topology'
+DELETE FROM [dbo].[DRAAS_Topology]
+WHERE [VDC_FK] = @id_vdc
+
 print 'Delete CPU/RAM'
 print ' => Put cpu & ram FK to NULL on VDC'
 UPDATE [dbo].[DRAAS_VirtualResourcesInfo]

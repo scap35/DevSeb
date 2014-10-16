@@ -28,13 +28,14 @@
  - V4.9j par S. Caprais le 19/06/2014 : ajout du middleware spécifique (id=52) a la VM Service (id=54006, topologie HCS862V4-MW2)
  - V5.0a par S. Caprais le 01/07/2014 : mise a jour 554 vers 556
  - V5.0b par S. Caprais le 11/07/2014 : modif de la postConf des TOOLBOX, TOOLBOX obligatoire sur MW2+ ajout de la version cible de migration des topo MW2
- - V5.0c par S. Caprais le 03/09/2014 : 4 corrections d'erreurs d'id dans les règles d'exclusion pour la VM Service
+ - V5.0c par S. Caprais le 03/09/2014 : 9 corrections de  "vmUCGroup" en "vmUcGroup",
+										4 corrections d'erreurs d'id dans les règles d'exclusion pour la VM Service
 										Association des CUEAC-V3 au topo V3-mig
- - V5.0d par S. Caprais le 19/09/2014 :	Mise a jour des 2 postconfiguration AD FR (pour templates v1.05)
+ 
  
 Offre : UCaaS-France
-Version : 5.0d
-Sous version : 201409191200
+Version : 5.0c
+Sous version : 201407311600
 Plate-forme : Prod
 Sprint : SP556
 -->
@@ -4602,7 +4603,7 @@ Sprint : SP556
 					<!-- R U L E S -->
 					<!-- C O L L O C A L I S A T I O N -->
 					<!-- regles de collocalisation des VMs UC sur les memes blades, separees des blades Windows -->
-					<Rule type="Collocalisation_VM_Host" name="vmUCGroup">
+					<Rule type="Collocalisation_VM_Host" name="vmUcGroup">
 						<!-- UCS1000P01 -->
 						<VirtualMachine catalogElementId="1500"/>
 						<!-- UCS1000S01 -->
@@ -4707,7 +4708,7 @@ Sprint : SP556
 					<!-- R U L E S -->
 					<!-- C O L L O C A L I S A T I O N -->
 					<!-- regles de collocalisation des VMs UC sur les memes blades, separees des blades Windows -->
-					<Rule type="Collocalisation_VM_Host" name="vmUCGroup">
+					<Rule type="Collocalisation_VM_Host" name="vmUcGroup">
 						<!-- UCS1000P01 -->
 						<VirtualMachine catalogElementId="2500"/>
 						<!-- UCS1000S01 -->
@@ -4813,7 +4814,7 @@ Sprint : SP556
 					<!-- R U L E S -->
 					<!-- C O L L O C A L I S A T I O N -->
 					<!-- regles de collocalisation des VMs UC sur les memes blades, separees des blades Windows -->
-					<Rule type="Collocalisation_VM_Host" name="vmUCGroup">
+					<Rule type="Collocalisation_VM_Host" name="vmUcGroup">
 						<!-- UCS1000P01 -->
 						<VirtualMachine catalogElementId="4500"/>
 						<!-- UCS1000S01 -->
@@ -4919,7 +4920,7 @@ Sprint : SP556
 					<!-- R U L E S -->
 					<!-- C O L L O C A L I S A T I O N -->
 					<!-- regles de collocalisation des VMs UC sur les memes blades, separees des blades Windows -->
-					<Rule type="Collocalisation_VM_Host" name="vmUCGroup">
+					<Rule type="Collocalisation_VM_Host" name="vmUcGroup">
 						<!-- UCS1000P01 -->
 						<VirtualMachine catalogElementId="2500"/>
 						<!-- UCS1000S01 -->
@@ -5027,7 +5028,7 @@ Sprint : SP556
 					<!-- R U L E S -->
 					<!-- C O L L O C A L I S A T I O N -->
 					<!-- regles de collocalisation des VMs UC sur les memes blades, separees des blades Windows -->
-					<Rule type="Collocalisation_VM_Host" name="vmUCGroup">
+					<Rule type="Collocalisation_VM_Host" name="vmUcGroup">
 						<!-- UCS7500P01 -->
 						<VirtualMachine catalogElementId="4200"/>
 						<!-- UCS7500S01 -->
@@ -5171,7 +5172,7 @@ Sprint : SP556
 					<!-- R U L E S -->
 					<!-- C O L L O C A L I S A T I O N -->
 					<!-- regles de collocalisation des VMs UC sur les memes blades, separees des blades Windows -->
-					<Rule type="Collocalisation_VM_Host" name="vmUCGroup">
+					<Rule type="Collocalisation_VM_Host" name="vmUcGroup">
 						<!-- UCS7500P01 -->
 						<VirtualMachine catalogElementId="2200"/>
 						<!-- UCS7500S01 -->
@@ -5302,7 +5303,7 @@ Sprint : SP556
 					<!-- R U L E S -->
 					<!-- C O L L O C A L I S A T I O N -->
 					<!-- regles de collocalisation des VMs UC sur les memes blades, separees des blades Windows -->
-					<Rule type="Collocalisation_VM_Host" name="vmUCGroup">
+					<Rule type="Collocalisation_VM_Host" name="vmUcGroup">
 						<!-- UCS20000P01 -->
 						<VirtualMachine catalogElementId="4600"/>
 						<!-- UCS20000S01 -->
@@ -5463,7 +5464,7 @@ Sprint : SP556
 					<!-- R U L E S -->
 					<!-- C O L L O C A L I S A T I O N -->
 					<!-- regles de collocalisation des VMs UC sur les memes blades, separees des blades Windows -->
-					<Rule type="Collocalisation_VM_Host" name="vmUCGroup">
+					<Rule type="Collocalisation_VM_Host" name="vmUcGroup">
 						<!-- UCS40000P01 -->
 						<VirtualMachine catalogElementId="5600"/>
 						<!-- UCS40000S01 -->
@@ -5642,7 +5643,7 @@ Sprint : SP556
 					<!-- R U L E S -->
 					<!-- C O L L O C A L I S A T I O N -->
 					<!-- regles de collocalisation des VMs UC sur les memes blades, separees des blades Windows -->
-					<Rule type="Collocalisation_VM_Host" name="vmUCGroup">
+					<Rule type="Collocalisation_VM_Host" name="vmUcGroup">
 						<!-- UCS7500P01 -->
 						<VirtualMachine catalogElementId="2200"/>
 						<!-- UCS7500S01 -->
