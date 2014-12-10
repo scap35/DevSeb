@@ -21,6 +21,11 @@ unless File.exist? xml_filename
   exit
 end
 
+if  File.exist? csv_prefix
+  puts "cvs_prefix_name is not a file and must be provided"
+  exit
+end
+
 list_license_os = {}
 list_os = {}
 list_license_mid = {}

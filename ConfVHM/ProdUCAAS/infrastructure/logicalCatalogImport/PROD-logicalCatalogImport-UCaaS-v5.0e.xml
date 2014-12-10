@@ -33,14 +33,14 @@
 
 - V5.0d par S. Caprais le 19/09/2014 :	Mise a jour des 2 postconfiguration AD FR (pour templates v1.05)
 
-- V5.0e par S. Caprais le 15/10/2014 :	Ajout de topo TOCVPN issue de la topo UCaaS Cisco (20000 devices) HCS 8.6.2-V4-MW2
+- V5.0e par S. Caprais le 15/10/2014 :	Ajout des topos TOCVPN issues des topos UCaaS Cisco (20000 devices) HCS 8.6.2-Vx-MW2
  
  
 Offre : UCaaS-France
 Version : 5.0e
 Sous version : 201410151700
 Plate-forme : Prod
-Sprint : SP556
+Sprint : SP557
 -->
 <LogicalCatalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="logicalCatalog.xsd">
 	<Licenses>
@@ -1908,6 +1908,7 @@ Sprint : SP556
 				</Middlewares>
 			</VMTemplate>
 
+			
 			<VMTemplate catalogElementId="105022" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01E" hostNaming="CU1">
 				<Information>
 					<Name commercialName="CUEAC UCaaS 1-6 operatrices-TOCVPN-HCS862V4-MW2" shortName="CUEAC6-25S01E-TOCVPN-HCS862V4-MW2"/>
@@ -1926,6 +1927,7 @@ Sprint : SP556
 				</Middlewares>
 			</VMTemplate>
 
+			
 			<VMTemplate catalogElementId="106022" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01S" hostNaming="CU1">
 				<Information>
 					<Name commercialName="CUEAC UCaaS 6-25 operatrices-TOCVPN-HCS862V4-MW2" shortName="CUEAC6-25S01S-TOCVPN-HCS862V4-MW2"/>
@@ -2095,6 +2097,7 @@ Sprint : SP556
 					<Middleware useCatalogElementId="62"/>
 				</Middlewares>
 			</VMTemplate>
+
 			
 			<VMTemplate catalogElementId="105012" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="CUEAC6-25S01E" hostNaming="CU1">
 				<Information>
@@ -2434,7 +2437,67 @@ Sprint : SP556
 				</OSRequirement>
 				<Network createVNic="false"/>
 			</VMTemplate>
+
+			<VMTemplate catalogElementId="129012" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC100CX01" hostNaming="UC100CX01">
+				<Information>
+					<Name commercialName="UCCX01 100-TOCVPN-HCS862V2" shortName="UC100CX01-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UC100CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 100 attendants TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="UCCX"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
 			
+			<VMTemplate catalogElementId="130012" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC300CX01" hostNaming="UC300CX01">
+				<Information>
+					<Name commercialName="UCCX01 300-TOCVPN-HCS862V2" shortName="UC300CX01-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UC300CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 300 attendants TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="UCCX"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+
+			<VMTemplate catalogElementId="129022" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC100CX01" hostNaming="UC100CX01">
+				<Information>
+					<Name commercialName="UCCX01 100-TOCVPN-HCS862V4" shortName="UC100CX01-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UC100CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 100 attendants TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="UCCX"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="130022" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC300CX01" hostNaming="UC300CX01">
+				<Information>
+					<Name commercialName="UCCX01 300-TOCVPN-HCS862V4" shortName="UC300CX01-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UC300CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 300 attendants TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="UCCX"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+
 		</Collection>
 		<Collection name="UCaaS Cisco HCS (1000 devices)">
 			<VMTemplate catalogElementId="5213" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC300CX01" hostNaming="UC300CX01">
@@ -4025,7 +4088,427 @@ Sprint : SP556
 				</OSRequirement>
 				<Network createVNic="false"/>
 			</VMTemplate>
+
+			<VMTemplate catalogElementId="115012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000P01" hostNaming="UCS20000P01">
+				<Information>
+					<Name commercialName="UCSP01 20000 TOCVPN HCS 8.6.2-V2" shortName="UCS20000P01-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UCS20000P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="P"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
 			
+			<VMTemplate catalogElementId="116012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S01" hostNaming="UCS20000S01">
+				<Information>
+					<Name commercialName="UCSS01 20000 TOCVPN HCS 8.6.2-V2" shortName="UCS20000S01-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UCS20000S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="117012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S02" hostNaming="UCS20000S02">
+				<Information>
+					<Name commercialName="UCSS02 20000 TOCVPN HCS 8.6.2-V2" shortName="UCS20000S02-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UCS20000S02" language="FR" architecture="32bits"/>
+					<Description description="UCSS02 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="118012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S03" hostNaming="UCS20000S03">
+				<Information>
+					<Name commercialName="UCSS03 20000 TOCVPN HCS 8.6.2-V2" shortName="UCS20000S03-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UCS20000S03" language="FR" architecture="32bits"/>
+					<Description description="UCSS03 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="119012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S04" hostNaming="UCS20000S04">
+				<Information>
+					<Name commercialName="UCSS04 20000 TOCVPN HCS 8.6.2-V2" shortName="UCS20000S04-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UCS20000S04" language="FR" architecture="32bits"/>
+					<Description description="UCSS04 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="120012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S05" hostNaming="UCS20000S05">
+				<Information>
+					<Name commercialName="UCSS05 20000 TOCVPN HCS 8.6.2-V2" shortName="UCS20000S05-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UCS20000S05" language="FR" architecture="32bits"/>
+					<Description description="UCSS05 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="121012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S06" hostNaming="UCS20000S06">
+				<Information>
+					<Name commercialName="UCSS06 20000 TOCVPN HCS 8.6.2-V2" shortName="UCS20000S06-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UCS20000S06" language="FR" architecture="32bits"/>
+					<Description description="UCSS06 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="122012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S07" hostNaming="UCS20000S07">
+				<Information>
+					<Name commercialName="UCSS07 20000 TOCVPN HCS 8.6.2-V2" shortName="UCS20000S07-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UCS20000S07" language="FR" architecture="32bits"/>
+					<Description description="UCSS07 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="123012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S08" hostNaming="UCS20000S08">
+				<Information>
+					<Name commercialName="UCSS08 20000 TOCVPN HCS 8.6.2-V2" shortName="UCS20000S08-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UCS20000S08" language="FR" architecture="32bits"/>
+					<Description description="UCSS08 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="124012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S09" hostNaming="UCS20000S09">
+				<Information>
+					<Name commercialName="UCSS09 20000 TOCVPN HCS 8.6.2-V2" shortName="UCS20000S09-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UCS20000S09" language="FR" architecture="32bits"/>
+					<Description description="UCSS09 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="125012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S10" hostNaming="UCS20000S10">
+				<Information>
+					<Name commercialName="UCSS10 20000 TOCVPN HCS 8.6.2-V2" shortName="UCS20000S10-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UCS20000S10" language="FR" architecture="32bits"/>
+					<Description description="UCSS10 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="126012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000CNX01" hostNaming="UC20000CNX01">
+				<Information>
+					<Name commercialName="UCNX01 20000 TOCVPN HCS 8.6.2-V2" shortName="UC20000CNX01-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UC20000CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX (Unity) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="Unity"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="8192" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="7" max="7"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="127012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000PS01" hostNaming="UC20000PS01">
+				<Information>
+					<Name commercialName="UCPS01 20000 TOCVPN HCS 8.6.2-V2" shortName="UC20000PS01-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UC20000PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUPS"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="128012" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000PS02" hostNaming="UC20000PS02">
+				<Information>
+					<Name commercialName="UCPS02 20000 TOCVPN HCS 8.6.2-V2" shortName="UC20000PS02-TOCVPN-HCS862V2"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V2" type="UC20000PS02" language="FR" architecture="32bits"/>
+					<Description description="UCPS02 (CUPS) 20000 devices TOCVPN-HCS8.6.2 V2"/>
+					<ApplicationType useApplicationTypeId="CUPS"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+						
+			<VMTemplate catalogElementId="115022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000P01" hostNaming="UCS20000P01">
+				<Information>
+					<Name commercialName="UCSP01 20000 TOCVPN HCS 8.6.2-V4" shortName="UCS20000P01-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UCS20000P01" language="FR" architecture="32bits"/>
+					<Description description="UCSP01 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="P"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="116022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S01" hostNaming="UCS20000S01">
+				<Information>
+					<Name commercialName="UCSS01 20000 TOCVPN HCS 8.6.2-V4" shortName="UCS20000S01-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UCS20000S01" language="FR" architecture="32bits"/>
+					<Description description="UCSS01 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="117022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S02" hostNaming="UCS20000S02">
+				<Information>
+					<Name commercialName="UCSS02 20000 TOCVPN HCS 8.6.2-V4" shortName="UCS20000S02-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UCS20000S02" language="FR" architecture="32bits"/>
+					<Description description="UCSS02 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="118022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S03" hostNaming="UCS20000S03">
+				<Information>
+					<Name commercialName="UCSS03 20000 TOCVPN HCS 8.6.2-V4" shortName="UCS20000S03-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UCS20000S03" language="FR" architecture="32bits"/>
+					<Description description="UCSS03 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="119022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S04" hostNaming="UCS20000S04">
+				<Information>
+					<Name commercialName="UCSS04 20000 TOCVPN HCS 8.6.2-V4" shortName="UCS20000S04-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UCS20000S04" language="FR" architecture="32bits"/>
+					<Description description="UCSS04 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="120022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S05" hostNaming="UCS20000S05">
+				<Information>
+					<Name commercialName="UCSS05 20000 TOCVPN HCS 8.6.2-V4" shortName="UCS20000S05-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UCS20000S05" language="FR" architecture="32bits"/>
+					<Description description="UCSS05 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="121022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S06" hostNaming="UCS20000S06">
+				<Information>
+					<Name commercialName="UCSS06 20000 TOCVPN HCS 8.6.2-V4" shortName="UCS20000S06-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UCS20000S06" language="FR" architecture="32bits"/>
+					<Description description="UCSS06 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="122022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S07" hostNaming="UCS20000S07">
+				<Information>
+					<Name commercialName="UCSS07 20000 TOCVPN HCS 8.6.2-V4" shortName="UCS20000S07-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UCS20000S07" language="FR" architecture="32bits"/>
+					<Description description="UCSS07 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="123022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S08" hostNaming="UCS20000S08">
+				<Information>
+					<Name commercialName="UCSS08 20000 TOCVPN HCS 8.6.2-V4" shortName="UCS20000S08-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UCS20000S08" language="FR" architecture="32bits"/>
+					<Description description="UCSS08 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="124022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S09" hostNaming="UCS20000S09">
+				<Information>
+					<Name commercialName="UCSS09 20000 TOCVPN HCS 8.6.2-V4" shortName="UCS20000S09-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UCS20000S09" language="FR" architecture="32bits"/>
+					<Description description="UCSS09 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="125022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS20000S10" hostNaming="UCS20000S10">
+				<Information>
+					<Name commercialName="UCSS10 20000 TOCVPN HCS 8.6.2-V4" shortName="UCS20000S10-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UCS20000S10" language="FR" architecture="32bits"/>
+					<Description description="UCSS10 (CUCM) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUCM" role="S"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="126022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000CNX01" hostNaming="UC20000CNX01">
+				<Information>
+					<Name commercialName="UCNX01 20000 TOCVPN HCS 8.6.2-V4" shortName="UC20000CNX01-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UC20000CNX01" language="FR" architecture="32bits"/>
+					<Description description="UCNX (Unity) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="Unity"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="8192" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="7" max="7"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="127022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000PS01" hostNaming="UC20000PS01">
+				<Information>
+					<Name commercialName="UCPS01 20000 TOCVPN HCS 8.6.2-V4" shortName="UC20000PS01-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UC20000PS01" language="FR" architecture="32bits"/>
+					<Description description="UCPS01 (CUPS) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUPS"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+			
+			<VMTemplate catalogElementId="128022" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UC20000PS02" hostNaming="UC20000PS02">
+				<Information>
+					<Name commercialName="UCPS02 20000 TOCVPN HCS 8.6.2-V4" shortName="UC20000PS02-TOCVPN-HCS862V4"/>
+					<Version OSFamily="RedHat" version="TOCVPN-HCS8.6.2 V4" type="UC20000PS02" language="FR" architecture="32bits"/>
+					<Description description="UCPS02 (CUPS) 20000 devices TOCVPN-HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="CUPS"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4" maxMo="6144" unlimited="true"/>
+					<CPU minMhz="4" unlimited="true"/>
+					<vCPU min="4" max="4"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>
+									
 		</Collection>
 		
 		<Collection name="UCaaS Cisco HCS (40000 devices)">
@@ -4375,7 +4858,21 @@ Sprint : SP556
 					<VirtualMachine catalogElementId="54006"/>
 				</VappGroup>
 			</VApp>
-			<VApp vappId="80000" name="WIN_VAADTB" description="TOCVPN - VappNonUC HCS8.6.2 V4 Middleware 2">
+			<VApp vappId="80000" name="WIN_VAADTB" description="TOCVPN - VappNonUC TOCVPN-HCS8.6.2 V2 Middleware 2">
+				<VappGroup orderStart="1">
+					<!-- AD1-->
+					<VirtualMachine catalogElementId="101012"/>
+				</VappGroup>
+				<VappGroup orderStart="2">
+					<!-- AD2-->
+					<VirtualMachine catalogElementId="102012"/>
+				</VappGroup>
+				<VappGroup orderStart="3">
+					<!-- Toolbox-->
+					<VirtualMachine catalogElementId="103012"/>
+				</VappGroup>
+			</VApp>
+			<VApp vappId="90000" name="WIN_VAADTB" description="TOCVPN - VappNonUC TOCVPN-HCS8.6.2 V4 Middleware 2">
 				<VappGroup orderStart="1">
 					<!-- AD1-->
 					<VirtualMachine catalogElementId="101022"/>
@@ -4523,7 +5020,32 @@ Sprint : SP556
 					<VirtualMachine catalogElementId="54014"/>
 				</VappGroup>
 			</VApp>
-			<VApp vappId="81000" name="WIN_VACUEAC25" description="Vapp CUEAC25 HCS8.6.2 V4 Middleware 2">
+			<VApp vappId="81000" name="WIN_VACUEAC25" description="Vapp CUEAC25 TOCVPN-HCS8.6.2 V2 Middleware 2">
+<!-- Peuvent être demarrees en parallele -->
+			<VappGroup orderStart="1">
+					<!-- CUEAC6S01 : SQL Express avec installation middleware -->
+					<VirtualMachine catalogElementId="105012"/>
+					<!-- CUEAC25S01 : SQL-Standard avec installation Middleware-->
+					<VirtualMachine catalogElementId="106012"/>
+					<!-- CUEAC25S02 : premier increment de 25 operatrices -->
+					<VirtualMachine catalogElementId="107012"/>
+					<!-- CUEAC25S03-->
+					<VirtualMachine catalogElementId="108012"/>
+					<!-- CUEAC25S04-->
+					<VirtualMachine catalogElementId="109012"/>
+					<!-- CUEAC25S05 -->
+					<VirtualMachine catalogElementId="110012"/>
+					<!-- CUEAC25S06-->
+					<VirtualMachine catalogElementId="111012"/>
+					<!-- CUEAC25S07-->
+					<VirtualMachine catalogElementId="112012"/>
+					<!-- CUEAC25S08-->
+					<VirtualMachine catalogElementId="113012"/>
+					<!-- CUEAC25S09-->
+					<VirtualMachine catalogElementId="114012"/>
+				</VappGroup>
+			</VApp>
+			<VApp vappId="91000" name="WIN_VACUEAC25" description="Vapp CUEAC25 TOCVPN-HCS8.6.2 V4 Middleware 2">
 <!-- Peuvent être demarrees en parallele -->
 			<VappGroup orderStart="1">
 					<!-- CUEAC6S01 : SQL Express avec installation middleware -->
@@ -4594,8 +5116,22 @@ Sprint : SP556
 					<VirtualMachine catalogElementId="5213"/>
 				</VappGroup>
 			</VApp>
-			
-<!-- ________________________________ -->
+			<VApp vappId="82000" name="UCS_VAUCCX" description="Vapp UCCX TOCVPN-HCS8.6.2 V2 Middleware 2">
+				<VappGroup orderStart="1">
+					<!-- UC100CX01-->
+					<VirtualMachine catalogElementId="129012"/>
+					<!-- UC300CX01-->
+					<VirtualMachine catalogElementId="130012"/>
+				</VappGroup>
+			</VApp>
+			<VApp vappId="92000" name="UCS_VAUCCX" description="Vapp UCCX TOCVPN-HCS8.6.2 V4 Middleware 2">
+				<VappGroup orderStart="1">
+					<!-- UC100CX01-->
+					<VirtualMachine catalogElementId="129022"/>
+					<!-- UC300CX01-->
+					<VirtualMachine catalogElementId="130022"/>
+				</VappGroup>
+			</VApp><!-- ________________________________ -->
 <!-- VApp UC 1000 users Cisco -->
 			<!-- Une VAPP UC doit contenir "UCS_" qui sert pour la calcul des ressources par type de groupe d'hotes (deprecie) -->
 			<VApp vappId="23000" name="UCS_VAUC1000" description="Vapp UC 1000 users HCS8.6.1 V1">
@@ -5098,7 +5634,127 @@ Sprint : SP556
 				</VappGroup>
 			</VApp>
 			<!-- Une VAPP UC doit contenir "UCS_" qui sert pour la calcul des ressources par type de groupe d'hotes (deprecie) -->
-		</Collection>
+
+			<VApp vappId="85000" name="UCS_VAUC20000" description="Vapp UC 20000 devices TOCVPN 8.6.2 V2  (1 Publisher,  8 Subscribers,  2 TFTP,  1 Unity et 1 CUPS)">
+				<VappGroup orderStart="1">
+					<!-- UCS20000P01 -->
+					<VirtualMachine catalogElementId="115012"/>
+				</VappGroup>
+				<VappGroup orderStart="2">
+					<!-- UCS2000S01 -->
+					<VirtualMachine catalogElementId="116012"/>
+				</VappGroup>
+				<VappGroup orderStart="5">
+					<!-- UCS20000S02 -->
+					<VirtualMachine catalogElementId="117012"/>
+				</VappGroup>
+				<VappGroup orderStart="3">
+					<!-- UCS20000S03 -->
+					<VirtualMachine catalogElementId="118012"/>
+				</VappGroup>
+				<VappGroup orderStart="6">
+					<!-- UCS20000S04 -->
+					<VirtualMachine catalogElementId="119012"/>
+				</VappGroup>
+				<VappGroup orderStart="4">
+					<!-- UCS20000S05 -->
+					<VirtualMachine catalogElementId="120012"/>
+				</VappGroup>
+				<VappGroup orderStart="7">
+					<!-- UCS20000S06 -->
+					<VirtualMachine catalogElementId="121012"/>
+				</VappGroup>
+				<VappGroup orderStart="8">
+					<!-- UCS20000S07 -->
+					<VirtualMachine catalogElementId="122012"/>
+				</VappGroup>
+				<VappGroup orderStart="9">
+					<!-- UCS20000S08 -->
+					<VirtualMachine catalogElementId="123012"/>
+				</VappGroup>
+				<VappGroup orderStart="10">
+					<!-- UCS20000S09 -->
+					<VirtualMachine catalogElementId="124012"/>
+				</VappGroup>
+				<VappGroup orderStart="11">
+					<!-- UCS20000S10 -->
+					<VirtualMachine catalogElementId="125012"/>
+				</VappGroup>
+				<VappGroup orderStart="12">
+					<!-- UC20000CNX01 -->
+					<VirtualMachine catalogElementId="126012"/>
+				</VappGroup>
+				<VappGroup orderStart="13">
+					<!-- UC20000PS01 -->
+					<VirtualMachine catalogElementId="127012"/>
+				</VappGroup>
+				<VappGroup orderStart="14">
+					<!-- UC20000PS02 -->
+					<VirtualMachine catalogElementId="128012"/>
+				</VappGroup>
+			</VApp>
+			<!-- Une VAPP UC doit contenir "UCS_" qui sert pour la calcul des ressources par type de groupe d'hotes (deprecie) -->
+
+			<VApp vappId="95000" name="UCS_VAUC20000" description="Vapp UC 20000 devices TOCVPN 8.6.2 V4  (1 Publisher,  8 Subscribers,  2 TFTP,  1 Unity et 1 CUPS)">
+				<VappGroup orderStart="1">
+					<!-- UCS20000P01 -->
+					<VirtualMachine catalogElementId="115022"/>
+				</VappGroup>
+				<VappGroup orderStart="2">
+					<!-- UCS2000S01 -->
+					<VirtualMachine catalogElementId="116022"/>
+				</VappGroup>
+				<VappGroup orderStart="5">
+					<!-- UCS20000S02 -->
+					<VirtualMachine catalogElementId="117022"/>
+				</VappGroup>
+				<VappGroup orderStart="3">
+					<!-- UCS20000S03 -->
+					<VirtualMachine catalogElementId="118022"/>
+				</VappGroup>
+				<VappGroup orderStart="6">
+					<!-- UCS20000S04 -->
+					<VirtualMachine catalogElementId="119022"/>
+				</VappGroup>
+				<VappGroup orderStart="4">
+					<!-- UCS20000S05 -->
+					<VirtualMachine catalogElementId="120022"/>
+				</VappGroup>
+				<VappGroup orderStart="7">
+					<!-- UCS20000S06 -->
+					<VirtualMachine catalogElementId="121022"/>
+				</VappGroup>
+				<VappGroup orderStart="8">
+					<!-- UCS20000S07 -->
+					<VirtualMachine catalogElementId="122022"/>
+				</VappGroup>
+				<VappGroup orderStart="9">
+					<!-- UCS20000S08 -->
+					<VirtualMachine catalogElementId="123022"/>
+				</VappGroup>
+				<VappGroup orderStart="10">
+					<!-- UCS20000S09 -->
+					<VirtualMachine catalogElementId="124022"/>
+				</VappGroup>
+				<VappGroup orderStart="11">
+					<!-- UCS20000S10 -->
+					<VirtualMachine catalogElementId="125022"/>
+				</VappGroup>
+				<VappGroup orderStart="12">
+					<!-- UC20000CNX01 -->
+					<VirtualMachine catalogElementId="126022"/>
+				</VappGroup>
+				<VappGroup orderStart="13">
+					<!-- UC20000PS01 -->
+					<VirtualMachine catalogElementId="127022"/>
+				</VappGroup>
+				<VappGroup orderStart="14">
+					<!-- UC20000PS02 -->
+					<VirtualMachine catalogElementId="128022"/>
+				</VappGroup>
+			</VApp>
+			<!-- Une VAPP UC doit contenir "UCS_" qui sert pour la calcul des ressources par type de groupe d'hotes (deprecie) -->
+			</Collection>
 	</VappCollections>
                              <!--  -->
                              <!-- T O P O L O G Y - C O L L E C T I O N S  -->
@@ -6913,7 +7569,169 @@ Sprint : SP556
 					</Rule>
 				</Rules>
 			</Topology>
-	
+
+			<Topology name="TOCVPN - UCaaS Cisco (20000 devices) HCS 8.6.2-V2-MW2" version="HCS 8.6.2-V2-MW2" displayName="TOCVPN-Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V2-MW2" description="TOCVPN - Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V2" migrationTargetTopologyName="TOCVPN - UCaaS Cisco (20000 devices) HCS 8.6.2-V4-MW2">
+				<VApps>
+					<!-- ADs & Toolbox -->
+					<VApp catalogElementId="80000" orderStart="10"/>
+					<!-- 20000 users -->
+					<VApp catalogElementId="85000" orderStart="20"/>
+					<!-- Uccx -->
+					<VApp catalogElementId="82000" orderStart="30"/>
+					<!-- Cueacs -->
+					<VApp catalogElementId="81000" orderStart="40"/>
+				</VApps>
+				<Rules>
+					<!--  R U L E S -->
+					<!-- C O L L O C A L I S A T I O N -->
+					<!-- regles de collocalisation des VMs Windows sur les memes blades, separees des blades UC/Cisco -->
+					<Rule type="Collocalisation_VM_Host" name="vmWindowsGroup">
+						<!-- AD1-->
+						<VirtualMachine catalogElementId="101012"/>
+						<!-- AD2-->
+						<VirtualMachine catalogElementId="102012"/>
+						<!-- Toolbox-->
+						<VirtualMachine catalogElementId="103012"/>
+						<!-- Service-->
+						<VirtualMachine catalogElementId="103012"/>
+						<!-- CUEAC6S01 : SQL Express avec installation middleware -->
+						<VirtualMachine catalogElementId="105012"/>
+						<!-- CUEAC25S01 : SQL-Standard avec installation Middleware-->
+						<VirtualMachine catalogElementId="106012"/>
+						<!-- CUEAC25S02 : premier increment de 25 operatrices -->
+						<VirtualMachine catalogElementId="107012"/>
+						<!-- CUEAC25S03-->
+						<VirtualMachine catalogElementId="108012"/>
+						<!-- CUEAC25S04-->
+						<VirtualMachine catalogElementId="109012"/>
+						<!-- CUEAC25S05 -->
+						<VirtualMachine catalogElementId="110012"/>
+						<!-- CUEAC25S06-->
+						<VirtualMachine catalogElementId="111012"/>
+						<!-- CUEAC25S07-->
+						<VirtualMachine catalogElementId="112012"/>
+						<!-- CUEAC25S08-->
+						<VirtualMachine catalogElementId="113012"/>
+						<!-- CUEAC25S09-->
+						<VirtualMachine catalogElementId="114012"/>
+					</Rule>
+					<!-- R U L E S -->
+					<!-- C O L L O C A L I S A T I O N -->
+					<!-- regles de collocalisation des VMs UC sur les memes blades, separees des blades Windows -->
+					<Rule type="Collocalisation_VM_Host" name="vmUcGroup">
+						<!-- UCS20000P01 -->
+						<VirtualMachine catalogElementId="115012"/>
+						<!-- UCS20000S01 -->
+						<VirtualMachine catalogElementId="116012"/>
+						<!-- UCS20000S02 -->
+						<VirtualMachine catalogElementId="117012"/>
+						<!-- UCS20000S03 -->
+						<VirtualMachine catalogElementId="118012"/>
+						<!-- UCS20000S04 -->
+						<VirtualMachine catalogElementId="119012"/>
+						<!-- UCS20000S05 -->
+						<VirtualMachine catalogElementId="120012"/>
+						<!-- UCS20000S06 -->
+						<VirtualMachine catalogElementId="121012"/>
+						<!-- UCS20000S07 -->
+						<VirtualMachine catalogElementId="122012"/>
+						<!-- UCS20000S08 -->
+						<VirtualMachine catalogElementId="123012"/>
+						<!-- UCS20000S09 -->
+						<VirtualMachine catalogElementId="124012"/>
+						<!-- UCS20000S10 -->
+						<VirtualMachine catalogElementId="125012"/>
+						<!-- UC20000CNX01 -->
+						<VirtualMachine catalogElementId="126012"/>
+						<!-- UC20000PS01 -->
+						<VirtualMachine catalogElementId="127012"/>
+						<!-- UC20000PS02 -->
+						<VirtualMachine catalogElementId="128012"/>
+						<!-- UC100CX01-->
+						<VirtualMachine catalogElementId="129012"/>
+						<!-- UC300CX01-->
+						<VirtualMachine catalogElementId="130012"/>
+					</Rule>
+					<!-- R U L E S -->
+					<!-- P R E - R E Q U I S    D E    V M s -->
+					<!-- vide
+					<Rule type="Prerequis_VM" name="RULE_CUEACSTD_${CLIENTACCOUNTNAME}">
+					</Rule>
+					-->
+					<!-- R U L E S -->
+					<!-- E X C L U S I O N    D E    V M s -->
+					<!-- regles d'exclusion metier : CUEAC01 : soit express soit standard -->
+					<Rule type="Exclusion_VM" name="RULE_CUEAC01_${CLIENTACCOUNTNAME}">
+						<!-- CUEAC6S01 : SQL Express avec installation middleware -->
+						<VirtualMachine catalogElementId="105012"/>
+						<!-- CUEAC25S01 : SQL-Standard avec installation Middleware-->
+						<VirtualMachine catalogElementId="106012"/>
+					</Rule>
+					<!-- R U L E S -->
+					<!-- E X C L U S I O N    D E    V M s -->
+					<!-- regles d'exclusion metier : UCCX100 et 300 incompatibles -->
+					<Rule type="Exclusion_VM" name="RULE_UCCX100300_${CLIENTACCOUNTNAME}">
+						<!-- UC100CX01-->
+						<VirtualMachine catalogElementId="129012"/>
+						<!-- UC300CX01-->
+						<VirtualMachine catalogElementId="130012"/>
+					</Rule>
+					<!-- R U L E S -->
+					<!-- E X C L U S I O N    D E    V M s    S U R    E S X -->
+					<!-- regles d'anti-affinite de virtualisation (DRS): AD1 & AD2 sur 2 hotes differents -->
+					<Rule type="Exclusion_VM_ESX" name="RULE_ADs_${CLIENTACCOUNTNAME}">
+						<!-- AD1-->
+						<VirtualMachine catalogElementId="101012"/>
+						<!-- AD2-->
+						<VirtualMachine catalogElementId="102012"/>
+					</Rule>
+					<!-- R U L E S -->
+					<!-- E X C L U S I O N    D E    V M s    S U R    E S X -->
+					<!-- regles d'anti-affinite de virtualisation (DRS): Subscriber S01 & Subscriber S02 sur 2 hotes differents -->
+					<Rule type="Exclusion_VM_ESX" name="RULE_UC20000_1_${CLIENTACCOUNTNAME}">
+						<!-- UCS20000S01 -->
+						<VirtualMachine catalogElementId="116012"/>
+						<!-- UCS20000S02 -->
+						<VirtualMachine catalogElementId="117012"/>
+					</Rule>
+					<!-- regles d'anti-affinite de virtualisation (DRS): Subscriber S03 & Subscriber S04 sur 2 hotes differents -->
+					<Rule type="Exclusion_VM_ESX" name="RULE_UC20000_2_${CLIENTACCOUNTNAME}">
+						<!-- UCS20000S03 -->
+						<VirtualMachine catalogElementId="118012"/>
+						<!-- UCS20000S04 -->
+						<VirtualMachine catalogElementId="119012"/>
+					</Rule>
+					<!-- regles d'anti-affinite de virtualisation (DRS): Subscriber S05 & Subscriber S06 sur 2 hotes differents -->
+					<Rule type="Exclusion_VM_ESX" name="RULE_UC20000_3_${CLIENTACCOUNTNAME}">
+						<!-- UCS20000S05 -->
+						<VirtualMachine catalogElementId="120012"/>
+						<!-- UCS20000S06 -->
+						<VirtualMachine catalogElementId="121012"/>
+					</Rule>
+					<!-- regles d'anti-affinite de virtualisation (DRS): Subscriber S07 & Subscriber S08 sur 2 hotes differents -->
+					<Rule type="Exclusion_VM_ESX" name="RULE_UC20000_4_${CLIENTACCOUNTNAME}">
+						<!-- UCS20000S07 -->
+						<VirtualMachine catalogElementId="122012"/>
+						<!-- UCS20000S08 -->
+						<VirtualMachine catalogElementId="123012"/>
+					</Rule>
+					<!-- regles d'anti-affinite de virtualisation (DRS): Subscriber S09 & Subscriber S10 sur 2 hotes differents -->
+					<Rule type="Exclusion_VM_ESX" name="RULE_UC20000_5_${CLIENTACCOUNTNAME}">
+						<!-- UCS20000S09 -->
+						<VirtualMachine catalogElementId="124012"/>
+						<!-- UCS20000S10 -->
+						<VirtualMachine catalogElementId="125012"/>
+					</Rule>
+					<!-- regles d'anti-affinite de virtualisation (DRS): Subscriber S09 & Subscriber S10 sur 2 hotes differents -->
+					<Rule type="Exclusion_VM_ESX" name="RULE_UC20000_6_${CLIENTACCOUNTNAME}">
+						<!-- UCS20000PS01 -->
+						<VirtualMachine catalogElementId="127012"/>
+						<!-- UCS20000PS02 -->
+						<VirtualMachine catalogElementId="128012"/>
+					</Rule>
+				</Rules>
+			</Topology>	
+			
 			<!-- 8.6.2 V4 -->
 			<Topology name="UCaaS Cisco (20000 devices) HCS 8.6.2-V4-MW2" version="HCS 8.6.2-V4-MW2" displayName="Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V4-MW2" description="Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V4">
 				<VApps>
@@ -7076,16 +7894,17 @@ Sprint : SP556
 					</Rule>
 				</Rules>
 			</Topology>
+
 			<Topology name="TOCVPN - UCaaS Cisco (20000 devices) HCS 8.6.2-V4-MW2" version="HCS 8.6.2-V4-MW2" displayName="TOCVPN-Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V4-MW2" description="TOCVPN - Topologie UCaaS Cisco (20000 devices) HCS 8.6.2-V4">
 				<VApps>
 					<!-- ADs & Toolbox -->
-					<VApp catalogElementId="80000" orderStart="10"/>
+					<VApp catalogElementId="90000" orderStart="10"/>
 					<!-- 20000 users -->
-					<VApp catalogElementId="75000" orderStart="20"/>
+					<VApp catalogElementId="95000" orderStart="20"/>
 					<!-- Uccx -->
-					<VApp catalogElementId="72000" orderStart="30"/>
+					<VApp catalogElementId="92000" orderStart="30"/>
 					<!-- Cueacs -->
-					<VApp catalogElementId="81000" orderStart="40"/>
+					<VApp catalogElementId="91000" orderStart="40"/>
 				</VApps>
 				<Rules>
 					<!--  R U L E S -->
@@ -7126,37 +7945,37 @@ Sprint : SP556
 					<!-- regles de collocalisation des VMs UC sur les memes blades, separees des blades Windows -->
 					<Rule type="Collocalisation_VM_Host" name="vmUcGroup">
 						<!-- UCS20000P01 -->
-						<VirtualMachine catalogElementId="6600"/>
+						<VirtualMachine catalogElementId="115022"/>
 						<!-- UCS20000S01 -->
-						<VirtualMachine catalogElementId="6601"/>
+						<VirtualMachine catalogElementId="116022"/>
 						<!-- UCS20000S02 -->
-						<VirtualMachine catalogElementId="6602"/>
+						<VirtualMachine catalogElementId="117022"/>
 						<!-- UCS20000S03 -->
-						<VirtualMachine catalogElementId="6603"/>
+						<VirtualMachine catalogElementId="118022"/>
 						<!-- UCS20000S04 -->
-						<VirtualMachine catalogElementId="6604"/>
+						<VirtualMachine catalogElementId="119022"/>
 						<!-- UCS20000S05 -->
-						<VirtualMachine catalogElementId="6605"/>
+						<VirtualMachine catalogElementId="120022"/>
 						<!-- UCS20000S06 -->
-						<VirtualMachine catalogElementId="6606"/>
+						<VirtualMachine catalogElementId="121022"/>
 						<!-- UCS20000S07 -->
-						<VirtualMachine catalogElementId="6607"/>
+						<VirtualMachine catalogElementId="122022"/>
 						<!-- UCS20000S08 -->
-						<VirtualMachine catalogElementId="6608"/>
+						<VirtualMachine catalogElementId="123022"/>
 						<!-- UCS20000S09 -->
-						<VirtualMachine catalogElementId="6609"/>
+						<VirtualMachine catalogElementId="124022"/>
 						<!-- UCS20000S10 -->
-						<VirtualMachine catalogElementId="6610"/>
+						<VirtualMachine catalogElementId="125022"/>
 						<!-- UC20000CNX01 -->
-						<VirtualMachine catalogElementId="6611"/>
+						<VirtualMachine catalogElementId="126022"/>
 						<!-- UC20000PS01 -->
-						<VirtualMachine catalogElementId="6612"/>
+						<VirtualMachine catalogElementId="127022"/>
 						<!-- UC20000PS02 -->
-						<VirtualMachine catalogElementId="6613"/>
+						<VirtualMachine catalogElementId="128022"/>
 						<!-- UC100CX01-->
-						<VirtualMachine catalogElementId="5212"/>
+						<VirtualMachine catalogElementId="129022"/>
 						<!-- UC300CX01-->
-						<VirtualMachine catalogElementId="5213"/>
+						<VirtualMachine catalogElementId="130022"/>
 					</Rule>
 					<!-- R U L E S -->
 					<!-- P R E - R E Q U I S    D E    V M s -->
@@ -7178,9 +7997,9 @@ Sprint : SP556
 					<!-- regles d'exclusion metier : UCCX100 et 300 incompatibles -->
 					<Rule type="Exclusion_VM" name="RULE_UCCX100300_${CLIENTACCOUNTNAME}">
 						<!-- UC100CX01-->
-						<VirtualMachine catalogElementId="5212"/>
+						<VirtualMachine catalogElementId="129022"/>
 						<!-- UC300CX01-->
-						<VirtualMachine catalogElementId="5213"/>
+						<VirtualMachine catalogElementId="130022"/>
 					</Rule>
 					<!-- R U L E S -->
 					<!-- E X C L U S I O N    D E    V M s    S U R    E S X -->
@@ -7196,47 +8015,47 @@ Sprint : SP556
 					<!-- regles d'anti-affinite de virtualisation (DRS): Subscriber S01 & Subscriber S02 sur 2 hotes differents -->
 					<Rule type="Exclusion_VM_ESX" name="RULE_UC20000_1_${CLIENTACCOUNTNAME}">
 						<!-- UCS20000S01 -->
-						<VirtualMachine catalogElementId="6601"/>
+						<VirtualMachine catalogElementId="116022"/>
 						<!-- UCS20000S02 -->
-						<VirtualMachine catalogElementId="6602"/>
+						<VirtualMachine catalogElementId="117022"/>
 					</Rule>
 					<!-- regles d'anti-affinite de virtualisation (DRS): Subscriber S03 & Subscriber S04 sur 2 hotes differents -->
 					<Rule type="Exclusion_VM_ESX" name="RULE_UC20000_2_${CLIENTACCOUNTNAME}">
 						<!-- UCS20000S03 -->
-						<VirtualMachine catalogElementId="6603"/>
+						<VirtualMachine catalogElementId="118022"/>
 						<!-- UCS20000S04 -->
-						<VirtualMachine catalogElementId="6604"/>
+						<VirtualMachine catalogElementId="119022"/>
 					</Rule>
 					<!-- regles d'anti-affinite de virtualisation (DRS): Subscriber S05 & Subscriber S06 sur 2 hotes differents -->
 					<Rule type="Exclusion_VM_ESX" name="RULE_UC20000_3_${CLIENTACCOUNTNAME}">
 						<!-- UCS20000S05 -->
-						<VirtualMachine catalogElementId="6605"/>
+						<VirtualMachine catalogElementId="120022"/>
 						<!-- UCS20000S06 -->
-						<VirtualMachine catalogElementId="6606"/>
+						<VirtualMachine catalogElementId="121022"/>
 					</Rule>
 					<!-- regles d'anti-affinite de virtualisation (DRS): Subscriber S07 & Subscriber S08 sur 2 hotes differents -->
 					<Rule type="Exclusion_VM_ESX" name="RULE_UC20000_4_${CLIENTACCOUNTNAME}">
 						<!-- UCS20000S07 -->
-						<VirtualMachine catalogElementId="6607"/>
+						<VirtualMachine catalogElementId="122022"/>
 						<!-- UCS20000S08 -->
-						<VirtualMachine catalogElementId="6608"/>
+						<VirtualMachine catalogElementId="123022"/>
 					</Rule>
 					<!-- regles d'anti-affinite de virtualisation (DRS): Subscriber S09 & Subscriber S10 sur 2 hotes differents -->
 					<Rule type="Exclusion_VM_ESX" name="RULE_UC20000_5_${CLIENTACCOUNTNAME}">
 						<!-- UCS20000S09 -->
-						<VirtualMachine catalogElementId="6609"/>
+						<VirtualMachine catalogElementId="124022"/>
 						<!-- UCS20000S10 -->
-						<VirtualMachine catalogElementId="6610"/>
+						<VirtualMachine catalogElementId="125022"/>
 					</Rule>
 					<!-- regles d'anti-affinite de virtualisation (DRS): Subscriber S09 & Subscriber S10 sur 2 hotes differents -->
 					<Rule type="Exclusion_VM_ESX" name="RULE_UC20000_6_${CLIENTACCOUNTNAME}">
 						<!-- UCS20000PS01 -->
-						<VirtualMachine catalogElementId="6612"/>
+						<VirtualMachine catalogElementId="127022"/>
 						<!-- UCS20000PS02 -->
-						<VirtualMachine catalogElementId="6613"/>
+						<VirtualMachine catalogElementId="128022"/>
 					</Rule>
 				</Rules>
-			</Topology>			
+			</Topology>				
 		</Collection>
 	</TopologyCollections>
 </LogicalCatalog>
