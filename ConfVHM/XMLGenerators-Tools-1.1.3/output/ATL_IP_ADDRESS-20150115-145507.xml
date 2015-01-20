@@ -1,0 +1,299 @@
+<CatalogImplementation>
+    <VMTemplate catalogElementId="34002">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34003">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34005">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34015">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34016">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34007">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34008">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34009">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34010">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34011">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34012">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34013">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34014">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3212">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3213">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3500">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3501">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3502">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3503">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3200">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3201">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3209">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3210">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3600">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3601">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3611">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3612">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54002">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54003">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54005">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54006">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54015">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54016">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54007">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54008">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54009">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54010">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54011">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54012">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54013">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54014">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5212">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5213">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5500">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5501">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5502">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5503">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5200">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5201">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5209">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5210">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="6600">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="6601">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="6611">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="6612">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1032011">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1032021">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1032041">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1032031">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033191">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033201">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033271">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033261">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033101">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033111">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033181">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033171">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1034011">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1034021">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1034141">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1034121">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1035011">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1035021">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1035151">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1035121">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1031011">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1031021">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030071">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030081">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030091">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030101">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030111">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030121">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030131">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030141">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030051">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030061">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050071">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050081">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050091">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050101">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050111">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050121">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050131">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050141">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050051">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050061">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030041">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050041">
+        <Eth address="" networkType="" number="0"/>
+    </VMTemplate>
+</CatalogImplementation>

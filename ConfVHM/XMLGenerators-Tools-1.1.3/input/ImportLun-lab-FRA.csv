@@ -1,0 +1,2 @@
+Clust;Size;Cust;datacenter;cn1;cn2;cn3;cn4;capacity1;capacity2;capacity3;capacity4;rcapacity1;rcapacity2;rcapacity3;rcapacity4;storageType;storageClass;storageUnit
+CLCUST01;2To;Customer-58;CLCUST01-2To-Customer-58;naa.600601608ab02a001eb939e81bd4e211;naa.600601608ab02a0020b939e81bd4e211;;;1000000;1000000;;;1000000;1000000;;;SAN;Gold;LabUCaaS

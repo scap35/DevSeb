@@ -1,0 +1,6 @@
+codeDatacenter;ipVCenter;login;password;chemin des ISOs sur le datastore
+CVY;10.6.142.244;VHMAdministrator@b2gaas.local;PSn1+Elx;[Template] MLG/ISOs/20140606 - ISOs migration 8.6.2lot1 vers 8.6.2lot2 (exemple !)
+SIN;172.18.44.102;VHMAdministrator@System-Domain;Prog#scsi?Jc@1;[Template] MLG/ISOs/20140606 - ISOs migration 8.6.2lot1 vers 8.6.2lot2 (exemple !)
+ATL;172.18.76.102;VHMAdministrator@System-Domain;Prog#scsi?Jc@1;[Template] MLG/ISOs/20140606 - ISOs migration 8.6.2lot1 vers 8.6.2lot2 (exemple !)
+FRA;172.18.108.102;VHMAdministrator@System-Domain;Prog#scsi?Jc@1;[Template] MLG/ISOs/20140606 - ISOs migration 8.6.2lot1 vers 8.6.2lot2 (exemple !)
+

@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VHMSetup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="parametersPackaging.xsd">
+<!-- 
+ Versionning du fichier:
+ - V1.1 par N. Ledez le 09/01/2012 : Version UCaaS
+ - V2.1 par A. Lagarde le 14/09/2012 : Migration SP551F
+    Reprise en compte des modifications selon le document de migration 
+			"Migration VHM UCaaS SP500 vers SP551 (E: Fromentin)"
+ -V3.0 par Zoumana T. le 15/03/2013: Merge 551 -> 553 (MEP 553)
+ -V3.1 par Nicolas Ledez le 15/05/2013: Taille des LUN
+ -V4.0 par Zoumana TRAORE le 14/10/2013: Migration de 553.D vers 554.E
+ -V4.1 par Sébastien Caprais le 03/07/2014 : Ajout applicativeUpgrade et PatchManagementSetup
+
+Offre : UCaaS
+Sprint : SP556
+Plate-forme : Prod
+Version : 4.1
+Sous version : 201407031200
+-->
+	<AvailableLanguages>
+		<!--
+			la liste des valeurs a choisir doivent etre exhaustivement dans les
+			baseTypes.xsd
+		-->
+		<Lang name="Français" abrev="fr" format="dd/MM/yyyy HH:mm:ss" formatWithoutTime="dd/MM/yyyy" langID="0000"/>
+		<Lang name="English"  abrev="en" format="MM/dd/yyyy HH:mm:ss" formatWithoutTime="MM/dd/yyyy" langID="0001"/>
+	</AvailableLanguages>
+	<Offer type="UCAAS" version="1">
+		<TelRegExp><![CDATA[^(((\+[0-9]{4,})|([0-9]+))| *)$]]></TelRegExp>
+		<Alert>
+			<IntervalX>30</IntervalX>
+		</Alert>
+		<ClientAccountSetup>
+			<NBMaxContracts>1</NBMaxContracts>
+			<NbMaxVDC>1</NbMaxVDC>
+			<NbMaxSubVDCInVDC>1</NbMaxSubVDCInVDC>
+			<NbMaxVSAInVDC>1</NbMaxVSAInVDC>
+			<NbMaxDatastoreInVDC>2</NbMaxDatastoreInVDC>
+			<NBMaxVMInVDC>100</NBMaxVMInVDC>
+			<ClassOfServices>
+				<Service name="Platinium" burstOverMaxPercentage="100"></Service>
+				<Service name="Gold" burstOverMaxPercentage="75"></Service>
+				<Service name="Silver" burstOverMaxPercentage="50"></Service>
+				<MinimalBurstInVDCServiceClass>50</MinimalBurstInVDCServiceClass>
+			</ClassOfServices>
+			<TypeOfClient>
+				<Type name="France" setCustomerId="false" />
+				<Type name="International" setCustomerId="true" />
+			</TypeOfClient>
+			<ManageAdditionalOptions>true</ManageAdditionalOptions>
+			<Support>
+				<TelRegExp><![CDATA[^(((\+[0-9]{4,})|([0-9]+))| *)$]]></TelRegExp>
+			</Support>
+			<MultiAccountUser>true</MultiAccountUser>
+			<!-- 554E -->
+			<ICO1RegExp>^[0-9a-zA-Z]+$</ICO1RegExp>
+		</ClientAccountSetup>
+		<VDCSetup>
+			<HideOperaParams>false</HideOperaParams>
+			<HideServiceClass>true</HideServiceClass>
+			<CPU min="1000" max="336000" step="1000" />
+			<RAM min="1000" max="100000" step="1000" />
+			<LunSetup>
+				<NbMaxLunPerCluster>256</NbMaxLunPerCluster>
+				<MaxSizePerLun>2048</MaxSizePerLun> <!-- in GB -->
+				<NbMaxUnitsInDs>10</NbMaxUnitsInDs>
+				<UnitSize>200</UnitSize> <!-- in GB -->
+				<UnitSizeMargin>5</UnitSizeMargin> <!-- in % 5 est ncessaire pour le dev pour grer les LUN 20000 MB relle en 25 GB-->
+			</LunSetup>
+			<Datastores>
+				<!--
+					aujourd'hui, l'import des LUNs par zone d'exploitation se ralise
+					par l'usage des informations suivantes: <lun
+					canonicalName="naa.60060e800562a200000062a2000010f6"
+					physicalCapacity="25000" storageType="SAN" storageClass="Tier 1"
+					storageUnit="HP/CX3"/> ==> Il est donc interessant de reprendre les
+					memes informations storageClass et StorageType. ==> L'import des
+					LUNs reference des MEGA bytes, mais le client utilise l'unite Giga
+					bytes
+				-->
+				<StorageUsageThreshold>98</StorageUsageThreshold>
+				<Datastore name="Stockage 1" label="Gold" min="0" max="10000" step="100" sortOrder="1">
+					<!-- 10*200 << 51000 !!!!!!! -->
+					<StorageTypes>
+						<StorageType>SAN</StorageType>
+					</StorageTypes>
+					<StorageClasses>
+						<StorageClass>Gold</StorageClass>
+					</StorageClasses>
+					<allowCustomizeLabel>false</allowCustomizeLabel>
+				</Datastore>
+				<Datastore name="Stockage 2" label="Silver" min="0" max="10000" step="100" sortOrder="2">
+					<StorageTypes>
+						<StorageType>SAN</StorageType>
+					</StorageTypes>
+					<StorageClasses>
+						<StorageClass>Silver</StorageClass>
+					</StorageClasses>
+					<allowCustomizeLabel>false</allowCustomizeLabel>
+				</Datastore>
+				<hideStorageLabels>true</hideStorageLabels>
+			</Datastores>
+			<RAMValues>2|4|8|12|16|24|32|48|64|80|96|128|160|192|224|256|320|384|448</RAMValues>
+			<CPUValues>2|4|8|12|16|24|32|48|64|80|112|144|192|240|288|336</CPUValues>
+			<IntranetBandwith min="0" max="30" step="1"></IntranetBandwith>
+			<TFTPLicenseNaming 
+				regexp="^[0-9A-Z]{2}-[0-9A-Z]{6}-[0-9A-Z]{8}-[0-9A-Z]{6}-[0-9A-Z]{4}$"
+				length="30"
+			/>
+			<ADDomainNaming regexp="^[-_0-9a-zA-Z]+$" length="15"/>
+		</VDCSetup>
+		<SubVDCSetup>
+			<NBMaxVMInSubVDC>4</NBMaxVMInSubVDC>
+		</SubVDCSetup>
+		<VSASetup>
+			<VSAPolicy>preProvisionned</VSAPolicy> <!-- BaseTypes: preProvisionned ou dynamique -->
+			<AllowExternalZones>true</AllowExternalZones>
+			<AllowFrontEndZones>true</AllowFrontEndZones>
+			<AllowBackendZones>true</AllowBackendZones>
+		</VSASetup>
+		<VMSetup>
+			<VMPostConf>
+			 	<Workflows 			 	
+			 		path="Library/draas/VirtualMachineMngt/PostConfig"
+					isSubWorkflowRequired="false" 
+				/>
+			</VMPostConf>
+			<VMConfigurations>
+				<VMConfiguration name="custom">
+					<CPU min="256" max="16384" step="256" />
+					<RAM min="128" max="65536" step="128" />
+					<VDisk min="1" step="1" />
+					<NbMaxVCpu>4</NbMaxVCpu>
+				</VMConfiguration>
+				<VMConfiguration name="small">
+					<CPU min="128" max="128" step="0" />
+					<RAM min="256" max="256" step="0" />
+					<VDisk min="1" step="1" />
+					<NbMaxVCpu>1</NbMaxVCpu>
+				</VMConfiguration>
+			</VMConfigurations>
+			<LicenseActivation>
+				<OSFamilies>
+					<OSFamily>Windows 2008</OSFamily>
+				</OSFamilies>
+			</LicenseActivation>
+
+	<!--rajout des regles de préfixages des vms -->
+
+			<ShortNameNaming regexp="^[-_0-9a-zA-Z\.]+$" length="20"></ShortNameNaming>
+			<DisplayNameNaming regexp="^[-_0-9a-zA-Z\.]+$" length="35"></DisplayNameNaming>
+			<PrefixNaming regexp="^[-_0-9a-zA-Z\.]+$" length="20"></PrefixNaming>
+
+		</VMSetup>
+
+		<PatchManagementSetup>
+			<Prefix>patchManagement</Prefix>
+			<MailingList>co4.hosting@orange.com</MailingList>
+			<VHMPlatformOwner></VHMPlatformOwner>
+			<SFTPSetup>
+				<HostName>10.6.142.204</HostName>
+				<UserName>vhm</UserName>
+				<PrivateKeyFilePath>E:\\orchestrator\\privateKey\\gini\\id_rsa</PrivateKeyFilePath>
+				<Repository>/var/local/relmanage</Repository>
+				<MaxAttempts>3</MaxAttempts>
+				<WaitTimeBetweenAttempts>5000</WaitTimeBetweenAttempts>
+			</SFTPSetup>
+		</PatchManagementSetup>	
+		
+		<LogicalCatalog>
+			<IgnoreMiddlewares>false</IgnoreMiddlewares>
+		</LogicalCatalog>
+		<ActivatedFeatures>
+			<UISetup>
+				<ShowVSAGraphics>true</ShowVSAGraphics>
+				<CustomerNetworkTypeOrderList>
+					<Value>CustAdmin</Value>
+					<Value>data</Value>
+				</CustomerNetworkTypeOrderList>
+				<HostingNetworkTypeOrderList>
+					<Value>private</Value>
+					<Value>UHPAdmin</Value>
+					<Value>data</Value>
+					<Value>UHPTraffic</Value>
+				</HostingNetworkTypeOrderList>
+				<VSACustomerNetworkTypeOrderList>
+					<Value>data</Value>
+					<Value>virt</Value>
+				</VSACustomerNetworkTypeOrderList>
+				<VSAHostingNetworkTypeOrderList>
+					<Value>data</Value>
+					<Value>private</Value>
+					<Value>virt</Value>
+				</VSAHostingNetworkTypeOrderList>
+			</UISetup>
+			<VDCSetup>
+				<UseVDCStatusCycle>true</UseVDCStatusCycle>
+			</VDCSetup>
+			<UHPSetup>
+				<ManageUHPAddressPool>true</ManageUHPAddressPool>
+			</UHPSetup>
+			<FWSetup>
+				<ConfigureFirewallFeatures>true</ConfigureFirewallFeatures>
+				<VsysNameMaster>FW_{OrderId}_{VSysName}_Virtual_FC1</VsysNameMaster>
+				<VsysNameSlave>FW_{OrderId}_{VSysName}_Virtual_FC2</VsysNameSlave>
+				<!--
+					Liste des actions possibles pour une rgle de firewall La cl de
+					trad est constitue en concatnant "action_firewallRuleAction_" et
+					@name @defaultSelected permet d'indiquer l'action privilgie pour
+					les choix par dfaut
+				-->
+				<SecurityRuleActions>
+					<Action name="permit" defaultSelected="true" />
+					<Action name="deny" defaultSelected="false" />
+				</SecurityRuleActions>
+				<ZoneTypeMatrix>
+					<FromType name="ExtInet">
+						<ToType name="FrontendInternet" isTargetMip="true" />
+					</FromType>
+					<FromType name="ExtIpvpn">
+						<ToType name="FrontendIPVPN" />
+					</FromType>
+					<FromType name="TransAdm">
+						<ToType name="AllDMZ" />
+					</FromType>
+					<FromType name="FrontendInternet">
+						<ToType name="ExtInet" isSourceMip="true" />
+						<ToType name="Backend" />
+					</FromType>
+					<FromType name="FrontendIPVPN">
+						<ToType name="ExtIpvpn" />
+						<ToType name="Backend" />
+					</FromType>
+					<FromType name="Backend">
+						<ToType name="FrontendInternet" />
+						<ToType name="FrontendIPVPN" />
+						<ToType name="Backend" />
+					</FromType>
+					<FromType name="AllDMZ">
+						<ToType name="TransAdm" />
+					</FromType>
+				</ZoneTypeMatrix>
+			</FWSetup>
+			<LBSetup>
+				<ConfigureLoadBalancerFeatures>false</ConfigureLoadBalancerFeatures>
+			</LBSetup>
+			<CustAdmIpTranslation>
+				<ConfigureCustAdmIpTranslationFeatures>false</ConfigureCustAdmIpTranslationFeatures>
+			</CustAdmIpTranslation>
+			<HostingZoneServices>
+				<!--
+					A definir: quel est le comporteent si cet attribut est a FALSE?
+					doit-on refuser ou ignorer les attributs definis sur la zone ?
+				-->
+				<ConfigureHostingZoneServices>true</ConfigureHostingZoneServices>
+			</HostingZoneServices>
+			<LDAPSetup>
+				<replicateLDAP>true</replicateLDAP>
+				<replicatedOrganisationUnitIntl>OU=INTL,OU=VHMRoot,DC=b2gaas-infra,DC=cloud,DC=local</replicatedOrganisationUnitIntl>
+				<replicatedOrganisationUnitFr>OU=FR,OU=VHMRoot,DC=b2gaas-infra,DC=cloud,DC=local</replicatedOrganisationUnitFr>
+				<replicatedGroupIntl>CN=FlexibleComputingIntl,OU=VHMRoot,DC=b2gaas-infra,DC=cloud,DC=local</replicatedGroupIntl>
+				<replicatedGroupFr>CN=FlexibleComputing,OU=VHMRoot,DC=b2gaas-infra,DC=cloud,DC=local</replicatedGroupFr>
+			</LDAPSetup>
+		</ActivatedFeatures>
+		<HostingZone>
+			<Alert>
+				<Seuils>
+					<CPU>90</CPU>
+					<RAM>90</RAM>
+					<Gold>90</Gold>
+					<Silver>90</Silver>
+				</Seuils>
+			</Alert>
+			<VSASetup>
+				<ExternalZones>
+					<!--
+						Optionnel si Offre/AllowExternalZones  False
+					--> <!-- enum baseTypes.xsd -->
+					<ExternalZone type="ExtInet" mandatory="false"
+						activate="false" />
+					<ExternalZone type="ExtIpvpn" mandatory="true"
+						activate="false" />
+					<ExternalZone type="TransAdm" mandatory="false"
+						activate="false" />
+				</ExternalZones>
+				<SecurityZones id="alldmz">
+					<FrontendSecurityZones>
+						<!--
+							Optionnel si Offre/AllowFrontEndZones  False
+						--> <!-- enum baseTypes.xsd -->
+						<SecurityZone id="feinet" mandatory="false" activate="false" />
+						<SecurityZone id="feipvpn" mandatory="false"
+							activate="false" />
+					</FrontendSecurityZones>
+					<BackendSecurityZones>
+						<!--
+							Optionnel si Offre/AllowBackendzones  False
+						--> <!-- enum baseTypes.xsd -->
+						<SecurityZone id="be1" mandatory="false" activate="false" />
+						<SecurityZone id="be2" mandatory="false" activate="false" />
+						<SecurityZone id="be3" mandatory="false" activate="false" />
+						<SecurityZone id="be4" mandatory="false" activate="false" />
+					</BackendSecurityZones>
+				</SecurityZones>
+				<AdminNetworksZone> <!-- enum baseTypes.xsd -->
+				</AdminNetworksZone>
+			</VSASetup>
+			<VMSetup>
+				<!--
+					l'ensemble des routes a postconfigurer dans les VMs sont
+					exclusivement definies au niveau de chaque zone d'exploitation
+				-->
+				<VMPostConf>
+					<!--
+						chaque information listee donnera lieu a calcul par le workflow
+						VHM de postconfig, afin de convertir l'information 'network' en sa
+						version 'GatewayIP' par l'utilisation de @iP de la gateway de ce
+						'network' qui a ete defini dans le 'subnet' associé à ce 'network'
+						Question: comment faire dans FCPC lorsqu'il y a plus de un
+						'subnet' pour un 'network'?
+					-->
+					<Routes>
+						<Route name="ObsAdmin" network="private" subnetDest="192.168.1.0"
+							subnetDestMask="255.255.255.0" comments="Route vers la zone d'admin OBS pour FCExpress"></Route>
+					</Routes>
+				</VMPostConf>
+			</VMSetup>
+			<ActivatedFeatures>
+				<UHPSetup>
+					<UHPAddressAlertThreshold>80</UHPAddressAlertThreshold>
+					<UHPSupportEmail>co4.hosting@orange.com</UHPSupportEmail>
+					<ManageASRFront>false</ManageASRFront>
+					<ManageASRBack>true</ManageASRBack>
+					<ManageDNS>true</ManageDNS>
+					<ZoneNameSuffix>obs</ZoneNameSuffix>
+					<PrimaryDNSIpAddresses>
+						<IpAddress>127.0.0.1</IpAddress>
+						<IpAddress>127.0.0.1</IpAddress>
+					</PrimaryDNSIpAddresses>
+					<SecondaryDNSIpAddresses>
+					</SecondaryDNSIpAddresses>
+					<SSHIpAddresses>
+					</SSHIpAddresses>
+				</UHPSetup>
+				<FWSetup>
+					<IPVPNInterfaceNamingCoefs>
+						<N>1000</N>
+						<M>0</M>
+					</IPVPNInterfaceNamingCoefs>
+					<IPVPNVlanIdRange>
+						<Min>2001</Min>
+						<Max>2999</Max>
+					</IPVPNVlanIdRange>
+					<NBMaxPublicIP>10</NBMaxPublicIP> <!-- equivalent a MaxNatRules (on nat entre PublicIP et RIP ou VIP -->
+					<QuarantineDuration>30</QuarantineDuration>
+					<NBMaxSecurityRules>90</NBMaxSecurityRules>
+					<NBMaxAddresses>100</NBMaxAddresses>
+					<NBMaxAddressGroups>10</NBMaxAddressGroups>
+					<NBMaxServices>40</NBMaxServices>
+					<NBMaxServiceGroups>10</NBMaxServiceGroups>
+					<NBMaxServicesInGroups>5</NBMaxServicesInGroups>
+					<NBMaxAddressesInGroups>5</NBMaxAddressesInGroups>
+					<!--
+						Range pour les ports de service source et destination
+					-->
+					<ServicePortRange>
+						<Source>
+							<Min>0</Min>
+							<Max>65535</Max>
+						</Source>
+						<Destination>
+							<Min>0</Min>
+							<Max>65535</Max>
+						</Destination>
+					</ServicePortRange>
+					<FWProtocolOptionsList>
+						<Option>TCP</Option>
+						<Option>UDP</Option>
+					</FWProtocolOptionsList>
+					<LogServer ipAddress="192.168.1.2" sshUser="test" sshKeyLocalPath="E:\\orchestrator\\privateKey\\key"/>
+				</FWSetup>
+				<LBSetup>
+					<LBOptions>
+						<LBPersistanceOptionsList>
+							<Option>NONE</Option>
+							<Option>SRC_IPADDR</Option>
+						</LBPersistanceOptionsList>
+						<LBAlgoOptionsList>
+							<Option>LEAST_CONNECTION</Option>
+							<Option>ROUND_ROBIN</Option>
+						</LBAlgoOptionsList>
+						<LBProtocolOptionsList>
+							<Option>TCP</Option>
+							<Option>UDP</Option>
+							<Option>IP</Option>
+						</LBProtocolOptionsList>
+					</LBOptions>
+					<NBMaxVIS>10</NBMaxVIS>
+				</LBSetup>
+			</ActivatedFeatures>
+			<HostingZoneServices>
+					<Servers>
+					<Server name="DNS" ipAddress="127.0.0.1" etcHostsDeclaration="false"></Server>
+					<Server name="NTP" ipAddress="127.0.0.1" etcHostsDeclaration="false"></Server>
+					<Server name="VAMT" ipAddress="127.0.0.1" etcHostsDeclaration="false">
+						<ServerOptions>
+							<ServerOption name="login" type="string" value="toto"></ServerOption>
+							<ServerOption name="sshKeyIdPath" type="string"
+								value="/root/ssh/shadow/rsa-id.priv"></ServerOption>
+						</ServerOptions>
+					</Server>
+					<!-- <Server name="RHN" ipAddress="192.168.1.13" etcHostsDeclaration="false"></Server> -->
+					<!-- <Server name="ProxyDebian" ipAddress="192.168.1.14" etcHostsDeclaration="false"></Server> -->
+					<Server name="WSUS" ipAddress="127.0.0.1" etcHostsDeclaration="false"></Server>
+					<Server name="Sophos" ipAddress="127.0.0.1" etcHostsDeclaration="false"></Server>
+					<!-- <Server name="S-FTP" ipAddress="192.168.1.17" etcHostsDeclaration="false"></Server> -->
+					<!-- <Server name="RP-Apache-Cust" ipAddress="192.168.1.18" etcHostsDeclaration="false"></Server> -->
+					<Server name="RP-Apache-OBS" ipAddress="127.0.0.1" etcHostsDeclaration="false"></Server>
+				</Servers>
+			</HostingZoneServices>
+			<DatacenterSetup>
+					<DatacenterCodes>
+						<DatacenterCode code="CVY" description="Chevilly (B2GaaS France TTM)" />
+						<DatacenterCode code="SIN" description="Singapour" />
+						<DatacenterCode code="FRA" description="Frankfort" />
+						<DatacenterCode code="ATL" description="Atlanta" />
+						<DatacenterCode code="RUE" description="Rueil-Malmaison" />
+						<DatacenterCode code="VDR" description="Val-de-Reuil" />
+					</DatacenterCodes>
+			</DatacenterSetup>
+		</HostingZone>
+		<ResourcePoolSetup constraint="ucaas"></ResourcePoolSetup>
+		<SupportTeamInfo
+			email="co4.hosting@orange.com" 
+			entity="FCAM Co4" 
+			TelHNO="+20128789873" 
+			TelHO="+20222929531" 
+			EdsOceane="ATQIFC" 
+			exploitant="exploitant SCOF"
+		/>
+		<ApplicativeUpgrade>
+			<Directory>e:\Orchestrator\applicativeUpgrade</Directory>
+			<Script>MasterUpgrade.ps1</Script>
+			<CompatibilityMatrix>matrixUpgrade.csv</CompatibilityMatrix>
+			<NbRetry>80</NbRetry>
+			<PollInterval>3</PollInterval>
+		</ApplicativeUpgrade>
+	</Offer>
+	<serviceName>Flexible Computing Console</serviceName>
+	<userGuides>
+		<userGuidePath>/documentation/userGuide/current</userGuidePath>
+		<faqPath>/documentation/faq/current</faqPath>
+	</userGuides>
+</VHMSetup>

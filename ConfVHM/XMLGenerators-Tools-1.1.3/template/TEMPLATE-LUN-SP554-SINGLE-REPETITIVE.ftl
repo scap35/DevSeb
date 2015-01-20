@@ -1,0 +1,1 @@
+<lun canonicalName="${wwn}" physicalCapacity="${capacity}" storageType="${storageType}" storageClass="${storageClass}" storageUnit="${storageUnit}"/>

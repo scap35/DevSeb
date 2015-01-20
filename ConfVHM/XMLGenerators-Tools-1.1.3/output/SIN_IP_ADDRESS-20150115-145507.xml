@@ -1,0 +1,348 @@
+<CatalogImplementation>
+    <VMTemplate catalogElementId="3212">
+        <Eth address="6.194.138.40" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3213">
+        <Eth address="6.194.138.40" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3500">
+        <Eth address="6.194.138.1" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3501">
+        <Eth address="6.194.138.2" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3502">
+        <Eth address="6.194.138.20" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3503">
+        <Eth address="6.194.138.30" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3200">
+        <Eth address="6.194.138.1" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3201">
+        <Eth address="6.194.138.2" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3209">
+        <Eth address="6.194.138.20" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3210">
+        <Eth address="6.194.138.30" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3600">
+        <Eth address="6.194.138.1" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3601">
+        <Eth address="6.194.138.2" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3611">
+        <Eth address="6.194.138.20" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="3612">
+        <Eth address="6.194.138.30" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5212">
+        <Eth address="6.194.138.40" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5213">
+        <Eth address="6.194.138.40" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5500">
+        <Eth address="6.194.138.1" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5501">
+        <Eth address="6.194.138.2" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5502">
+        <Eth address="6.194.138.20" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5503">
+        <Eth address="6.194.138.30" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5200">
+        <Eth address="6.194.138.1" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5201">
+        <Eth address="6.194.138.2" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5209">
+        <Eth address="6.194.138.20" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="5210">
+        <Eth address="6.194.138.30" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="6600">
+        <Eth address="6.194.138.1" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="6601">
+        <Eth address="6.194.138.2" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="6611">
+        <Eth address="6.194.138.20" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="6612">
+        <Eth address="6.194.138.30" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1032011">
+        <Eth address="6.194.138.1" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1032021">
+        <Eth address="6.194.138.2" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1032041">
+        <Eth address="6.194.138.20" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1032031">
+        <Eth address="6.194.138.30" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033191">
+        <Eth address="6.194.138.1" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033201">
+        <Eth address="6.194.138.2" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033271">
+        <Eth address="6.194.138.20" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033261">
+        <Eth address="6.194.138.30" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033101">
+        <Eth address="6.194.138.1" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033111">
+        <Eth address="6.194.138.2" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033181">
+        <Eth address="6.194.138.20" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1033171">
+        <Eth address="6.194.138.30" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1034011">
+        <Eth address="6.194.138.1" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1034021">
+        <Eth address="6.194.138.2" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1034141">
+        <Eth address="6.194.138.20" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1034121">
+        <Eth address="6.194.138.30" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1035011">
+        <Eth address="6.194.138.1" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1035021">
+        <Eth address="6.194.138.2" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1035151">
+        <Eth address="6.194.138.20" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1035121">
+        <Eth address="6.194.138.30" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1031011">
+        <Eth address="6.194.138.40" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1031021">
+        <Eth address="6.194.138.40" networkType="data" number="0"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34002">
+        <Eth address="6.194.138.60" networkType="data" number="0"/>
+        <Eth address="6.194.138.142" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34003">
+        <Eth address="6.194.138.61" networkType="data" number="0"/>
+        <Eth address="6.194.138.143" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34005">
+        <Eth address="6.194.138.63" networkType="data" number="0"/>
+        <Eth address="6.194.138.144" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34015">
+        <Eth address="6.194.138.50" networkType="data" number="0"/>
+        <Eth address="6.194.138.132" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34016">
+        <Eth address="6.194.138.50" networkType="data" number="0"/>
+        <Eth address="6.194.138.132" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34007">
+        <Eth address="6.194.138.51" networkType="data" number="0"/>
+        <Eth address="6.194.138.133" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34008">
+        <Eth address="6.194.138.52" networkType="data" number="0"/>
+        <Eth address="6.194.138.134" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34009">
+        <Eth address="6.194.138.53" networkType="data" number="0"/>
+        <Eth address="6.194.138.135" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34010">
+        <Eth address="6.194.138.54" networkType="data" number="0"/>
+        <Eth address="6.194.138.136" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34011">
+        <Eth address="6.194.138.55" networkType="data" number="0"/>
+        <Eth address="6.194.138.137" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34012">
+        <Eth address="6.194.138.56" networkType="data" number="0"/>
+        <Eth address="6.194.138.138" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34013">
+        <Eth address="6.194.138.57" networkType="data" number="0"/>
+        <Eth address="6.194.138.139" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="34014">
+        <Eth address="6.194.138.58" networkType="data" number="0"/>
+        <Eth address="6.194.138.140" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54002">
+        <Eth address="6.194.138.60" networkType="data" number="0"/>
+        <Eth address="6.194.138.142" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54003">
+        <Eth address="6.194.138.61" networkType="data" number="0"/>
+        <Eth address="6.194.138.143" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54005">
+        <Eth address="6.194.138.63" networkType="data" number="0"/>
+        <Eth address="6.194.138.144" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54006">
+        <Eth address="6.194.138.67" networkType="data" number="0"/>
+        <Eth address="6.194.138.148" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54015">
+        <Eth address="6.194.138.50" networkType="data" number="0"/>
+        <Eth address="6.194.138.132" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54016">
+        <Eth address="6.194.138.50" networkType="data" number="0"/>
+        <Eth address="6.194.138.132" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54007">
+        <Eth address="6.194.138.51" networkType="data" number="0"/>
+        <Eth address="6.194.138.133" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54008">
+        <Eth address="6.194.138.52" networkType="data" number="0"/>
+        <Eth address="6.194.138.134" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54009">
+        <Eth address="6.194.138.53" networkType="data" number="0"/>
+        <Eth address="6.194.138.135" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54010">
+        <Eth address="6.194.138.54" networkType="data" number="0"/>
+        <Eth address="6.194.138.136" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54011">
+        <Eth address="6.194.138.55" networkType="data" number="0"/>
+        <Eth address="6.194.138.137" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54012">
+        <Eth address="6.194.138.56" networkType="data" number="0"/>
+        <Eth address="6.194.138.138" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54013">
+        <Eth address="6.194.138.57" networkType="data" number="0"/>
+        <Eth address="6.194.138.139" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="54014">
+        <Eth address="6.194.138.58" networkType="data" number="0"/>
+        <Eth address="6.194.138.140" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030071">
+        <Eth address="6.194.138.51" networkType="data" number="0"/>
+        <Eth address="6.194.138.133" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030081">
+        <Eth address="6.194.138.52" networkType="data" number="0"/>
+        <Eth address="6.194.138.134" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030091">
+        <Eth address="6.194.138.53" networkType="data" number="0"/>
+        <Eth address="6.194.138.135" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030101">
+        <Eth address="6.194.138.54" networkType="data" number="0"/>
+        <Eth address="6.194.138.136" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030111">
+        <Eth address="6.194.138.55" networkType="data" number="0"/>
+        <Eth address="6.194.138.137" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030121">
+        <Eth address="6.194.138.56" networkType="data" number="0"/>
+        <Eth address="6.194.138.138" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030131">
+        <Eth address="6.194.138.57" networkType="data" number="0"/>
+        <Eth address="6.194.138.139" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030141">
+        <Eth address="6.194.138.58" networkType="data" number="0"/>
+        <Eth address="6.194.138.140" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030051">
+        <Eth address="6.194.138.50" networkType="data" number="0"/>
+        <Eth address="6.194.138.132" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030061">
+        <Eth address="6.194.138.50" networkType="data" number="0"/>
+        <Eth address="6.194.138.132" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050071">
+        <Eth address="6.194.138.51" networkType="data" number="0"/>
+        <Eth address="6.194.138.133" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050081">
+        <Eth address="6.194.138.52" networkType="data" number="0"/>
+        <Eth address="6.194.138.134" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050091">
+        <Eth address="6.194.138.53" networkType="data" number="0"/>
+        <Eth address="6.194.138.135" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050101">
+        <Eth address="6.194.138.54" networkType="data" number="0"/>
+        <Eth address="6.194.138.136" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050111">
+        <Eth address="6.194.138.55" networkType="data" number="0"/>
+        <Eth address="6.194.138.137" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050121">
+        <Eth address="6.194.138.56" networkType="data" number="0"/>
+        <Eth address="6.194.138.138" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050131">
+        <Eth address="6.194.138.57" networkType="data" number="0"/>
+        <Eth address="6.194.138.139" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050141">
+        <Eth address="6.194.138.58" networkType="data" number="0"/>
+        <Eth address="6.194.138.140" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050051">
+        <Eth address="6.194.138.50" networkType="data" number="0"/>
+        <Eth address="6.194.138.132" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050061">
+        <Eth address="6.194.138.50" networkType="data" number="0"/>
+        <Eth address="6.194.138.132" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1030041">
+        <Eth address="6.194.138.67" networkType="data" number="0"/>
+        <Eth address="6.194.138.148" networkType="private" number="1"/>
+    </VMTemplate>
+    <VMTemplate catalogElementId="1050041">
+        <Eth address="6.194.138.67" networkType="data" number="0"/>
+        <Eth address="6.194.138.148" networkType="private" number="1"/>
+    </VMTemplate>
+</CatalogImplementation>

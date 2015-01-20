@@ -240,7 +240,7 @@ Sprint : SP557
 						<Command interpreter="Windows" command="stage3.cmd"/>
 						<Command interpreter="Windows" command="stage4.cmd"/>
 						<Command interpreter="VHM" command="StopStartVM"/>
-						<Command interpreter="Windows" command="launchSophosScript1.bat /cidpath http://213.56.206.137/sophosupdate/CIDs/S001/SAVSCFXP/ /hostname 213.56.206.137 /group CUSTOMERS"/>
+						<Command interpreter="Windows" command="launchSophosScript1.bat /cidpath http://213.56.206.137/sophosupdate/CIDs/S000/SAVSCFXP/ /hostname 213.56.206.137 /group CUSTOMERS"/>
 						<Command interpreter="Windows" command="launchSophosScript2.bat"/>
 						<Command interpreter="VHM" command="StopStartVM"/>
 					</Commands>
@@ -265,8 +265,18 @@ Sprint : SP557
 					<Commands>
 						<Command interpreter="Windows" command="stage1-AD1.bat ${vm.vdc.options.DOMAIN_NAME_AD.value}"/>
 						<Command interpreter="VHM" command="StopStartVM"/>
+						<Command interpreter="VHM" command="Sleep">
+						   <Params>
+									<Param name="seconds" value="120"/>
+						   </Params>
+						</Command>
 						<Command interpreter="Windows" command="stage2-AD1.bat ${vm.vdc.options.DOMAIN_NAME_AD.value}"/>
 						<Command interpreter="VHM" command="StopStartVM"/>
+						<Command interpreter="VHM" command="Sleep">
+						   <Params>
+									<Param name="seconds" value="120"/>
+						   </Params>
+						</Command>
 						<Command interpreter="Windows" command="stage3-AD1.bat ${vm.vdc.options.DOMAIN_NAME_AD.value}"/>
 					</Commands>
 				</Installation>
@@ -289,9 +299,25 @@ Sprint : SP557
 					<Commands>
 						<Command interpreter="Windows" command="stage4-AD2.bat ${vm.vdc.options.DOMAIN_NAME_AD.value}"/>
 						<Command interpreter="VHM" command="StopStartVM"/>
+						<Command interpreter="VHM" command="Sleep">
+						   <Params>
+									<Param name="seconds" value="120"/>
+						   </Params>
+						</Command>
 						<Command interpreter="Windows" command="stage5-AD2.bat ${vm.vdc.options.DOMAIN_NAME_AD.value}"/>
 						<Command interpreter="VHM" command="StopStartVM"/>
+						<Command interpreter="VHM" command="Sleep">
+						   <Params>
+									<Param name="seconds" value="120"/>
+						   </Params>
+						</Command>
 						<Command interpreter="Windows" command="stage6-AD2.bat ${vm.vdc.options.DOMAIN_NAME_AD.value}"/>
+						<Command interpreter="VHM" command="StopStartVM"/>
+						<Command interpreter="VHM" command="Sleep">
+						   <Params>
+									<Param name="seconds" value="120"/>
+						   </Params>
+						</Command>
 						<Command interpreter="Windows" command="stage7-AD2.bat"/>
 					</Commands>
 				</Installation>
@@ -2358,6 +2384,20 @@ Sprint : SP557
 				<Network createVNic="false"/>
 			</VMTemplate>
 			
+			<VMTemplate catalogElementId="5213" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC300CX01" hostNaming="UC300CX01">
+				<Information>
+					<Name commercialName="UCCX01 300-HCS862V4" shortName="UC300CX01-HCS862V4"/>
+					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UC300CX01" language="FR" architecture="32bits"/>
+					<Description description="UCCX01 Call Center 300 attendants HCS8.6.2 V4"/>
+					<ApplicationType useApplicationTypeId="UCCX"/>
+				</Information>
+				<OSRequirement>
+					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
+					<CPU minMhz="2500" unlimited="true"/>
+					<vCPU min="2" max="2"/>
+				</OSRequirement>
+				<Network createVNic="false"/>
+			</VMTemplate>			
 
 			<VMTemplate catalogElementId="1213" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC300CX01" hostNaming="UC300CX01">
 				<Information>
@@ -2499,23 +2539,7 @@ Sprint : SP557
 			</VMTemplate>
 
 		</Collection>
-		<Collection name="UCaaS Cisco HCS (1000 devices)">
-			<VMTemplate catalogElementId="5213" status="available" useLicenseId="00001" optional="true" backup="ImageLevel" vmNaming="UC300CX01" hostNaming="UC300CX01">
-				<Information>
-					<Name commercialName="UCCX01 300-HCS862V4" shortName="UC300CX01-HCS862V4"/>
-					<Version OSFamily="RedHat" version="HCS8.6.2 V4" type="UC300CX01" language="FR" architecture="32bits"/>
-					<Description description="UCCX01 Call Center 300 attendants HCS8.6.2 V4"/>
-					<ApplicationType useApplicationTypeId="UCCX"/>
-				</Information>
-				<OSRequirement>
-					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
-					<CPU minMhz="2500" unlimited="true"/>
-					<vCPU min="2" max="2"/>
-				</OSRequirement>
-				<Network createVNic="false"/>
-			</VMTemplate>
-			
-
+		<Collection name="UCaaS Cisco HCS (1000 devices)">			
 			<VMTemplate catalogElementId="1500" status="available" useLicenseId="00001" optional="false" backup="ImageLevel" vmNaming="UCS1000P01" hostNaming="UCS1000P01">
 				<Information>
 					<Name commercialName="UCSP01 1000-HCS861V1" shortName="UCS1000P01-HCS861V1"/>
@@ -2621,7 +2645,7 @@ Sprint : SP557
 				</Information>
 				<OSRequirement>
 					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
-					<CPU minMhz="2500" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
 					<vCPU min="1" max="1"/>
 				</OSRequirement>
 				<Network createVNic="false"/>
@@ -2637,7 +2661,7 @@ Sprint : SP557
 				</Information>
 				<OSRequirement>
 					<RAM minMo="4096" maxMo="4096" unlimited="true"/>
-					<CPU minMhz="2500" unlimited="true"/>
+					<CPU minMhz="2300" unlimited="true"/>
 					<vCPU min="1" max="1"/>
 				</OSRequirement>
 				<Network createVNic="false"/>
